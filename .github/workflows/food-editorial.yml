@@ -1,8 +1,10 @@
-name: "ĂN NGON CÓ DEAL — Kiểm tra nguồn bài miễn phí"
+name: "ĂN NGON CÓ DEAL — Kiểm tra nội dung miễn phí"
 on:
   push:
     paths:
       - ready.json
+      - scripts/**
+      - tests/**
       - .github/workflows/food-editorial.yml
   workflow_dispatch:
   schedule:
@@ -17,56 +19,33 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
-      - name: Lấy dữ liệu repo ẩm thực riêng
+      - name: Checkout repository riêng của dự án ẩm thực
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-      - name: Xác minh 37 bài và tạo nguồn đọc Site
+      - name: Chạy kiểm thử tự động (offline, không sửa Site)
+        run: python3 -m unittest discover -s tests -v
+      - name: Đối chiếu dữ liệu Site và xuất lô staging 100 bài
+        run: python3 scripts/prepare_feed.py
+      - name: Kiểm tra tệp kết quả
         run: |
           python3 - <<'PY'
-          import json, os, re
+          import json
           from pathlib import Path
-          source=Path('ready.json')
-          if not source.exists():
-              print('Chưa có ready.json. Workflow đã cài; chờ một lần upload dữ liệu. KHÔNG giả định Site đã xuất bản.')
-              raise SystemExit(0)
-          payload=json.loads(source.read_text(encoding='utf-8'))
-          assert payload.get('schema')==1, 'schema'
-          assert payload.get('site')=='https://an-ngon-co-deal.bvthn-1903.chatgpt.site/', 'site mismatch'
-          assert payload.get('status')=='ready_for_site', 'staging status'
-          articles=payload.get('articles')
-          assert isinstance(articles,list) and 0<len(articles)<=10000, 'articles invalid'
-          assert payload.get('articleCount')==len(articles),'count mismatch'
-          seen=set()
-          for a in articles:
-              slug=a.get('id','')
-              assert re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',slug), f'invalid slug {slug}'
-              assert slug not in seen, f'duplicate {slug}'
-              seen.add(slug)
-              assert a.get('approved') is True, f'not approved {slug}'
-              assert a.get('editorialStatus')=='approved', f'not editorially approved {slug}'
-              assert a.get('publicationStatus')=='ready_for_site', f'unexpected status {slug}'
-              assert isinstance(a.get('title'),str) and len(a['title'])>=10, f'title {slug}'
-              assert isinstance(a.get('body'),str) and len(a['body'])>=700, f'body too short {slug}'
-              assert not a.get('affiliateLinks'), f'unverified affiliate link {slug}'
-          Path('out').mkdir(exist_ok=True)
-          dest=Path('out/ready.json')
-          text=json.dumps(payload,ensure_ascii=False,indent=2)+'\n'
-          if not dest.exists() or dest.read_text(encoding='utf-8')!=text:
-              dest.write_text(text,encoding='utf-8')
-              print('Đã xác minh và xuất',len(articles),'bài STAGING ra out/ready.json.')
-          else:
-              print('Không thay đổi. Hiện có',len(articles),'bài STAGING.')
-          print('LƯU Ý: STAGING KHÔNG PHẢI BÀI ĐÃ XUẤT BẢN TRÊN CHATGPT SITES.')
+          data=json.loads(Path("out/manifest.json").read_text(encoding="utf-8"))
+          print("Bài staging:",data["countReady"])
+          print("Bài công khai thực tế trong Site ở lượt kiểm tra:",data["liveArticleCountAtLastAudit"])
+          print("Bài thiếu nguồn trực tiếp:",data["missingSources"])
+          print("Bài thiếu ảnh có quyền sử dụng:",data["missingImages"])
+          print("LÔ CHỜ IMPORT:",data["batches"])
+          assert data["sitePublicationConfirmed"] is False
           PY
-      - name: Lưu nguồn bài công khai nếu thay đổi
+      - name: Lưu dữ liệu staging khi thay đổi, không đăng Site
         run: |
-          if [ -f out/ready.json ] && [ -n "$(git status --porcelain -- out/ready.json)" ]; then
+          if [ -n "$(git status --porcelain -- out/)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add out/ready.json
-            git commit -m "chore(food): refresh validated staging feed"
+            git add out/
+            git commit -m "chore(food): validate staging batches and manifest"
             git push
           else
-            echo "Không có thay đổi trong staging feed."
+            echo "Không có thay đổi dữ liệu."
           fi
