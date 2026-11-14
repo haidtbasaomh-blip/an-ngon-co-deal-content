@@ -104,13 +104,16 @@ def main():
         raise ValueError(f"Conflict with LIVE Site, abort: {conflicts[:15]}")
 
     counts = dict(sorted(Counter(a["category"] for a in articles).items()))
-    no_source = [a["id"] for a in articles if not a.get("source")]
-    no_image = [a["id"] for a in articles if not a.get("image")]
+    no_source = [a["id"] for a in articles if not a.get("source") or a.get("sourceStatus") != "topic_matched"]
+    no_image = [a["id"] for a in articles if not a.get("image") and not a.get("imageUrl")]
+    no_dish_photos = [a["id"] for a in articles if a.get("imageType") != "licensed_dish_photo"]
     warnings = []
     if no_source:
         warnings.append(f"{len(no_source)} stories have no cited source; recheck factual statements")
     if no_image:
-        warnings.append(f"{len(no_image)} stories have no licensed specific illustration")
+        warnings.append(f"{len(no_image)} stories have no cover illustration")
+    if no_dish_photos:
+        warnings.append(f"{len(no_dish_photos)} stories still have no licensed dish photo; editorial SVGs are not photos")
     if live_error:
         warnings.append(live_error)
 
@@ -148,6 +151,7 @@ def main():
         "sourceSha256": hashlib.sha256(payload).hexdigest(),
         "missingSources": len(no_source),
         "missingImages": len(no_image),
+        "missingSpecificDishPhotos": len(no_dish_photos),
         "warnings": warnings,
     })
     print(f"PASS: {len(articles)} validated staging articles in {len(batches)} batch(es)")

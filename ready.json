@@ -13,14 +13,20 @@
       "image": "",
       "intro": "Bún riêu có nhiều phiên bản. Chọn đúng bát mình thích bắt đầu từ cách hỏi nước dùng, riêu và phần ăn kèm.",
       "body": "Bún riêu là một lựa chọn đáng thử khi muốn đổi vị khỏi các món phở quen thuộc. Có người thích bát nước dùng chua nhẹ với cà chua; người khác quan tâm nhiều hơn tới phần riêu và các món thêm. Không nên nghĩ rằng tất cả quán bún riêu đều có một công thức giống nhau.\n\nTrước khi gọi, nhìn thực đơn để phân biệt suất cơ bản với suất có thêm đậu, giò hoặc nguyên liệu khác. Nếu quán bán nhiều loại bún riêu, hỏi xem phần nào đã gồm trong giá. Cách hỏi này hữu ích hơn việc chỉ xem ảnh một bát thật đầy trên mạng.\n\nNgười không quen vị mắm hoặc muốn điều chỉnh độ cay có thể đề nghị để riêng gia vị, nhưng phải hỏi quán có hỗ trợ không. Với món mang về, nên để riêng rau và nước nếu người bán cho phép để giữ cách ăn mình muốn.\n\nBài này giúp lựa chọn kiểu món, không giới thiệu một địa chỉ cụ thể. Giờ bán, giá từng suất và nguồn nguyên liệu luôn cần kiểm tra trực tiếp tại quán trước khi đặt.",
-      "source": "",
+      "source": "https://dantri.com.vn/du-lich/khach-my-nghien-mot-mon-an-o-ha-noi-san-sang-di-ca-tieng-de-thuong-thuc-20250826211447469.htm",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-rieu-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bún riêu Hà Nội: chọn vị thanh hay đậm ngay từ đầu; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-cuon-thanh-tri",
@@ -31,14 +37,20 @@
       "image": "",
       "intro": "Một bữa bánh cuốn ngon với mỗi người có thể khác nhau ở độ mềm của bánh, nhân và cách pha nước chấm.",
       "body": "Nhắc tới bánh cuốn, nhiều người quan tâm trước hết đến bề mặt bánh mỏng, mềm và cách cuốn. Bánh cuốn Thanh Trì thường được nhắc như một hướng khám phá ẩm thực Hà Nội, nhưng mỗi hàng có thể phục vụ cách ăn riêng. Đọc kỹ tên món trước khi gọi sẽ tránh nhầm loại có nhân với loại không nhân.\n\nNếu gọi theo nhóm, hỏi quán tính theo đĩa hay theo suất; chả, hành phi hoặc món thêm có tính tiền riêng không. Nước chấm có thể được chuẩn bị sẵn, vì thế người ăn nhạt hoặc không dùng một số gia vị nên hỏi trước khi món lên bàn.\n\nBánh có thể hợp cho một bữa sáng gọn, nhưng khối lượng mỗi phần tùy nơi bán. Người mua mang về nên hỏi cách đóng gói và thời gian sử dụng được cơ sở khuyến nghị, nhất là khi còn di chuyển qua nhiều điểm khác.\n\nẢnh trên website là ảnh minh họa nếu chưa có quyền sử dụng ảnh của cơ sở. Bài viết không khẳng định một quán cụ thể còn bán hay đang áp dụng khuyến mại.",
-      "source": "",
+      "source": "https://antoanthucpham.hanoi.gov.vn/banh-cuon-thanh-tri-bieu-tu-am-thuc-ha-noi-xua-duoc-ghi-danh-di-san-van-hoa-phi-vat-the-quoc-gia-239260903231416302.htm",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-cuon-thanh-tri.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh cuốn Thanh Trì: thưởng thức lớp bánh mỏng và nước chấm; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "xoi-xeo-buoi-sang",
@@ -56,7 +68,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/xoi-xeo-buoi-sang.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Xôi xéo buổi sáng: chọn phần xôi vừa đủ và món ăn kèm; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-gio-ha-noi",
@@ -74,7 +91,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-gio-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh giò Hà Nội: một bữa nhẹ gọn nhưng cần chọn đúng suất; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "bun-oc-ha-noi",
@@ -85,14 +107,20 @@
       "image": "",
       "intro": "Vị chua và cách chọn loại ốc khiến bún ốc có nhiều phong cách thưởng thức khác nhau.",
       "body": "Bún ốc là món có thể khiến người ăn nhớ lâu nhờ sự kết hợp giữa nước dùng và độ giòn của phần ốc. Một số người thích vị chua rõ, số khác muốn nước dùng dịu hơn. Khi thử lần đầu, nên chọn cách nêm chậm để không che mất hương vị ban đầu.\n\nTrên thực đơn, cần xem loại ốc, kích thước phần ăn và những món kèm mà quán thực sự phục vụ. Nếu bạn không ăn được một loại nguyên liệu hoặc có dị ứng với động vật thân mềm, hãy nêu rõ với người bán trước khi gọi, không chỉ yêu cầu bớt nước chấm.\n\nĐặt giao về nhà, hỏi phần nước có để riêng không và đọc lại ghi chú đơn hàng. Một món có cùng tên trên hai ứng dụng chưa chắc có cùng quy cách, vì thế hãy đối chiếu mô tả suất trước khi so sánh giá.\n\nKhông có một công thức bún ốc đại diện cho mọi quán Hà Nội. Bài này chỉ hướng dẫn cách chọn món, không đánh giá tình trạng vệ sinh hay chất lượng của một địa điểm cụ thể.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/eating-vietnam-anthony-bourdain/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-oc-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bún ốc Hà Nội: phân biệt bát nóng và cách ăn chua thanh; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "bun-moc-ha-noi",
@@ -110,7 +138,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-moc-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bún mọc Hà Nội: chọn bát nước trong và phần mọc vừa ý; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "chao-suon-buoi-chieu",
@@ -128,7 +161,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/chao-suon-buoi-chieu.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Cháo sườn: một món nóng cho buổi chiều nhiều gió; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "nem-ran-bua-co",
@@ -146,7 +184,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/nem-ran-bua-co.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Nem rán: món ăn chia sẻ và cách gọi đủ cho cả bàn; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-tom-ho-tay",
@@ -157,14 +200,20 @@
       "image": "",
       "intro": "Bánh tôm là gợi ý món ăn khi muốn có một điểm dừng nhẹ, nhưng nên đối chiếu đúng suất bán.",
       "body": "Bánh tôm thường được nhắc trong những câu chuyện ăn chơi Hà Nội. Người ăn có thể quan tâm lớp bánh rán và phần tôm, song các quán sẽ có quy cách chế biến, kích thước và cách bày khác nhau. Không nên mặc định một ảnh bánh tôm là hình ảnh chính xác của mọi địa điểm.\n\nTrước khi gọi, xem suất tính theo chiếc hay đĩa, có rau và nước chấm đi kèm không. Nếu có dị ứng hải sản, hãy hỏi kỹ thành phần và khả năng tiếp xúc chéo trong bếp; chỉ bỏ phần tôm khỏi bánh chưa chắc đã đáp ứng nhu cầu của bạn.\n\nNếu dự định kết hợp món ăn với chuyến đi dạo ven hồ, cần kiểm tra địa chỉ thật, giờ phục vụ và cách gửi xe tại nơi định ghé. Tên món gắn với Hồ Tây không có nghĩa mọi hàng bánh tôm đều nằm sát mặt hồ.\n\nBài không xếp hạng chất lượng hay giới thiệu giá bán của quán cụ thể. Các thông tin vận hành thay đổi theo cơ sở và thời điểm.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/exploring-ha-noi-street-food-sens-asia/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-tom-ho-tay.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh tôm Hồ Tây: xem kỹ phần bánh, tôm và rau ăn kèm; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "o-mai-lam-qua",
@@ -175,14 +224,20 @@
       "image": "",
       "intro": "Một hộp ô mai phù hợp phụ thuộc khẩu vị người nhận và thông tin sản phẩm rõ ràng hơn là bao bì bắt mắt.",
       "body": "Ô mai thường có nhiều vị như chua, ngọt, mặn hoặc cay. Người mua làm quà nên nghĩ tới sở thích của người nhận trước khi chọn một hộp lớn. Những tên gọi giống nhau giữa hai cửa hàng không bảo đảm chúng có cùng nguyên liệu hay mức độ nêm.\n\nĐọc kỹ tên nguyên liệu, thành phần, khối lượng tịnh và hướng dẫn bảo quản trên nhãn. Nếu người nhận cần hạn chế một thành phần nào đó, chỉ mua khi thông tin được công bố đủ rõ. Tránh chọn dựa hoàn toàn vào màu sắc, vì ảnh quảng cáo có thể khác sản phẩm thật.\n\nKhi cần gửi đi xa, hỏi người bán về cách đóng gói và điều kiện vận chuyển. Nếu mua nhiều hộp làm quà cơ quan, hãy yêu cầu hóa đơn hoặc chứng từ phù hợp và kiểm tra từng loại trước khi nhận.\n\nWebsite không tự bảo đảm thời hạn sử dụng, nguồn gốc hay giấy phép của một mặt hàng. Mỗi sản phẩm Affiliate sau này cần dẫn tới đúng trang bán và đúng quy cách.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/vietnamese-snacks/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/o-mai-lam-qua.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Ô mai Hà Nội: chọn đúng vị và quy cách trước khi làm quà; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-khuc-ha-noi",
@@ -193,14 +248,20 @@
       "image": "",
       "intro": "Bánh khúc thường được dùng vào bữa sáng hoặc bữa nhẹ; phần nhân và lớp xôi có thể thay đổi theo người làm.",
       "body": "Một chiếc bánh khúc thường gây chú ý nhờ lớp nếp bên ngoài và phần bánh bên trong. Trải nghiệm ăn có thể khác nhau đáng kể theo cách nêm nhân và độ mềm của lớp xôi. Thay vì tìm một chuẩn duy nhất, hãy bắt đầu bằng việc hỏi người bán về phiên bản đang có.\n\nNếu chưa từng thử, nên mua số lượng vừa phải để tự cảm nhận hương vị. Người có yêu cầu tránh thịt hoặc một loại gia vị cụ thể cần hỏi thành phần trước; không mặc định món gói lá nào cũng là món chay.\n\nLúc mua mang về, kiểm tra số chiếc và hướng dẫn làm nóng. Không nên tự đặt thời gian bảo quản cho món đã chế biến nếu người bán chưa công bố. Với đơn giao nhiều suất, ghi từng lựa chọn nếu có nhân khác nhau.\n\nĐây là bài giới thiệu cách trải nghiệm món ăn, không xác nhận giá, giờ bán hay lịch sử của một hàng bánh khúc cụ thể.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/exploring-ha-noi-street-food-sens-asia/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-khuc-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh khúc: chọn món gói lá khi muốn đổi bữa sáng; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-ran-man",
@@ -218,7 +279,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-ran-man.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh rán mặn: chọn chiếc vừa ăn và nước chấm hợp khẩu vị; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-troi-tau",
@@ -236,7 +302,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-troi-tau.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh trôi tàu: một món ngọt cho những ngày muốn ăn chậm; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "che-sen-ha-noi",
@@ -254,7 +325,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/che-sen-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Chè sen: chọn vị thanh và khẩu phần vừa đủ; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-com-lam-qua",
@@ -265,14 +341,20 @@
       "image": "",
       "intro": "Bánh cốm hấp dẫn bằng màu sắc và câu chuyện hương vị, nhưng thông tin trên nhãn mới giúp chọn quà chính xác.",
       "body": "Khi định mua bánh cốm, nhiều người nhìn vào hộp quà trước. Tuy nhiên, cần xem loại bánh, số chiếc, trọng lượng và thành phần được nhà sản xuất công bố. Hai hộp cùng hình thức không đồng nghĩa có cùng quy cách hoặc thời hạn dùng.\n\nNếu mua làm quà cho người có yêu cầu ăn uống riêng, hãy đọc kỹ nhãn và hỏi về nguyên liệu gây dị ứng. Với món truyền thống, sự khác biệt giữa các cơ sở là điều bình thường; không nên dùng một câu chuyện làng nghề chung để xác nhận nguồn gốc của mọi hộp bánh.\n\nKhi đặt giao xa, trao đổi với người bán về cách đóng gói và điều kiện vận chuyển. Kiểm tra thông tin người bán, hóa đơn và mô tả sản phẩm ở trang đích trước khi thanh toán, đặc biệt nếu mua qua đường liên kết Affiliate.\n\nBài viết không xác thực thương hiệu, giá hoặc giấy phép của sản phẩm cụ thể. Các mục này chỉ được cập nhật khi có nguồn chính thức.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/unlocking-hanoi%E2%80%99s-heritage-journey-beyond-sightseeing/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-com-lam-qua.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh cốm làm quà: đọc nhãn trước khi chọn hộp; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "pho-cuon-ngu-xa",
@@ -283,14 +365,20 @@
       "image": "",
       "intro": "Phở cuốn phù hợp khi muốn ăn món cuốn thay vì món nước; cách tính suất và nguyên liệu cần xem rõ.",
       "body": "Nhắc đến phở cuốn, nhiều người liên tưởng tới những cuốn bánh phở đi cùng rau và phần nhân. Người thử lần đầu có thể chú ý độ mềm của bánh và sự cân bằng giữa rau, thịt, nước chấm. Tuy nhiên, công thức và kích cỡ cuốn không giống nhau ở mọi quán.\n\nNếu gọi cho nhóm, hỏi một suất gồm bao nhiêu cuốn và món chấm nào đi kèm. So sánh giá nên dựa trên số lượng, thành phần thực tế chứ không chỉ tên món. Khi có trẻ nhỏ, hãy hỏi khả năng làm phần không cay hoặc cắt nhỏ nếu quán hỗ trợ.\n\nĐặt món mang về, kiểm tra cách đóng gói để phần cuốn và nước chấm không bị lẫn. Tên địa danh trong một tên món không đủ để xác nhận cửa hàng nằm tại đúng phố hoặc thuộc một thương hiệu lâu đời.\n\nThông tin quán, chỗ gửi xe và giờ mở chỉ nên hiển thị khi đã đối chiếu đúng chi nhánh.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/3-walking-tours-ha-noi/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/pho-cuon-ngu-xa.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Phở cuốn: chọn món cuốn nhẹ cho một bữa chia sẻ; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "pho-chien-phong",
@@ -301,14 +389,20 @@
       "image": "",
       "intro": "Một đĩa phở chiên phồng có thể được chia sẻ, nhưng phần bánh, rau và nhân tùy thực đơn của từng nơi.",
       "body": "Phở chiên phồng tạo trải nghiệm khác phở nước nhờ cách dùng bánh phở đã chế biến theo kiểu chiên. Điều thú vị là sự tương phản giữa lớp bánh và phần ăn kèm. Người mới thử nên đọc mô tả trên thực đơn thay vì mặc định món chỉ có bánh phở và thịt bò.\n\nNếu đi hai hoặc ba người, hỏi một đĩa phù hợp với bao nhiêu khách và phần rau, sốt có tính riêng không. Những yếu tố này giúp gọi đủ món mà tránh lãng phí. Người không dùng được một nguyên liệu nào cần báo trước để bếp xác nhận khả năng điều chỉnh.\n\nĐĩa chiên vừa làm có thể có kết cấu khác món được giao sau chuyến đi dài. Nếu đặt qua ứng dụng, xem đánh giá đúng chi nhánh và hỏi cách đóng gói; không dựa vào hình minh họa của một nơi khác.\n\nBài không gắn điểm số cho quán và không khẳng định mức giá cố định cho mọi suất phở chiên phồng.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/3-walking-tours-ha-noi/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/pho-chien-phong.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Phở chiên phồng: đọc kỹ khẩu phần trước khi gọi; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "bun-bo-nam-bo-ha-noi",
@@ -319,14 +413,20 @@
       "image": "",
       "intro": "Món bún trộn có nhiều lớp thành phần; một suất phù hợp cần rõ thịt, rau và phần nước trộn.",
       "body": "Bún bò Nam Bộ thường được lựa chọn khi muốn ăn bún theo kiểu trộn thay vì chan nước dùng. Cảm nhận của mỗi người khác nhau ở lượng rau, loại thịt và cách nêm nước trộn. Vì vậy, đừng nghĩ rằng hai bát trông giống nhau trên ảnh sẽ có cùng nguyên liệu.\n\nKhi đọc thực đơn, hãy xem phần cơ bản gồm những gì và món thêm được tính thế nào. Nếu ăn cùng người không thích vị ngọt hoặc cay, thử hỏi người bán có thể để riêng nước trộn không. Yêu cầu chỉ có giá trị khi quán đồng ý.\n\nVới đơn giao đi xa, phần bún, rau và nước có thể được đóng riêng. Kiểm tra mô tả món trước khi bấm thanh toán, đối chiếu đúng chi nhánh và địa chỉ giao. Đừng dùng mức giá quảng cáo của một suất khác làm giá dự kiến cho phần đặc biệt.\n\nBài viết tập trung vào cách gọi món, không bình chọn nhà hàng hay tự xác thực chất lượng của bếp.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/explore-relax-and-play-northern-vietnam%C2%A0",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-bo-nam-bo-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bún bò Nam Bộ ở Hà Nội: đọc phần rau và nước trộn; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "nem-chua-ran",
@@ -337,14 +437,20 @@
       "image": "",
       "intro": "Những phần nem chua rán có thể khác nhau về kích thước và cách bán; hãy hỏi thành phần trước khi mua.",
       "body": "Nem chua rán thường xuất hiện trong lựa chọn ăn vặt của nhiều nhóm bạn. Khi gọi, người mua nên phân biệt số chiếc, kích thước và những đồ ăn thêm. Một đĩa chụp đẹp trên mạng chưa cho biết chính xác suất bán ở nơi bạn dự định đến.\n\nNgười có yêu cầu về nguyên liệu hoặc dị ứng nên hỏi trực tiếp cơ sở về thành phần và quy trình chế biến. Không tự hiểu rằng tên món thể hiện đầy đủ cách xử lý thực phẩm. Nếu ăn cùng trẻ em, chú ý nhiệt độ và kích cỡ của món khi chia phần.\n\nKhi đặt giao, đối chiếu loại nem, số lượng và nước chấm. Giá theo combo có thể khác gọi từng phần; thông tin khuyến mại chỉ nên tin khi còn hiệu lực trên đúng ứng dụng hoặc trang bán.\n\nWebsite không công bố chất lượng vệ sinh, chứng nhận hay trạng thái hoạt động của một hàng ăn khi chưa có bằng chứng cụ thể.",
-      "source": "",
+      "source": "https://beta-v2.vietnam.travel/vi/things-to-do/ha-noi-food-guide-best-street-food-dishes-sample",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/nem-chua-ran.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Nem chua rán: hiểu đúng món ăn vặt trước khi gọi; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "sua-chua-nep-cam",
@@ -362,7 +468,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/sua-chua-nep-cam.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Sữa chua nếp cẩm: chọn món tráng miệng theo khẩu vị; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "com-rang-dua-bo",
@@ -380,7 +491,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/com-rang-dua-bo.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Cơm rang dưa bò: hỏi rõ thành phần một đĩa cơm đầy; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-mi-pate-ha-noi",
@@ -398,7 +514,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-mi-pate-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh mì pa-tê Hà Nội: chọn nhân và nước sốt hợp ý; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "mien-luon",
@@ -409,14 +530,20 @@
       "image": "",
       "intro": "Miến lươn có thể được phục vụ theo những cách khác nhau, khiến trải nghiệm một bát miến rất đa dạng.",
       "body": "Khi chọn miến lươn, hãy xem đó là miến nước hay miến trộn. Một bát miến nước có trải nghiệm khác suất trộn, đặc biệt khi bạn quan tâm kết cấu của miến và phần lươn. Không nên so sánh hai suất chỉ theo kích thước bát trong ảnh.\n\nNgười mới ăn nên hỏi rõ lươn được chế biến kiểu nào, có rau và các món ăn kèm gì. Nếu đặt phần đặc biệt, xem sự khác biệt so với phần thường. Với yêu cầu dị ứng hoặc tránh một loại thực phẩm, người bán mới là nơi có thể xác nhận thành phần thực tế.\n\nĐặt mang về, xem nước được để riêng không và cách đóng gói có phù hợp với thời gian di chuyển. Khi nhận đơn, đối chiếu số phần và lựa chọn trộn hay nước trước khi rời quán.\n\nBài viết dùng để hiểu món chứ không xác nhận giá, hoạt động hoặc chất lượng của một cơ sở miến lươn cụ thể.",
-      "source": "",
+      "source": "https://beta-v2.vietnam.travel/vi/things-to-do/ha-noi-food-guide-best-street-food-dishes-sample",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/mien-luon.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Miến lươn: phân biệt phiên bản trộn và phiên bản nước; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "bun-ngan",
@@ -427,14 +554,20 @@
       "image": "",
       "intro": "Với bún ngan, thực đơn có thể khác nhau ở phần thịt, nước dùng và các món ăn kèm.",
       "body": "Bún ngan là một lựa chọn món bún khác khi bạn muốn thay đổi bữa ăn hằng ngày. Một số thực đơn phân biệt bún nước và bún trộn; đôi khi còn có món gọi riêng theo đĩa. Người ăn nên xem rõ phiên bản định chọn, thay vì mặc định tên món bao hàm một kiểu phục vụ.\n\nKhi gọi cho nhóm, hỏi suất thường có những phần thịt nào và món thêm được tính tiền ra sao. Nếu bạn không dùng được một phần nguyên liệu, hãy nêu cụ thể trước khi bếp làm. Điều này hữu ích hơn việc chỉ ghi chú chung chung như ít gia vị.\n\nVới bún ngan giao đi xa, phần nước, bún và rau có thể cần đóng riêng. Kiểm tra lại đơn để bảo đảm chọn đúng dạng nước hoặc trộn. Đừng lấy giá ở một quán rồi áp dụng cho quán có cùng tên món.\n\nWebsite chưa kiểm chứng địa chỉ hay giờ phục vụ của một cơ sở cụ thể trong bài này.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/must-try-food-in-hanoi/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-ngan.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bún ngan: chọn kiểu ăn nước hay trộn trước khi gọi; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "nuoc-sau-da",
@@ -445,14 +578,20 @@
       "image": "",
       "intro": "Một ly nước sấu có thể ngọt hoặc chua hơn tùy cách pha; người uống nên chọn theo khẩu vị của mình.",
       "body": "Nước sấu gợi nhớ tới những ngày Hà Nội muốn tìm một thức uống mát. Tuy nhiên, cách ngâm và pha của mỗi cơ sở có thể khác nhau. Khi thử lần đầu, bạn có thể hỏi về mức ngọt và lượng đá để nhận đúng kiểu đồ uống mình thích.\n\nNếu mua cùng nhóm, hãy hỏi ly có kích cỡ nào và những món thêm nếu có. Tên nước sấu đá trên hai thực đơn chưa nói rõ thành phần hoặc định lượng. Người đang cần tránh một thành phần hay dị ứng nên xác nhận trực tiếp với người pha.\n\nĐặt giao đồ uống, cần xem rõ lựa chọn đá, đường và nơi nhận. Sau khi nhận, hãy dùng theo hướng dẫn của cơ sở; không suy ra thời hạn dùng từ hình ảnh ly nước hay lời quảng cáo.\n\nBài viết là gợi ý đồ uống, không xác nhận quán bán quanh năm, giá hiện tại hay nguồn nguyên liệu của một thương hiệu.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/experience-poetry-autumn-hanoi/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/nuoc-sau-da.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Nước sấu đá: lựa chọn vị chua ngọt cho một khoảng nghỉ; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "tra-chanh-pho",
@@ -470,7 +609,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/tra-chanh-pho.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Trà chanh phố: chọn chỗ ngồi và đồ uống vừa ý; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-trang-tron-ha-noi",
@@ -488,7 +632,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-trang-tron-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh tráng trộn: đọc thành phần trước khi chọn phần ăn vặt; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "che-khuc-bach",
@@ -506,7 +655,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/che-khuc-bach.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Chè khúc bạch: xem rõ topping và cách tính suất; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "bo-bia-ngot",
@@ -524,7 +678,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bo-bia-ngot.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bò bía ngọt: món cuốn nhỏ và cách chọn phần ăn; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "khoai-lang-nuong",
@@ -542,7 +701,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/khoai-lang-nuong.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Khoai lang nướng: chọn món nóng vừa đủ cho buổi tối; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "dua-gop-an-kem",
@@ -560,7 +724,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/dua-gop-an-kem.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Dưa góp và rau ăn kèm: phần nhỏ giúp bữa ăn cân bằng; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "sua-dau-nanh",
@@ -578,7 +747,12 @@
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "needs_research",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/sua-dau-nanh.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Sữa đậu nành: đọc thành phần và lựa chọn độ ngọt; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "bun-ca-cay-hai-phong",
@@ -589,14 +763,20 @@
       "image": "",
       "intro": "Tìm món mang phong cách vùng khác tại Hà Nội cần đọc kỹ cách quán giới thiệu và mức độ cay.",
       "body": "Bún cá cay có thể xuất hiện trong danh sách món ăn được giới thiệu theo phong cách Hải Phòng. Tuy vậy, khi món được nấu ở nhiều địa phương, cách nêm và đồ ăn kèm có thể thay đổi. Người mới thử không nên mặc định phiên bản nào cũng có độ cay giống nhau.\n\nKhi gọi, xem phần cá và rau trong suất, hỏi quán có thể để riêng gia vị cay hay không. Nếu bạn có dị ứng với cá hoặc hải sản, hãy yêu cầu xác nhận toàn bộ thành phần. Một từ cay trong tên món không đủ nói rõ thành phần hay mức cay thực tế.\n\nĐối với đơn mang về, nên kiểm tra nước và bún có tách riêng không. Nếu có suất đặc biệt, cần xem thêm gì so với suất cơ bản trước khi so giá. Giữ đúng tên chi nhánh khi lưu quán để không nhầm nơi phục vụ.\n\nBài này chỉ giúp lựa chọn kiểu món, không xác minh tính chính gốc hay chất lượng của một quán cụ thể.",
-      "source": "",
+      "source": "https://ankhanh.haiphong.gov.vn/tin-tuc-su-kien/pho-di-bo-am-thuc-dem-hai-phong-bo-tri-22-30-gian-hang-du-kien-khai-mac-18h-ngay-28-8-tai-quang--955474",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-ca-cay-hai-phong.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bún cá cay kiểu Hải Phòng: chọn mức cay khi ăn ở Hà Nội; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-da-cua",
@@ -607,14 +787,20 @@
       "image": "",
       "intro": "Bánh đa cua được nhiều người tìm thử khi khám phá món vùng miền; nên xem rõ sợi bánh và thành phần của suất.",
       "body": "Người chưa quen bánh đa cua có thể bắt đầu bằng việc hỏi loại bánh đa được dùng và cách phục vụ nước. Món có thể có những phần ăn kèm khác nhau tùy nơi bán. Đó là lý do cùng một tên món nhưng hình ảnh thực đơn có thể khá khác nhau.\n\nKhi gọi theo nhóm, hỏi về suất cơ bản, những loại nhân và mức giá của phần thêm. Nếu muốn tránh một nguyên liệu, hãy trao đổi trực tiếp với cơ sở. Không nên dựa vào ảnh chụp từ quán khác để quyết định món tại nơi mình đặt.\n\nVới đơn giao xa, kiểm tra người bán có để riêng phần bánh, nước và rau không. Cách đóng gói có thể ảnh hưởng đến trải nghiệm, nhưng người mua không nên tự suy đoán thời hạn dùng hay chất lượng vệ sinh từ hình ảnh bao bì.\n\nBài giới thiệu món vùng miền, không khẳng định mỗi phiên bản ở Hà Nội đều giống món tại Hải Phòng.",
-      "source": "",
+      "source": "https://ankhanh.haiphong.gov.vn/tin-tuc-su-kien/pho-di-bo-am-thuc-dem-hai-phong-bo-tri-22-30-gian-hang-du-kien-khai-mac-18h-ngay-28-8-tai-quang--955474",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-da-cua.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh đa cua: một món Hải Phòng có nhiều phiên bản; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-xeo-mien-nam-ha-noi",
@@ -625,14 +811,20 @@
       "image": "",
       "intro": "Khi gọi bánh xèo ở Hà Nội, cần xem phong cách bánh được quán giới thiệu và những món rau đi kèm.",
       "body": "Bánh xèo có thể được chế biến theo nhiều kiểu vùng miền. Nếu thực đơn ghi phong cách miền Nam, người ăn có thể hỏi về kích thước bánh, loại nhân và cách ăn mà quán gợi ý. Tên vùng miền là thông tin tham khảo, không tự chứng minh nguồn gốc của từng nguyên liệu.\n\nKhi đi nhóm, hỏi bánh bán theo chiếc hay phần và phần rau, bánh tráng, nước chấm có bao gồm không. Một suất được chụp chung nhiều chiếc có thể là combo thay vì suất đơn. Đọc rõ trước khi so sánh giá giữa hai nơi.\n\nNgười có dị ứng với tôm, hải sản hoặc một thành phần khác nên xác nhận với bếp trước khi gọi. Đặt giao, cần kiểm tra cách đóng gói vì bánh có thể thay đổi kết cấu sau thời gian vận chuyển.\n\nBài không gắn danh hiệu món chính gốc cho bất kỳ quán nào; thông tin thực tế cần được xác minh riêng từng địa chỉ.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/10-delicious-vietnamese-rolls/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-xeo-mien-nam-ha-noi.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh xèo miền Nam ở Hà Nội: chọn cách cuốn và khẩu phần; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "cha-muc-ha-long-lam-qua",
@@ -643,14 +835,20 @@
       "image": "",
       "intro": "Chả mực thường được nhắc như lựa chọn đặc sản, nhưng người mua cần kiểm tra nhãn và quy cách thực tế.",
       "body": "Khi tìm chả mực làm quà, điều đầu tiên nên kiểm tra là tên nhà sản xuất, loại sản phẩm và khối lượng. Hình ảnh một đĩa chả vừa chế biến có thể không phản ánh gói chả được bán qua sàn thương mại điện tử. Đừng chỉ dựa vào tên vùng miền trên nhãn.\n\nNgười mua nên xem thành phần, hướng dẫn chế biến, điều kiện giữ lạnh và hạn sử dụng do cơ sở công bố. Nếu có dị ứng với mực hoặc hải sản, cần đối chiếu đầy đủ thông tin sản phẩm. Không dùng lời nhận xét của người bán khác làm chứng cứ cho mặt hàng định mua.\n\nNếu đặt giao từ xa, hỏi cách vận chuyển và thời điểm nhận. Một link Affiliate phù hợp phải dẫn đúng sản phẩm, đúng khối lượng và đúng người bán đã kiểm tra, không đưa khách sang một danh sách kết quả tìm kiếm chung.\n\nBài không xác thực nguồn gốc địa lý hay nhãn hiệu của sản phẩm cụ thể khi chưa có hồ sơ tương ứng.",
-      "source": "",
+      "source": "https://dulich.quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=2037",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/cha-muc-ha-long-lam-qua.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Chả mực làm quà: chọn đúng loại sản phẩm và hướng dẫn bảo quản; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     },
     {
       "id": "banh-gai-lam-qua",
@@ -661,14 +859,20 @@
       "image": "",
       "intro": "Bánh gai có thể xuất hiện trong nhiều câu chuyện đặc sản; cần xác định đúng cơ sở và thông tin nhãn.",
       "body": "Tên bánh gai gợi một kiểu bánh truyền thống nhưng không tự xác định nơi sản xuất hoặc công thức của mọi cơ sở. Người mua làm quà nên chọn sản phẩm có thông tin rõ ràng hơn là dựa vào một câu chuyện truyền miệng chưa kiểm chứng.\n\nTrước khi đặt, xem khối lượng, số chiếc, thành phần và hướng dẫn bảo quản. Nếu người nhận có dị ứng với một thành phần như vừng hoặc dừa, hãy đọc nhãn và hỏi nhà sản xuất. Không suy đoán thời hạn sử dụng từ lớp lá gói bên ngoài.\n\nVới đơn chuyển phát xa, hỏi nhà bán về điều kiện vận chuyển và chính sách đổi trả. Nếu một đường dẫn ghi bánh gai đặc sản nhưng mở ra sản phẩm khác, không nên coi đó là liên kết mua hợp lệ chỉ vì tên gần giống.\n\nBài này hướng tới việc mua quà có trách nhiệm, không xác nhận cơ sở, giá hay chất lượng của một thương hiệu cụ thể.",
-      "source": "",
+      "source": "https://csdl.vietnamtourism.gov.vn/shop/?item=656",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
       "editorialStatus": "approved",
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể."
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "sourceStatus": "topic_matched",
+      "sourceChecked": "2026-11-14",
+      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-gai-lam-qua.svg",
+      "imageType": "original_editorial_illustration",
+      "imageAlt": "Bìa minh họa biên tập cho bài Bánh gai làm quà: phân biệt tên món và nơi sản xuất; không phải ảnh chụp món ăn",
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
     }
   ]
 }

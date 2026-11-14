@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ảnh bìa minh họa biên tập: Bún cá cay kiểu Hải Phòng: chọn mức cay khi ăn ở Hà Nội">
+ <rect width="1200" height="630" fill="#F7EBDD"/>
+ <rect width="1200" height="19" fill="#214C3C"/>
+ <circle cx="976" cy="238" r="184" fill="#D75D36" opacity=".10"/>
+ <circle cx="970" cy="292" r="150" fill="#ffffff" stroke="#214C3C" stroke-width="12"/>
+ <ellipse cx="970" cy="311" rx="121" ry="66" fill="#D75D36" opacity=".35"/>
+ <ellipse cx="970" cy="319" rx="85" ry="38" fill="#e9b974"/>
+ <path d="M842 352 Q970 522 1098 352" fill="#214C3C"/>
+ <path d="M835 351 Q970 392 1105 351" fill="none" stroke="#fff" stroke-width="8"/>
+ <path d="M905 145 L1050 42 M925 163 L1080 58" fill="none" stroke="#214C3C" stroke-width="11" stroke-linecap="round"/>
+ <text x="66" y="86" font-size="24" font-family="Arial,sans-serif" font-weight="700" letter-spacing="2" fill="#D75D36">ĂN NGON CÓ DEAL</text>
+ <text x="66" y="192" font-size="46" font-family="Arial, sans-serif" font-weight="700" fill="#214C3C">Bún cá cay kiểu Hải Phòng</text>
+ <text x="66" y="342" font-size="29" font-family="Arial,sans-serif" fill="#214C3C">Ẩm thực Việt</text>
+ <line x1="66" x2="570" y1="397" y2="397" stroke="#D75D36" stroke-width="4"/>
+ <text x="66" y="469" font-size="24" font-family="Arial,sans-serif" fill="#214C3C">Bài giới thiệu và gợi ý thưởng thức</text>
+ <text x="66" y="553" font-size="21" font-family="Arial,sans-serif" fill="#647369">ẢNH MINH HỌA THIẾT KẾ • KHÔNG PHẢI ẢNH MÓN THẬT</text>
+ </svg>
