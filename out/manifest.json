@@ -55,15 +55,16 @@
     "banh-gai-lam-qua"
   ],
   "liveArticleCountAtLastAudit": 51,
-  "missingImages": 37,
-  "missingSources": 37,
+  "missingImages": 0,
+  "missingSources": 18,
+  "missingSpecificDishPhotos": 37,
   "schema": 1,
   "site": "https://an-ngon-co-deal.bvthn-1903.chatgpt.site/",
   "sitePublicationConfirmed": false,
-  "sourceSha256": "25f19a6b152a376a0e0e2742f8f5dcd176c7bc25ee9b5857446d3537203b5ef9",
+  "sourceSha256": "38aec234a2ab30bb19094b02a918844df317fd983e8f35d94b95b0742ddb30c4",
   "stage": "ready_for_site",
   "warnings": [
-    "37 stories have no cited source; recheck factual statements",
-    "37 stories have no licensed specific illustration"
+    "18 stories have no cited source; recheck factual statements",
+    "37 stories still have no licensed dish photo; editorial SVGs are not photos"
   ]
 }
