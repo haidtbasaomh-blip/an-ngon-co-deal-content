@@ -1,0 +1,69 @@
+{
+  "batches": [
+    {
+      "articleCount": 37,
+      "path": "batches/batch-001.json"
+    }
+  ],
+  "categories": {
+    "Món Hà Nội": 20,
+    "Món ăn vặt": 3,
+    "Mẹo chọn món": 1,
+    "Đặc sản": 6,
+    "Đồ ngọt": 1,
+    "Đồ uống": 3,
+    "Ẩm thực Việt": 3
+  },
+  "countReady": 37,
+  "ids": [
+    "bun-rieu-ha-noi",
+    "banh-cuon-thanh-tri",
+    "xoi-xeo-buoi-sang",
+    "banh-gio-ha-noi",
+    "bun-oc-ha-noi",
+    "bun-moc-ha-noi",
+    "chao-suon-buoi-chieu",
+    "nem-ran-bua-co",
+    "banh-tom-ho-tay",
+    "o-mai-lam-qua",
+    "banh-khuc-ha-noi",
+    "banh-ran-man",
+    "banh-troi-tau",
+    "che-sen-ha-noi",
+    "banh-com-lam-qua",
+    "pho-cuon-ngu-xa",
+    "pho-chien-phong",
+    "bun-bo-nam-bo-ha-noi",
+    "nem-chua-ran",
+    "sua-chua-nep-cam",
+    "com-rang-dua-bo",
+    "banh-mi-pate-ha-noi",
+    "mien-luon",
+    "bun-ngan",
+    "nuoc-sau-da",
+    "tra-chanh-pho",
+    "banh-trang-tron-ha-noi",
+    "che-khuc-bach",
+    "bo-bia-ngot",
+    "khoai-lang-nuong",
+    "dua-gop-an-kem",
+    "sua-dau-nanh",
+    "bun-ca-cay-hai-phong",
+    "banh-da-cua",
+    "banh-xeo-mien-nam-ha-noi",
+    "cha-muc-ha-long-lam-qua",
+    "banh-gai-lam-qua"
+  ],
+  "liveArticleCountAtLastAudit": 51,
+  "missingImages": 37,
+  "missingSources": 37,
+  "schema": 1,
+  "site": "https://an-ngon-co-deal.bvthn-1903.chatgpt.site/",
+  "sitePublicationConfirmed": false,
+  "sourceSha256": "25f19a6b152a376a0e0e2742f8f5dcd176c7bc25ee9b5857446d3537203b5ef9",
+  "stage": "ready_for_site",
+  "warnings": [
+    "37 stories have no cited source; recheck factual statements",
+    "37 stories have no licensed specific illustration"
+  ]
+}
