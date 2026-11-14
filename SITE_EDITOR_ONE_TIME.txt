@@ -1,0 +1,19 @@
+YÊU CẦU CHỈNH SỬA SITE ĐANG CÓ: ĂN NGON CÓ DEAL
+Site ID: appgprj_6af7dc2735f4819199c24aded5106f37
+Site: https://an-ngon-co-deal.bvthn-1903.chatgpt.site/
+
+KHÔNG tạo Site mới. KHÔNG sửa PC GIÁ TỐT, không xóa 51 bài cũ, không xóa kho 2.000 gợi ý/nháp, không thay đổi các URL đã được Google thu thập.
+
+MỤC TIÊU: sau khi người chủ tạo GitHub repo riêng an-ngon-co-deal-content và workflow chạy thành công, bổ sung cầu nối 1 lần từ GitHub Actions vào CHÍNH WEBSITE HIỆN TẠI:
+Nguồn đọc công khai:
+https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/out/ready.json
+
+1. GET nguồn JSON (read-only) theo server-side fetch nếu framework cho phép, timeout 5 giây, có cache ngắn và fallback sạch: lỗi nguồn KHÔNG phá giao diện và KHÔNG xóa dữ liệu cũ.
+2. Chỉ chấp nhận JSON có schema=1, site khớp https://an-ngon-co-deal.bvthn-1903.chatgpt.site/, status=ready_for_site, articles là mảng. Với từng bài, chỉ đưa vào giao diện công khai nếu approved=true, editorialStatus=approved, publicationStatus=ready_for_site, id hợp lệ, body >= 700 ký tự, nội dung không trùng id với 51 bài hiện có. Trùng ID: giữ bài cũ, KHÔNG ghi đè.
+3. Khi đã tích hợp thật vào Site và hiện bài dưới đường dẫn /bai-viet/{id}/, đánh dấu dữ liệu nội bộ Site là published. Trạng thái ready_for_site trong nguồn GitHub KHÔNG đồng nghĩa bài đã xuất bản tại Site.
+4. Xây dựng bài viết có metadata title, description, canonical, OG và trạng thái index,follow. Chỉ đưa URL thực sự trả HTTP 200 vào sitemap.xml và chỉ đưa bài thật sự công khai và có approved=true vào rss.xml. Nguồn JSON dưới dạng raw không được coi là RSS của Site.
+5. Không lộ đường quản trị, bản nháp, API token/secret. Nguồn chỉ chứa nội dung biên soạn, không có token. KHÔNG tạo Cron từ Site đi đăng Facebook; xử lý này để sau khi cấu hình quyền Fanpage riêng và chống đăng trùng.
+6. Có nhãn "đã biên tập" và mô tả rõ: bài gợi ý chọn món, thông tin quán/giá/địa chỉ thay đổi và cần xác nhận. Ảnh trống -> dùng minh họa thương hiệu hoặc ảnh được cấp phép; không mượn ảnh quán khác.
+7. Sau khi thay đổi, kiểm thử Site thật: 51 bài cũ còn nguyên; 1 bài mới đã có URL 200, metadata; RSS tăng đúng số; sitemap tăng đúng số; không có nháp lẫn vào; thời gian tải điện thoại; lỗi fetch nguồn không làm sập Site. Báo số công khai CHỈ SAU KHI ĐÃ KIỂM THỬ.
+
+Lưu ý: nếu ChatGPT Sites không cho phép fetch dữ liệu động / xuất bản qua API, phải báo rõ giới hạn kỹ thuật, không tạo thêm site rồi nhận là hoàn thành.
