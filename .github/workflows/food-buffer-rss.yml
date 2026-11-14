@@ -1,0 +1,40 @@
+name: Food RSS to Buffer - safe queue
+
+on:
+  schedule:
+    - cron: "17 2,12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: food-buffer-rss
+  cancel-in-progress: false
+
+jobs:
+  buffer-food:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      FOOD_BUFFER_API_KEY: ${{ secrets.FOOD_BUFFER_API_KEY }}
+      FOOD_BUFFER_CHANNEL_ID: ${{ vars.FOOD_BUFFER_CHANNEL_ID }}
+      FOOD_BUFFER_AUTO_QUEUE: ${{ vars.FOOD_BUFFER_AUTO_QUEUE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check Python syntax
+        run: python -m py_compile scripts/food_buffer_rss.py
+      - name: Add approved public RSS item to Buffer queue only when connected
+        run: python scripts/food_buffer_rss.py
+      - name: Save anti-duplicate state
+        run: |
+          if [ -n "$(git status --porcelain data/buffer_food_seen.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/buffer_food_seen.json
+            git commit -m "chore(food): track Buffer queue URLs"
+            git push
+          fi
