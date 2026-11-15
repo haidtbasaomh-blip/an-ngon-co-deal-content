@@ -7,6 +7,7 @@ import re
 import sys
 import unicodedata
 import urllib.request
+import urllib.error
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -46,23 +47,35 @@ def graphql(key, query, variables=None):
                  "Authorization": "Bearer " + key},
         method="POST"
     )
-    with urllib.request.urlopen(req, timeout=25) as res:
-        output = json.load(res)
+    try:
+        with urllib.request.urlopen(req, timeout=25) as res:
+            output = json.load(res)
+    except urllib.error.HTTPError as exc:
+        if exc.code == 401:
+            raise RuntimeError("Buffer API rejected FOOD_BUFFER_API_KEY (401 Unauthorized). Check that GitHub secret stores the full active key, not a masked value, label, or 'Bearer ' prefix.") from None
+        raise RuntimeError("Buffer API HTTP error " + str(exc.code) + "; no posts created.") from None
     if output.get("errors"):
         raise RuntimeError("Buffer GraphQL: " + str(output["errors"][0].get("message")))
     return output.get("data") or {}
 
 
 def ensure_channel(key, channel_id):
-    q = "query ($id: ChannelId!) { channel(input: {id: $id}) { id name displayName service } }"
-    ch = graphql(key, q, {"id": channel_id}).get("channel") or {}
-    label = str(ch.get("name") or "") + " " + str(ch.get("displayName") or "")
-    if str(ch.get("id")) != channel_id:
-        raise RuntimeError("Channel ID not confirmed. No posts sent.")
-    if "facebook" not in str(ch.get("service") or "").lower():
+    # Official Buffer API flow: account -> organization -> channels.
+    account = graphql(key, "query { account { organizations { id } } }").get("account") or {}
+    orgs = account.get("organizations") or []
+    if len(orgs) != 1:
+        raise RuntimeError("Could not verify exactly one Buffer organization. No posts sent.")
+    org_id = json.dumps(str(orgs[0]["id"]))
+    q = "query { channels(input: { organizationId: " + org_id + " }) { id name service } }"
+    channels = graphql(key, q).get("channels") or []
+    ch = next((item for item in channels if str(item.get("id")) == channel_id), None)
+    if not ch:
+        raise RuntimeError("Food Buffer channel ID not found in authenticated organization. No posts sent.")
+    if str(ch.get("service") or "").lower() != "facebook":
         raise RuntimeError("Wrong channel type. No posts sent.")
-    if "an ngon co deal" not in fold(label):
+    if "an ngon co deal" not in fold(str(ch.get("name") or "")):
         raise RuntimeError("Wrong Fanpage! Must be An Ngon Co Deal. No posts sent.")
+    print("Verified Buffer Facebook food channel by exact ID, service and name.")
 
 
 def recent_posts(key, channel_id, status):
