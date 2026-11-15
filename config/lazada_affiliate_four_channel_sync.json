@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "scope": "Lazada Affiliate -> 2 websites -> 2 respective Facebook Fanpages",
+  "asOf": "2026-11-15",
+  "status": "integration_contract_only_not_live_four_channel_sync",
+  "primarySources": {
+    "affiliateProgram": "Lazada Vietnam Affiliate approved API/campaign feed",
+    "apiCredentials": "Server-side only (Cloudflare Worker secrets)",
+    "doNotCopySecretsToGithub": true
+  },
+  "channels": [
+    {
+      "project": "pc-gia-tot",
+      "type": "website",
+      "url": "https://pc-gia-tot.pages.dev/",
+      "lazadaMediaApproval": "not_verified_in_portal",
+      "source": "existing_pcgt_lazada_worker_d1",
+      "categoryPolicy": "computer_equipment_accessories_networks_software_tech",
+      "eligibleForAutoImportAfterApproval": true
+    },
+    {
+      "project": "pc-gia-tot",
+      "type": "facebook_page",
+      "url": "https://www.facebook.com/pcgiatotvn/",
+      "lazadaMediaApproval": "not_verified_in_portal",
+      "publisher": "metricool",
+      "maxDailyPosts": 3,
+      "eligibleForAutoPostingAfterApproval": true
+    },
+    {
+      "project": "an-ngon-co-deal",
+      "type": "website",
+      "url": "https://an-ngon-co-deal.bvthn-1903.chatgpt.site/",
+      "lazadaMediaApproval": "not_verified_in_portal",
+      "source": "food_category_feed_not_connected",
+      "categoryPolicy": "food_kitchen_dining_drinks_household_related",
+      "eligibleForAutoImportAfterApproval": false
+    },
+    {
+      "project": "an-ngon-co-deal",
+      "type": "facebook_page",
+      "url": "https://www.facebook.com/profile.php?id=61596507422819",
+      "lazadaMediaApproval": "not_verified_in_portal",
+      "publisher": "zapier_to_buffer",
+      "maxDailyPosts": 3,
+      "eligibleForAutoPostingAfterApproval": false
+    }
+  ],
+  "requirements": {
+    "explicitLazadaMediaApprovalEachChannel": true,
+    "preserveExistingProduction": true,
+    "doNotDeployOldZip": true,
+    "productFields": [
+      "lazada_product_id",
+      "title",
+      "category",
+      "image_url_from_allowed_source",
+      "affiliate_link_from_approved_feed",
+      "stock_status",
+      "price_and_currency_when_available",
+      "commission_eligibility"
+    ],
+    "idempotency": [
+      "channel_id",
+      "lazada_product_id",
+      "campaign_id"
+    ],
+    "productEligibility": "Only API products with a verified tracking link; do not invent links or guarantee commission.",
+    "socialDelivery": "Publish a selected product summary from the matching website; not one Facebook post per imported product; first check scheduled and published posts.",
+    "antiLoop": "Never repost Facebook-origin content as website-to-Facebook output",
+    "maxNewEditorialPostsPerDayPerWebsite": 3,
+    "maxNewFacebookPostsPerDayPerPage": 3,
+    "foodSafety": "No PC-only product promoted on food site; never describe unverifiable discounts, restaurant facts, prices or availability as confirmed.",
+    "noAutomaticPublicationUntilApproved": true,
+    "approvedMediaEvidenceMustBeCheckedInLazadaPortal": true,
+    "doNotStoreTokensInGitHub": true
+  },
+  "implementationGates": [
+    "Confirm all four online assets are approved Lazada marketing channels",
+    "Obtain a permitted food/kitchen product feed from Lazada Affiliate (not the PC catalog)",
+    "Bind verified food feed to existing Ăn Ngon Có Deal CMS with separate deduped product store",
+    "Connect PC website new approved items to Metricool without touching 17 existing pending posts",
+    "Connect food approved items via website -> RSS -> Zapier -> Buffer; only after anti-duplicate and food feed verification",
+    "Validate one real approved affiliate tracking link from each website without invoking self-purchase",
+    "Check published URLs, photos, category, mobile rendering, no 404, and commission/report attribution"
+  ],
+  "note": "This contract tracks readiness, not activation. Editing this file does not grant Lazada approval or deploy an integration."
+}
