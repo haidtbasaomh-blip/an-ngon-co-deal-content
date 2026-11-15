@@ -1,0 +1,4 @@
+# Temporary Facebook import candidates are restricted to local execution.
+# Never commit potentially private Page post text or API output.
+/out/facebook_to_web_candidates_LOCAL.json
+/reports/facebook_to_web_candidates_LOCAL.json
