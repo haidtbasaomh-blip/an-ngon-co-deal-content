@@ -13,6 +13,7 @@ from pathlib import Path
 SITE = "https://an-ngon-co-deal.bvthn-1903.chatgpt.site"
 FEED = SITE + "/rss.xml"
 BUFFER = "https://api.buffer.com"
+FOOD_CHANNEL_ID = "6af914e962b70b94b0375e37"  # Verified from logged-in Buffer Food channel settings
 STATE = Path(__file__).resolve().parents[1] / "data" / "buffer_food_seen.json"
 
 
@@ -92,7 +93,9 @@ def main():
         articles = read_feed(res.read(1600000))
     print("Public food RSS articles:", len(articles))
     key = os.getenv("FOOD_BUFFER_API_KEY", "").strip()
-    channel = os.getenv("FOOD_BUFFER_CHANNEL_ID", "").strip()
+    channel = (os.getenv("FOOD_BUFFER_CHANNEL_ID") or FOOD_CHANNEL_ID).strip()
+    if channel != FOOD_CHANNEL_ID:
+        raise RuntimeError("Food Buffer channel ID mismatch; no posts sent.")
     enabled = os.getenv("FOOD_BUFFER_AUTO_QUEUE", "").lower() == "true"
     if not (key and channel and enabled):
         print("SAFE MODE: missing credentials or enable flag; no Buffer posts created.")
