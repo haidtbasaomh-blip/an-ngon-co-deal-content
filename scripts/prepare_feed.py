@@ -98,10 +98,22 @@ def main():
         raise ValueError("Duplicate IDs or normalized titles in staging")
 
     live_articles, live_error = (None, "offline audit") if args.offline else read_live()
-    live_ids = {a.get("id") for a in live_articles} if live_articles is not None else set()
-    conflicts = sorted(set(ids) & live_ids)
-    if conflicts:
-        raise ValueError(f"Conflict with LIVE Site, abort: {conflicts[:15]}")
+    live_by_id = {a.get("id"): a for a in live_articles} if live_articles is not None else {}
+    already_published = []
+    for article in articles:
+        live_item = live_by_id.get(article["id"])
+        if live_item is None:
+            continue
+        # Exclude only a verified publication of the SAME titled, approved article.
+        # Any ambiguous ID collision must fail safely rather than overwrite a Site page.
+        if (live_item.get("approved") is not True
+                or live_item.get("publicationStatus") != "published"
+                or clean_title(live_item.get("title", "")) != clean_title(article["title"])):
+            raise ValueError("LIVE Site ID collision/approval mismatch: " + article["id"])
+        already_published.append(article["id"])
+    if already_published:
+        print("Already published on Site, excluded from staging:", already_published)
+        articles = [a for a in articles if a["id"] not in set(already_published)]
 
     counts = dict(sorted(Counter(a["category"] for a in articles).items()))
     no_source = [a["id"] for a in articles if not a.get("source") or a.get("sourceStatus") != "topic_matched"]
@@ -147,7 +159,9 @@ def main():
         "liveArticleCountAtLastAudit": len(live_articles) if live_articles is not None else None,
         "categories": counts,
         "batches": batches,
-        "ids": ids,
+        "ids": [a["id"] for a in articles],
+        "alreadyPublishedIds": already_published,
+        "alreadyPublishedCount": len(already_published),
         "sourceSha256": hashlib.sha256(payload).hexdigest(),
         "missingSources": len(no_source),
         "missingImages": len(no_image),
