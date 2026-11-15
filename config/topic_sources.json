@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "purpose": "reference_only",
+  "ownerSite": "https://an-ngon-co-deal.bvthn-1903.chatgpt.site/",
+  "feeds": [
+    {
+      "name": "Thanh Niên - Ẩm thực",
+      "rss_url": "https://thanhnien.vn/rss/doi-song/am-thuc.rss",
+      "allowed_article_host": "thanhnien.vn"
+    },
+    {
+      "name": "Ngôi Sao - Ẩm thực",
+      "rss_url": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
+      "allowed_article_host": "ngoisao.vnexpress.net"
+    }
+  ],
+  "comment": "Reference and topic ideas only. Never copy articles, user reviews, restaurant photos, prices or addresses into published pages without verification and rights."
+}
