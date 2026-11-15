@@ -29,8 +29,8 @@ async function run(){
  const foreign=articleLinks.filter(link=>!link.startsWith(base+'/bai-viet/'));
  if(foreign.length)errors.push('RSS contains unexpected external or non-article links: '+foreign.length);
  // Check a representative fixed sample, do not hammer hosting or connected apps.
- const sample=articleLinks.slice(0,12);
- let index=0;const failures=[],missingCanon=[],missingOG=[];
+ const sample=articleLinks; // Audit every RSS-published article, not a 12-article sample.
+ let index=0;const failures=[],missingCanon=[],missingOG=[],missingDescription=[],missingTitle=[],missingStructuredData=[],noindexArticles=[];
  await Promise.all(Array.from({length:4},async()=>{
   while(index<sample.length){
    const url=sample[index++],path=url.slice(base.length);
@@ -38,13 +38,21 @@ async function run(){
     const html=await get(path);
     if(!/rel=['"]canonical['"]/i.test(html))missingCanon.push(path);
     if(!/property=['"]og:image['"]/i.test(html))missingOG.push(path);
+    if(!/<title\b[^>]*>[^<]+<\/title>/i.test(html))missingTitle.push(path);
+    if(!/<meta\b[^>]*name=['"]description['"]/i.test(html))missingDescription.push(path);
+    if(!/<script\b[^>]*type=['"]application\/ld\+json['"]/i.test(html))missingStructuredData.push(path);
+    if(/<meta\b[^>]*name=['"]robots['"][^>]*noindex/i.test(html))noindexArticles.push(path);
    }catch(e){failures.push(path+': '+String(e.message||e))}
   }
  }));
  if(failures.length)errors.push('Published article URLs failed: '+failures.length);
  if(missingCanon.length)errors.push('Published articles without canonical: '+missingCanon.length);
  if(missingOG.length)warnings.push('Published articles without OG image: '+missingOG.length);
- const report={checkedAt:new Date().toISOString(),site:base,readOnly:true,homepage:{canonical:true},rss:{itemCount:itemXml.length,validLinks:articleLinks.length,duplicateLinks:duplicateRSS},sitemap:{urls:sitemapUrls.length,missingRSSArticles:missingFromSitemap.length},articles:{sampled:sample.length,broken:failures,missingCanon,missingOG},status:errors.length?'failed':warnings.length?'needs_review':'healthy',errors,warnings};
+ if(missingDescription.length)warnings.push('Published articles without meta description: '+missingDescription.length);
+ if(missingStructuredData.length)warnings.push('Published articles without JSON-LD: '+missingStructuredData.length);
+ if(missingTitle.length)errors.push('Published articles without title: '+missingTitle.length);
+ if(noindexArticles.length)errors.push('Published articles incorrectly noindex: '+noindexArticles.length);
+ const report={checkedAt:new Date().toISOString(),site:base,readOnly:true,homepage:{canonical:true},rss:{itemCount:itemXml.length,validLinks:articleLinks.length,duplicateLinks:duplicateRSS},sitemap:{urls:sitemapUrls.length,missingRSSArticles:missingFromSitemap.length},articles:{sampled:sample.length,totalPublished:articleLinks.length,broken:failures,missingCanon,missingOG,missingTitle,missingDescription,missingStructuredData,noindexArticles},status:errors.length?'failed':warnings.length?'needs_review':'healthy',errors,warnings};
  fs.mkdirSync('reports',{recursive:true});
  fs.writeFileSync('reports/food-live-qa.json',JSON.stringify(report,null,2)+'\n');
  const summary=['# Ăn Ngon Có Deal – kiểm tra website thật',
@@ -54,6 +62,9 @@ async function run(){
   '| Bài lỗi truy cập | '+failures.length+' |',
   '| Bài thiếu canonical | '+missingCanon.length+' |',
   '| Bài thiếu ảnh OG | '+missingOG.length+' |',
+  '| Bài thiếu meta description | '+missingDescription.length+' |',
+  '| Bài thiếu JSON-LD | '+missingStructuredData.length+' |',
+  '| Bài bị noindex sai | '+noindexArticles.length+' |',
   '| Bài từ RSS chưa có trong sitemap | '+missingFromSitemap.length+' |','',
   '**Trạng thái:** '+report.status.toUpperCase(),'',
   'Chỉ kiểm tra nội dung công khai. Không truy cập admin, không xuất bản nháp, không gửi Facebook.',
