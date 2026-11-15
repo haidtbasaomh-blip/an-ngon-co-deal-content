@@ -1,6 +1,6 @@
 # Bài thử kết nối website → RSS → Zapier → Buffer → Facebook
 
-**Trạng thái:** SẴN SÀNG ĐỂ XUẤT BẢN TRÊN SITE, **CHƯA ĐƯỢC XUẤT BẢN**.
+**Trạng thái cập nhật 15/11/2026:** **ĐÃ XUẤT BẢN TRÊN SITE** lúc khoảng 10:12 giờ Việt Nam; bài `bun-rieu-ha-noi` đã nằm trong RSS và sitemap công khai. **Chưa xác nhận Zapier → Buffer → Facebook đã đăng.**
 
 Đây là bài có sẵn trong hàng đợi đã duyệt. Không tạo bài giả hoặc bài trùng để thử. Đúng website: https://an-ngon-co-deal.bvthn-1903.chatgpt.site/ (Site ID appgprj_6af7dc2735f4819199c24aded5106f37).
 Không sửa PC GIÁ TỐT, không xóa 51 bài cũ, không chạy lại các bài mẫu của Zapier.
@@ -39,4 +39,4 @@ Bài này giúp lựa chọn kiểu món, không giới thiệu một địa ch�
 5. Sau giờ đăng, xem `Sent` và liên kết Facebook thật. Không nhận là đã đăng thành công nếu chỉ thấy Queue.
 6. Nếu không có RSS item mới, không đẩy đi lại bài cũ; báo rõ phần Site cần mở quyền biên tập. Không tự tăng số lượng để bù lịch.
 
-**Kiểm tra tại 15/11/2026:** ID này **chưa có** trong `/api/editorial` (51 bài), cũng **chưa có** trong `/rss.xml`. Site admin trả HTTP 403 khi truy cập bằng phiên đọc công khai; công cụ hiện tại không có quyền ghi vào ChatGPT Sites.
+**Đối chiếu sau khi xuất bản ngày 15/11/2026:** URL `/bai-viet/bun-rieu-ha-noi/` công khai, được ghi nhận trong `/rss.xml` và `/sitemap.xml`; mỗi nguồn có **52 URL bài viết duy nhất** (51 bài cũ + bài thử). RSS đặt bài Bún riêu đầu tiên với ngày xuất bản `Sun, 15 Nov 2026 03:12:29 GMT`. Lần chạy GitHub thử Buffer trước đó bị `401 Unauthorized`; **không dùng lỗi của API GitHub để kết luận Zapier OAuth thất bại**, phải kiểm tra Zap History/Buffer Queue/Facebook URL riêng. Chưa bật đăng song song từ GitHub để chống trùng.
