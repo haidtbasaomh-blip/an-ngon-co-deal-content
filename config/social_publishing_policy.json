@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "project": "an-ngon-co-deal",
+  "website": "https://an-ngon-co-deal.bvthn-1903.chatgpt.site/",
+  "facebookPage": "https://www.facebook.com/profile.php?id=61596507422819",
+  "timezone": "Asia/Bangkok",
+  "activePublisher": "zapier-to-buffer",
+  "otherPublishers": {
+    "metricool": {
+      "mayPublish": false,
+      "reason": "No confirmed food brand connection"
+    },
+    "github_buffer_direct": {
+      "mayPublish": false,
+      "reason": "Manual-only diagnostic failed 401; avoid duplicating Zapier"
+    }
+  },
+  "postingSlots": {
+    "buffer": [
+      "18:30"
+    ]
+  },
+  "maxDailyPosts": 1,
+  "rules": {
+    "onePublisherPerArticle": true,
+    "oneSchedulePerArticlePerFacebookPage": true,
+    "neverRepublishAlreadyScheduledOrSent": true,
+    "requireApprovedAndPublic": true,
+    "requireLiveCanonicalUrl": true,
+    "doNotScheduleDrafts": true,
+    "doNotPublishUnverifiedRestaurantInfo": true,
+    "avoidSubstantiallySimilarText": true,
+    "doNotRecycleOnError": true,
+    "reviewExistingPendingPostsBeforeEnqueue": true,
+    "doNotCrossPostToPcPage": true
+  },
+  "dedupeKeyFields": [
+    "facebook_page_id",
+    "canonical_url",
+    "article_id",
+    "normalized_content_hash"
+  ],
+  "status": "Policy only. Does not enable or disable a live integration without the publishing service adopting it."
+}
