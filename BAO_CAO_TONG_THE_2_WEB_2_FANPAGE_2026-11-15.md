@@ -97,3 +97,9 @@
 
 ## 10. Để tiếp tục cuộc trò chuyện sau
 “Tiếp tục dự án 2 website + 2 Fanpage theo BAO_CAO_TONG_THE_2_WEB_2_FANPAGE_2026-11-15.md. Không tạo website mới, không xóa dữ liệu/secret/lịch. Ưu tiên xác thực đồng bộ 2 chiều thực tế và Lazada >1.000 sản phẩm chất lượng. Chỉ bật một publisher/Fanpage, tối đa 3 bài/ngày/kênh. Chủ động làm phần kỹ thuật; khi cần quyền truy cập, gửi link và hướng dẫn một bước ngắn gọn.”
+
+## Cập nhật kỹ thuật cùng ngày - thành phần chiều Facebook -> Website
+- Đã thêm `scripts/facebook_to_web_candidates.py` cho **cả 2 kho GitHub**. Script chỉ đọc các bài do đúng Fanpage đăng qua Meta Graph API chính thức, loại bỏ các bài đã dẫn từ website để ngăn vòng lặp và xuất file ứng viên **ở máy chạy**, để xét duyệt trước khi đưa lên web.
+- Đã thêm `tests/test_facebook_to_web_candidates.py` kiểm tra sai Page ID, bài chưa xuất bản, bài trùng web, chế độ thiếu quyền dừng an toàn; thêm `.gitignore` để không đưa nội dung ứng viên hay dữ liệu token vào GitHub.
+- Kiểm thử GitHub của dự án ẩm thực tại mốc cập nhật báo cáo trả **success**. Hai chiều **chưa chạy production**: còn thiếu Page Access Token hợp lệ/quyền đọc Meta, đúng Page ID và API/adapter ghi bài đã duyệt của từng website.
+- Không được tự bật job, không dán token vào chat, không tự đẩy sản phẩm/bài viết lên Fanpage hoặc website khi chưa kiểm tra trạng thái trùng và danh mục.
