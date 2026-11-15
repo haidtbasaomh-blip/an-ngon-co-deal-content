@@ -1,16 +1,17 @@
 {
-  "alreadyPublishedCount": 1,
+  "alreadyPublishedCount": 2,
   "alreadyPublishedIds": [
-    "bun-rieu-ha-noi"
+    "bun-rieu-ha-noi",
+    "banh-cuon-thanh-tri"
   ],
   "batches": [
     {
-      "articleCount": 36,
+      "articleCount": 35,
       "path": "batches/batch-001.json"
     }
   ],
   "categories": {
-    "Món Hà Nội": 19,
+    "Món Hà Nội": 18,
     "Món ăn vặt": 3,
     "Mẹo chọn món": 1,
     "Đặc sản": 6,
@@ -18,9 +19,8 @@
     "Đồ uống": 3,
     "Ẩm thực Việt": 3
   },
-  "countReady": 36,
+  "countReady": 35,
   "ids": [
-    "banh-cuon-thanh-tri",
     "xoi-xeo-buoi-sang",
     "banh-gio-ha-noi",
     "bun-oc-ha-noi",
@@ -57,17 +57,17 @@
     "cha-muc-ha-long-lam-qua",
     "banh-gai-lam-qua"
   ],
-  "liveArticleCountAtLastAudit": 52,
+  "liveArticleCountAtLastAudit": 53,
   "missingImages": 0,
   "missingSources": 18,
-  "missingSpecificDishPhotos": 36,
+  "missingSpecificDishPhotos": 35,
   "schema": 1,
   "site": "https://an-ngon-co-deal.bvthn-1903.chatgpt.site/",
   "sitePublicationConfirmed": false,
-  "sourceSha256": "baa40a4afe89ea94d102e371943fe3bad498d8685d9ef63405ee7a90717bad6c",
+  "sourceSha256": "f0b7529b1c8e6b0407fdc8aa4fdff95887d2779100036448ffbcb8c8d9423683",
   "stage": "ready_for_site",
   "warnings": [
     "18 stories have no cited source; recheck factual statements",
-    "36 stories still have no licensed dish photo; editorial SVGs are not photos"
+    "35 stories still have no licensed dish photo; editorial SVGs are not photos"
   ]
 }

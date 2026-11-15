@@ -1,36 +1,6 @@
 {
-  "articleCount": 36,
+  "articleCount": 35,
   "articles": [
-    {
-      "affiliateLinks": [],
-      "approved": true,
-      "area": "Hà Nội",
-      "body": "Nhắc tới bánh cuốn, nhiều người quan tâm trước hết đến bề mặt bánh mỏng, mềm và cách cuốn. Bánh cuốn Thanh Trì thường được nhắc như một hướng khám phá ẩm thực Hà Nội, nhưng mỗi hàng có thể phục vụ cách ăn riêng. Đọc kỹ tên món trước khi gọi sẽ tránh nhầm loại có nhân với loại không nhân.\n\nNếu gọi theo nhóm, hỏi quán tính theo đĩa hay theo suất; chả, hành phi hoặc món thêm có tính tiền riêng không. Nước chấm có thể được chuẩn bị sẵn, vì thế người ăn nhạt hoặc không dùng một số gia vị nên hỏi trước khi món lên bàn.\n\nBánh có thể hợp cho một bữa sáng gọn, nhưng khối lượng mỗi phần tùy nơi bán. Người mua mang về nên hỏi cách đóng gói và thời gian sử dụng được cơ sở khuyến nghị, nhất là khi còn di chuyển qua nhiều điểm khác.\n\nẢnh trên website là ảnh minh họa nếu chưa có quyền sử dụng ảnh của cơ sở. Bài viết không khẳng định một quán cụ thể còn bán hay đang áp dụng khuyến mại.",
-      "category": "Món Hà Nội",
-      "checked": "2026-11-14",
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "editorialStatus": "approved",
-      "icon": "🍲",
-      "id": "banh-cuon-thanh-tri",
-      "image": "",
-      "imageAlt": "Bìa minh họa biên tập cho bài Bánh cuốn Thanh Trì: thưởng thức lớp bánh mỏng và nước chấm; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
-      "imageType": "original_editorial_illustration",
-      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-cuon-thanh-tri.svg",
-      "intro": "Một bữa bánh cuốn ngon với mỗi người có thể khác nhau ở độ mềm của bánh, nhân và cách pha nước chấm.",
-      "publicationStatus": "ready_for_site",
-      "region": "Miền Bắc",
-      "source": "https://antoanthucpham.hanoi.gov.vn/banh-cuon-thanh-tri-bieu-tuong-am-thuc-ha-noi-xua-duoc-ghi-danh-di-san-van-hoa-phi-vat-the-quoc-gia-239260903231416302.htm",
-      "sourceChecked": "2026-11-14",
-      "sourceReview": {
-        "checkedAt": "2026-11-15T07:14:48.442Z",
-        "evidence": "Không cầu kỳ về nguyên liệu, món ăn chinh phục thực khách bằng lớp bánh mỏng tang",
-        "url": "https://antoanthucpham.hanoi.gov.vn/banh-cuon-thanh-tri-bieu-tuong-am-thuc-ha-noi-xua-duoc-ghi-danh-di-san-van-hoa-phi-vat-the-quoc-gia-239260903231416302.htm",
-        "verified": true
-      },
-      "sourceStatus": "topic_matched",
-      "title": "Bánh cuốn Thanh Trì: thưởng thức lớp bánh mỏng và nước chấm"
-    },
     {
       "affiliateLinks": [],
       "approved": true,
