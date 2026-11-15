@@ -101,6 +101,17 @@ def caption(article):
 
 
 def main():
+    # Single-publisher safeguard: Zapier -> Buffer owns food Facebook publication.
+    # This standalone GitHub path must never publish the same RSS article again.
+    policy_file = Path(__file__).resolve().parents[1] / "config" / "social_publishing_policy.json"
+    policy = json.loads(policy_file.read_text(encoding="utf-8"))
+    if policy.get("project") != "an-ngon-co-deal":
+        raise RuntimeError("Wrong social publishing policy; no posts sent.")
+    if (policy.get("activePublisher") != "github-buffer-direct"
+            or not policy.get("otherPublishers", {}).get("github_buffer_direct", {}).get("mayPublish", False)):
+        print("SAFE HOLD: Food RSS publishing belongs to Zapier -> Buffer; GitHub direct queue is disabled.")
+        return
+
     req = urllib.request.Request(FEED, headers={"User-Agent": "FoodBufferBridge/1.0"})
     with urllib.request.urlopen(req, timeout=20) as res:
         articles = read_feed(res.read(1600000))
