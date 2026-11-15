@@ -1,9 +1,7 @@
 name: Food RSS to Buffer - safe queue
 
 on:
-  schedule:
-    - cron: "17 11 * * *" # 18:17 Vietnam, prepare Buffer 18:30; only when food channel connected
-  workflow_dispatch:
+  workflow_dispatch: # RSS -> Buffer automatic publishing now delegated to Zapier OAuth; manual API diagnostic only
 
 permissions:
   contents: write
