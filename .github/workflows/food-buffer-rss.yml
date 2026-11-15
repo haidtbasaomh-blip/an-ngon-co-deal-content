@@ -19,7 +19,7 @@ jobs:
     env:
       FOOD_BUFFER_API_KEY: ${{ secrets.FOOD_BUFFER_API_KEY }}
       FOOD_BUFFER_CHANNEL_ID: ${{ vars.FOOD_BUFFER_CHANNEL_ID }}
-      FOOD_BUFFER_AUTO_QUEUE: ${{ vars.FOOD_BUFFER_AUTO_QUEUE }}
+      FOOD_BUFFER_AUTO_QUEUE: ${{ vars.FOOD_BUFFER_AUTO_QUEUE || 'true' }} # enabled by default after key setup; set var to false to pause
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
