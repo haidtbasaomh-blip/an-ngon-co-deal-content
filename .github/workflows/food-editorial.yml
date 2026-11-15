@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - ready.json
-      - scripts/**
+      - scripts/prepare_feed.py
       - tests/**
       - .github/workflows/food-editorial.yml
   workflow_dispatch:
@@ -45,7 +45,26 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add out/
             git commit -m "chore(food): validate staging batches and manifest"
-            git push
+            # GitHub may receive independent QA/docs commits while this job runs.
+            # Preserve staging and retry without force-pushing over another writer.
+            pushed=0
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "STAGING CONFLICT: no data was overwritten; requires review."
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                pushed=1
+                break
+              fi
+              sleep $((attempt * 2))
+            done
+            if [ "$pushed" -ne 1 ]; then
+              echo "STAGING NOT PUSHED after 3 safe retries."
+              exit 1
+            fi
           else
             echo "Không có thay đổi dữ liệu."
           fi
