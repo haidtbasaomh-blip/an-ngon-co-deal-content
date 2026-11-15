@@ -1,30 +1,6 @@
 {
-  "articleCount": 37,
+  "articleCount": 36,
   "articles": [
-    {
-      "affiliateLinks": [],
-      "approved": true,
-      "area": "Hà Nội",
-      "body": "Bún riêu là một lựa chọn đáng thử khi muốn đổi vị khỏi các món phở quen thuộc. Có người thích bát nước dùng chua nhẹ với cà chua; người khác quan tâm nhiều hơn tới phần riêu và các món thêm. Không nên nghĩ rằng tất cả quán bún riêu đều có một công thức giống nhau.\n\nTrước khi gọi, nhìn thực đơn để phân biệt suất cơ bản với suất có thêm đậu, giò hoặc nguyên liệu khác. Nếu quán bán nhiều loại bún riêu, hỏi xem phần nào đã gồm trong giá. Cách hỏi này hữu ích hơn việc chỉ xem ảnh một bát thật đầy trên mạng.\n\nNgười không quen vị mắm hoặc muốn điều chỉnh độ cay có thể đề nghị để riêng gia vị, nhưng phải hỏi quán có hỗ trợ không. Với món mang về, nên để riêng rau và nước nếu người bán cho phép để giữ cách ăn mình muốn.\n\nBài này giúp lựa chọn kiểu món, không giới thiệu một địa chỉ cụ thể. Giờ bán, giá từng suất và nguồn nguyên liệu luôn cần kiểm tra trực tiếp tại quán trước khi đặt.",
-      "category": "Món Hà Nội",
-      "checked": "2026-11-14",
-      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "editorialStatus": "approved",
-      "icon": "🍲",
-      "id": "bun-rieu-ha-noi",
-      "image": "",
-      "imageAlt": "Bìa minh họa biên tập cho bài Bún riêu Hà Nội: chọn vị thanh hay đậm ngay từ đầu; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
-      "imageType": "original_editorial_illustration",
-      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-rieu-ha-noi.svg",
-      "intro": "Bún riêu có nhiều phiên bản. Chọn đúng bát mình thích bắt đầu từ cách hỏi nước dùng, riêu và phần ăn kèm.",
-      "publicationStatus": "ready_for_site",
-      "region": "Miền Bắc",
-      "source": "https://dantri.com.vn/du-lich/khach-my-nghien-mot-mon-an-o-ha-noi-san-sang-di-ca-tieng-de-thuong-thuc-20250826211447469.htm",
-      "sourceChecked": "2026-11-14",
-      "sourceStatus": "topic_matched",
-      "title": "Bún riêu Hà Nội: chọn vị thanh hay đậm ngay từ đầu"
-    },
     {
       "affiliateLinks": [],
       "approved": true,
