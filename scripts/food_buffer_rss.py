@@ -109,7 +109,7 @@ def main():
     buffer_text = "\n".join(str(p.get("text") or "") for p in scheduled + sent)
     history = json.loads(STATE.read_text("utf-8")) if STATE.exists() else {}
     seen = set(history.get("queued_urls", []))
-    for article in reversed(articles):
+    for article in articles:  # RSS feed is newest-first; publish the freshest approved article
         url = article["url"]
         if url in seen:
             continue
