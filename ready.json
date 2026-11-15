@@ -67,7 +67,7 @@
       "image": "",
       "intro": "Một gói xôi xéo có thể rất đơn giản hoặc thêm nhiều món; đọc kỹ thành phần để chọn đúng phần ăn.",
       "body": "Xôi xéo gợi một kiểu bữa sáng Hà Nội gọn gàng, với hạt xôi, đậu xanh và phần hành phi tạo hương vị đặc trưng. Người mới thử có thể bắt đầu từ suất cơ bản trước khi thêm các món ăn kèm. Như vậy sẽ dễ cảm nhận vị của xôi thay vì bị quá nhiều thành phần lấn át.\n\nCác quán thường có lựa chọn khác nhau, vì vậy không mặc định một suất xôi xéo nào cũng gồm chả, ruốc hoặc thịt. Hỏi rõ phần thêm và kích cỡ suất trước khi thanh toán. Nếu mua cho nhiều người, ghi riêng từng lựa chọn để tránh nhầm gói.\n\nKhi muốn mang theo đi học hoặc đi làm, hãy chú ý thời điểm nhận và cách bảo quản do người bán hướng dẫn. Thức ăn đã chế biến không nên để lâu chỉ vì được gói kín. Nếu cần ăn muộn, hãy cân nhắc chọn món phù hợp hơn.\n\nĐây là hướng dẫn chọn món chứ không phải danh sách xếp hạng quán. Địa chỉ, giá và giờ bán cần được xác nhận từ từng cơ sở đang hoạt động.",
-      "source": "",
+      "source": "https://antoanthucpham.hanoi.gov.vn/giai-ma-tuyet-ky-do-xoi-hai-lua-giup-xoi-phu-thuong-deo-thom-nuc-tieng-kinh-ky-23926042015333983.htm",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -75,11 +75,18 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "reference_added_dish_context_reviewed",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/xoi-xeo-buoi-sang.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Xôi xéo buổi sáng: chọn phần xôi vừa đủ và món ăn kèm; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://antoanthucpham.hanoi.gov.vn/giai-ma-tuyet-ky-do-xoi-hai-lua-giup-xoi-phu-thuong-deo-thom-nuc-tieng-kinh-ky-23926042015333983.htm",
+        "checkedAt": "2026-11-15T11:08:16.452Z",
+        "evidence": "đậu xanh làm xôi xéo cũng được xóc với một lượng muối vừa phải",
+        "scope": "Đối chiếu bối cảnh xôi Hà Nội, đậu xanh và hành phi. Không xác nhận quán, giá, giờ bán hoặc thời hạn bảo quản."
+      }
     },
     {
       "id": "banh-gio-ha-noi",
@@ -90,7 +97,7 @@
       "image": "",
       "intro": "Bánh giò thường được chọn khi muốn ăn nhanh; phần bánh và đồ ăn thêm không phải nơi nào cũng giống nhau.",
       "body": "Điểm thú vị của bánh giò là lớp bột mềm ôm phần nhân, phù hợp cho người thích món nóng và dễ ăn. Có người chọn ăn bánh đơn giản, có người thêm chả hoặc các món phụ. Tên một suất bánh giò không đủ nói rõ mọi thứ được phục vụ cùng.\n\nKhi mua, hỏi bánh có được giữ nóng không, phần nhân gồm những nguyên liệu nào và lựa chọn thêm có giá riêng hay không. Nếu có yêu cầu tránh thực phẩm gây dị ứng, đừng chỉ dựa vào tên bánh hoặc quan sát bằng mắt; hãy hỏi người bán trực tiếp.\n\nVới đơn mang về, kiểm tra số lượng bánh và món phụ ngay lúc nhận. Nếu đi cùng trẻ nhỏ, chú ý nhiệt độ món nóng trước khi ăn. Người mua nên tuân theo hướng dẫn bảo quản từ cơ sở thay vì tự ước lượng thời gian dùng an toàn.\n\nBài viết không đưa ra một mức giá chung cho Hà Nội. Giá, khuyến mại hoặc tình trạng còn hàng phải được đối chiếu tại đúng địa chỉ bán trong ngày.",
-      "source": "",
+      "source": "https://antoanthucpham.hanoi.gov.vn/6-mon-banh-qua-chieu-dan-da-khien-thuc-khach-me-man-khi-den-ha-noi-239261015121305584.htm",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -98,11 +105,18 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "reference_added_dish_context_reviewed",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-gio-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh giò Hà Nội: một bữa nhẹ gọn nhưng cần chọn đúng suất; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://antoanthucpham.hanoi.gov.vn/6-mon-banh-qua-chieu-dan-da-khien-thuc-khach-me-man-khi-den-ha-noi-239261015121305584.htm",
+        "checkedAt": "2026-11-15T11:08:16.452Z",
+        "evidence": "Phần bột dẻo mềm bao bọc lớp nhân đậm đà",
+        "scope": "Đối chiếu vỏ mềm, nhân và món ăn kèm thay đổi theo hàng. Không xác nhận cơ sở, giá, tình trạng còn hàng hoặc thời hạn bảo quản."
+      }
     },
     {
       "id": "bun-oc-ha-noi",
