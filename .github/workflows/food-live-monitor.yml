@@ -1,0 +1,30 @@
+name: AN NGON CO DEAL - live website QA (read only)
+on:
+  push:
+    paths:
+      - 'scripts/qa_food_live.mjs'
+      - '.github/workflows/food-live-monitor.yml'
+  schedule:
+    - cron: '40 1 * * *' # 08:40 Hanoi
+    - cron: '40 13 * * *' # 20:40 Hanoi
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check published articles, RSS, sitemap and metadata (never publish)
+        run: node scripts/qa_food_live.mjs
+      - name: Save read-only site audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: an-ngon-live-qa
+          path: reports/food-live-qa.*
+          retention-days: 7
