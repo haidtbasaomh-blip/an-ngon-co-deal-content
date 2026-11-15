@@ -20,8 +20,15 @@
       "intro": "Một gói xôi xéo có thể rất đơn giản hoặc thêm nhiều món; đọc kỹ thành phần để chọn đúng phần ăn.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://antoanthucpham.hanoi.gov.vn/giai-ma-tuyet-ky-do-xoi-hai-lua-giup-xoi-phu-thuong-deo-thom-nuc-tieng-kinh-ky-23926042015333983.htm",
+      "sourceReview": {
+        "checkedAt": "2026-11-15T11:08:16.452Z",
+        "evidence": "đậu xanh làm xôi xéo cũng được xóc với một lượng muối vừa phải",
+        "scope": "Đối chiếu bối cảnh xôi Hà Nội, đậu xanh và hành phi. Không xác nhận quán, giá, giờ bán hoặc thời hạn bảo quản.",
+        "url": "https://antoanthucpham.hanoi.gov.vn/giai-ma-tuyet-ky-do-xoi-hai-lua-giup-xoi-phu-thuong-deo-thom-nuc-tieng-kinh-ky-23926042015333983.htm",
+        "verified": true
+      },
+      "sourceStatus": "reference_added_dish_context_reviewed",
       "title": "Xôi xéo buổi sáng: chọn phần xôi vừa đủ và món ăn kèm"
     },
     {
@@ -43,8 +50,15 @@
       "intro": "Bánh giò thường được chọn khi muốn ăn nhanh; phần bánh và đồ ăn thêm không phải nơi nào cũng giống nhau.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://antoanthucpham.hanoi.gov.vn/6-mon-banh-qua-chieu-dan-da-khien-thuc-khach-me-man-khi-den-ha-noi-239261015121305584.htm",
+      "sourceReview": {
+        "checkedAt": "2026-11-15T11:08:16.452Z",
+        "evidence": "Phần bột dẻo mềm bao bọc lớp nhân đậm đà",
+        "scope": "Đối chiếu vỏ mềm, nhân và món ăn kèm thay đổi theo hàng. Không xác nhận cơ sở, giá, tình trạng còn hàng hoặc thời hạn bảo quản.",
+        "url": "https://antoanthucpham.hanoi.gov.vn/6-mon-banh-qua-chieu-dan-da-khien-thuc-khach-me-man-khi-den-ha-noi-239261015121305584.htm",
+        "verified": true
+      },
+      "sourceStatus": "reference_added_dish_context_reviewed",
       "title": "Bánh giò Hà Nội: một bữa nhẹ gọn nhưng cần chọn đúng suất"
     },
     {
