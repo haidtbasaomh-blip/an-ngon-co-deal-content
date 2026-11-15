@@ -20,7 +20,7 @@
       "18:30"
     ]
   },
-  "maxDailyPosts": 1,
+  "maxDailyPosts": 3,
   "rules": {
     "onePublisherPerArticle": true,
     "oneSchedulePerArticlePerFacebookPage": true,
@@ -32,7 +32,10 @@
     "avoidSubstantiallySimilarText": true,
     "doNotRecycleOnError": true,
     "reviewExistingPendingPostsBeforeEnqueue": true,
-    "doNotCrossPostToPcPage": true
+    "doNotCrossPostToPcPage": true,
+    "requireContentQualityAndOriginalWriting": true,
+    "neverBackfillMissedSlotsWithBulkPosts": true,
+    "onlyUniqueCanonicalArticlePerPage": true
   },
   "dedupeKeyFields": [
     "facebook_page_id",
@@ -40,5 +43,15 @@
     "article_id",
     "normalized_content_hash"
   ],
-  "status": "Policy only. Does not enable or disable a live integration without the publishing service adopting it."
+  "status": "Editorial goal and duplicate-prevention policy; live schedules are not changed until publisher connections, existing reservations and anti-duplicate state are verified.",
+  "dailyTargets": {
+    "websitePublishedArticles": 3,
+    "facebookPublishedPosts": 3,
+    "description": "Target per channel, not total across four channels; only approved and original content. Do not auto-approve drafts."
+  },
+  "plannedFacebookSlots": [
+    "08:30",
+    "12:30",
+    "18:30"
+  ]
 }
