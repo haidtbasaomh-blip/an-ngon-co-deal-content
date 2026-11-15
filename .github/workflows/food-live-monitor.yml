@@ -10,6 +10,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  issues: write
 jobs:
   audit:
     runs-on: ubuntu-latest
@@ -28,3 +29,9 @@ jobs:
           name: an-ngon-live-qa
           path: reports/food-live-qa.*
           retention-days: 7
+      - name: Notify internal issue only when Food QA state changes
+        if: always()
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/notify_food_qa_issue.mjs
