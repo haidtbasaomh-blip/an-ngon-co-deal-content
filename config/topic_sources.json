@@ -12,6 +12,11 @@
       "name": "Ngôi Sao - Ẩm thực",
       "rss_url": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
       "allowed_article_host": "ngoisao.vnexpress.net"
+    },
+    {
+      "name": "The Guardian Food – ẩm thực quốc tế",
+      "rss_url": "https://www.theguardian.com/food/rss",
+      "allowed_article_host": "theguardian.com"
     }
   ],
   "comment": "Reference and topic ideas only. Never copy articles, user reviews, restaurant photos, prices or addresses into published pages without verification and rights."
