@@ -4,6 +4,7 @@ on:
     paths:
       - ready.json
       - scripts/prepare_feed.py
+      - scripts/facebook_to_web_candidates.py
       - tests/**
       - .github/workflows/food-editorial.yml
   workflow_dispatch:
