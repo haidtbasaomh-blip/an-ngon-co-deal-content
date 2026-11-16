@@ -1,0 +1,31 @@
+name: Food live browser accessibility geo audit (no publish)
+on:
+  push:
+    paths:
+      - 'scripts/qa_food_browser_a11y.mjs'
+      - '.github/workflows/food-browser-a11y.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Use runner Chrome + free accessibility tooling
+        run: |
+          npm install --no-save playwright@latest @axe-core/playwright@latest
+          google-chrome --version
+      - name: Audit real mobile navigation, public articles, admin and WCAG
+        run: node scripts/qa_food_browser_a11y.mjs
+      - name: Save reports/screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-browser-a11y
+          path: reports/food-*
+          retention-days: 7
