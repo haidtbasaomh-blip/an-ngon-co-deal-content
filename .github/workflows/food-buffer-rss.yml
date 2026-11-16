@@ -2,6 +2,10 @@ name: Food RSS to Buffer - safe queue
 
 on:
   workflow_dispatch: # Free cutover can be tested manually; publish still gated by policy.
+  push:
+    paths:
+      - 'scripts/food_buffer_rss.py'
+      - '.github/workflows/food-buffer-rss.yml'
   schedule:
     - cron: '15 3,12 * * *' # 10:15 and 19:15 Hanoi; no posts until verified cutover.
 
