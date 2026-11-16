@@ -21,20 +21,20 @@ FB_GRAPH = "https://graph.facebook.com/v27.0"
 ALLOWED_DOMAINS = {"facebook.com", "www.facebook.com", "m.facebook.com"}
 
 def is_site_url(value: str, site: str) -> bool:
-    """Detect this website's URL (with/without www or scheme); do not match lookalikes."""
+    """Detect a website-origin link without matching lookalike domains."""
     value = str(value or "")
     host = str(urllib.parse.urlsplit(site).hostname or "").lower().removeprefix("www.")
     if not host:
         return False
-    for match in re.finditer(r"https?://[^\\s<>\\\"']+", value, flags=re.I):
+    for match in re.finditer(r"https?://[^\s<>\"']+", value, flags=re.I):
         url = match.group(0).rstrip(".,;:!?)")
         parts = urllib.parse.urlsplit(url)
         url_host = str(parts.hostname or "").lower().removeprefix("www.")
         if url_host == host:
             return True
-    # Facebook captions may contain "pc-gia-tot.pages.dev/..." without https.
-    # Negative lookbehind rejects phishing/lookalike hostnames such as not-site.dev.
-    bare = r"(?<![A-Za-z0-9_.-])(?:www\\.)?" + re.escape(host) + r"(?=$|[/\\s?#.,;:!)])"
+    # Facebook captions sometimes omit "https://"; prevent loop-back.
+    # Do not match lookalike hosts such as not-pc-gia-tot.pages.dev.
+    bare = r"(?<![A-Za-z0-9_.-])(?:www\.)?" + re.escape(host) + r"(?=$|[/\s?#.,;:!)])"
     return re.search(bare, value, flags=re.I) is not None
 
 def normalize_page_post(post: dict, page_id: str, site: str) -> dict | None:
