@@ -1,0 +1,28 @@
+name: Food staging editorial source validation
+on:
+  push:
+    paths:
+      - 'ready.json'
+      - 'scripts/qa_food_sources.mjs'
+      - '.github/workflows/food-source-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  citations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify staged article citations (read only)
+        run: node scripts/qa_food_sources.mjs
+      - name: Keep downloadable findings
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-source-qa
+          path: out/source_link_qa.json
+          retention-days: 7
