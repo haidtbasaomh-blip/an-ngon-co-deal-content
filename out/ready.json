@@ -104,8 +104,16 @@
       "intro": "Một tô bún mọc phù hợp không chỉ ở lượng bún mà còn ở phần mọc, rau và cách nêm nước dùng.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/doi-song-cooking-bun-moc-suon-ha-noi-4774929.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Bún mọc sườn có mọc, nấm hương/mộc nhĩ và nước dùng thanh trong.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/doi-song-cooking-bun-moc-suon-ha-noi-4774929.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Bún mọc Hà Nội: chọn bát nước trong và phần mọc vừa ý"
     },
     {
@@ -127,8 +135,16 @@
       "intro": "Cháo sườn có thể dùng như bữa nhẹ, nhưng cần xem rõ phần ăn kèm và khẩu phần thực tế.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/doi-song-cooking-chao-suon-ha-noi-4816507.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Cháo sườn Hà Nội có kết cấu sánh, ăn nóng; quẩy và ruốc là món kèm tùy chọn.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/doi-song-cooking-chao-suon-ha-noi-4816507.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Cháo sườn: một món nóng cho buổi chiều nhiều gió"
     },
     {
@@ -150,8 +166,16 @@
       "intro": "Nem rán xuất hiện trong nhiều bữa cơm và mâm cỗ; cách tính phần và kích thước từng chiếc cần hỏi rõ.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/doi-song-cooking-meo-tru-dong-ran-nem-gion-rum-ngay-tet-4842987.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Nem rán là món quen thuộc trong mâm cỗ; thành phần và cách cuốn có biến thể.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/doi-song-cooking-meo-tru-dong-ran-nem-gion-rum-ngay-tet-4842987.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Nem rán: món ăn chia sẻ và cách gọi đủ cho cả bàn"
     },
     {
@@ -245,8 +269,16 @@
       "intro": "Bánh rán mặn có thể là món ăn vặt dễ chia sẻ, nhưng mỗi hàng làm nhân, vỏ và nước chấm theo cách riêng.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/hang-quan-do-an-vat-cho-ngay-tro-lanh-o-ha-noi-5143228.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Bánh rán mặn nhân thịt/miến/mộc nhĩ ăn cùng nước chấm chua ngọt, dùng khi nóng.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/hang-quan-do-an-vat-cho-ngay-tro-lanh-o-ha-noi-5143228.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Bánh rán mặn: chọn chiếc vừa ăn và nước chấm hợp khẩu vị"
     },
     {
@@ -268,8 +300,16 @@
       "intro": "Khi chọn bánh trôi tàu, hãy để ý loại nhân và mức độ ngọt mà người bán có thể điều chỉnh.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/doi-song-cooking-banh-troi-tau-4194656.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Bánh trôi tàu thường có vỏ bột nếp, nhân và nước đường gừng, ăn nóng.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/doi-song-cooking-banh-troi-tau-4194656.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Bánh trôi tàu: một món ngọt cho những ngày muốn ăn chậm"
     },
     {
@@ -291,8 +331,16 @@
       "intro": "Một bát chè sen nên được chọn theo độ ngọt, cách dùng nóng lạnh và những thành phần đi kèm.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/doi-song-cooking-che-sen-ha-noi-4606006.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Chè sen Hà Nội dùng hạt sen và nước đường, có thể thêm dừa và thạch, điều chỉnh độ ngọt.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/doi-song-cooking-che-sen-ha-noi-4606006.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Chè sen: chọn vị thanh và khẩu phần vừa đủ"
     },
     {
@@ -434,8 +482,16 @@
       "intro": "Sữa chua nếp cẩm thường được dùng như món tráng miệng; nên kiểm tra mức ngọt và thành phần từng phần.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/che-sua-chua-nep-cam-4311348.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Sữa chua kết hợp nếp cẩm trong món chè tráng miệng.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/che-sua-chua-nep-cam-4311348.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Sữa chua nếp cẩm: chọn món tráng miệng theo khẩu vị"
     },
     {
@@ -457,8 +513,16 @@
       "intro": "Cơm rang dưa bò là lựa chọn quen thuộc của nhiều bữa ăn nhanh; cần xem suất bán có những gì.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/doi-song-cooking-com-rang-dua-bo-ha-noi-4665837.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Cơm rang dưa bò Hà Nội kết hợp cơm, thịt bò và dưa cải chua.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/doi-song-cooking-com-rang-dua-bo-ha-noi-4665837.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Cơm rang dưa bò: hỏi rõ thành phần một đĩa cơm đầy"
     },
     {
@@ -480,8 +544,16 @@
       "intro": "Một ổ bánh mì có thể trở thành bữa sáng hoặc bữa nhẹ; phần nhân và sốt quan trọng hơn tên gọi chung.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vietnam.travel/vi/things-to-do/21-must-try-vietnamese-dishes/",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Bánh mì có thể phết pa-tê và kẹp rau/dưa và các loại nhân khác; cấu phần tùy quán.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vietnam.travel/vi/things-to-do/21-must-try-vietnamese-dishes/",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Bánh mì pa-tê Hà Nội: chọn nhân và nước sốt hợp ý"
     },
     {
@@ -575,8 +647,16 @@
       "intro": "Một buổi uống trà chanh còn là dịp trò chuyện; cần kiểm tra nơi ngồi và cách tính giá trước khi gọi.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/nhung-pho-tra-chanh-hot-nhat-ha-noi-2231012.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Văn hóa uống trà chanh và tụ tập tại các phố Hà Nội, không dùng giá/địa chỉ cũ làm dữ liệu hiện tại.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/nhung-pho-tra-chanh-hot-nhat-ha-noi-2231012.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Trà chanh phố: chọn chỗ ngồi và đồ uống vừa ý"
     },
     {
@@ -598,8 +678,16 @@
       "intro": "Bánh tráng trộn được biến tấu nhiều kiểu; thành phần và mức độ cay nên được hỏi rõ trước khi đặt.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/banh-trang-tron-mien-nam-hut-khach-ha-noi-4089816.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Bánh tráng trộn có nhiều thành phần/topping, đã phổ biến ở Hà Nội.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/banh-trang-tron-mien-nam-hut-khach-ha-noi-4089816.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Bánh tráng trộn: đọc thành phần trước khi chọn phần ăn vặt"
     },
     {
@@ -621,8 +709,16 @@
       "intro": "Một cốc chè khúc bạch có thể có nhiều topping; nên đối chiếu thành phần thay vì chỉ nhìn ảnh.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/bi-quyet-nau-che-khuc-bach-4151618.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Chè khúc bạch là món tráng miệng có nhiều thành phần và topping, độ ngọt điều chỉnh tùy quán.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/bi-quyet-nau-che-khuc-bach-4151618.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Chè khúc bạch: xem rõ topping và cách tính suất"
     },
     {
@@ -644,8 +740,16 @@
       "intro": "Bò bía ngọt là lựa chọn ăn vặt có nhiều cách làm; nên tìm hiểu phần nhân và số cuốn trước khi mua.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/banh-bao-la-mon-an-duong-pho-ngon-nhat-viet-nam-4384721.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Bò bía ngọt miền Bắc gồm lớp bánh mềm, dừa nạo, kẹo mạch nha và mè.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/banh-bao-la-mon-an-duong-pho-ngon-nhat-viet-nam-4384721.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Bò bía ngọt: món cuốn nhỏ và cách chọn phần ăn"
     },
     {
@@ -667,8 +771,16 @@
       "intro": "Khoai lang nướng dễ gợi cảm giác gần gũi, nhưng khối lượng và cách bán cần được hỏi trước.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://tienphong.vn/nguoi-ha-noi-dot-lua-suoi-am-nuong-ngo-khoai-giua-dem-dong-gia-lanh-post1592168.tpo",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Khoai lang nướng là quà vặt nóng dùng trong ngày lạnh ở Hà Nội, không xác nhận địa chỉ/giá hiện tại.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://tienphong.vn/nguoi-ha-noi-dot-lua-suoi-am-nuong-ngo-khoai-giua-dem-dong-gia-lanh-post1592168.tpo",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Khoai lang nướng: chọn món nóng vừa đủ cho buổi tối"
     },
     {
@@ -690,8 +802,16 @@
       "intro": "Khi gọi món Việt, phần rau và dưa góp đi kèm cần được hiểu đúng trước khi yêu cầu thêm.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/cach-lam-dua-gop-gion-ngon-cho-ngay-tet-4416439.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Dưa góp chế biến từ rau củ và gia vị chua ngọt, ăn kèm nhiều món để cân bằng vị.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/cach-lam-dua-gop-gion-ngon-cho-ngay-tet-4416439.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Dưa góp và rau ăn kèm: phần nhỏ giúp bữa ăn cân bằng"
     },
     {
@@ -713,8 +833,16 @@
       "intro": "Một ly sữa đậu nành nóng hoặc lạnh nên được chọn theo thành phần, kích cỡ và sở thích vị ngọt.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "",
-      "sourceStatus": "needs_research",
+      "source": "https://vnexpress.net/thom-ngon-sua-dau-nanh-tu-che-4311281.html",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Sữa đậu nành chế biến từ đậu nành xay/nấu với nước; độ ngọt và thành phần phụ có thể chọn.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế.",
+        "url": "https://vnexpress.net/thom-ngon-sua-dau-nanh-tu-che-4311281.html",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
       "title": "Sữa đậu nành: đọc thành phần và lựa chọn độ ngọt"
     },
     {
