@@ -7,7 +7,7 @@ const jobs=articles.map(a=>({id:a.id,title:a.title,url:String(a.source||''),stat
 for(const a of jobs){
  if(!a.url||a.status!=='topic_matched'){report.missing.push(a.id);continue}
  let url;try{url=new URL(a.url)}catch{report.invalid.push(a.id);continue}
- if(url.protocol!=='https:'||!['vnexpress.net','vietnam.travel','antoanthucpham.hanoi.gov.vn','tienphong.vn','dulich.quangninh.gov.vn','csdl.vietnamtourism.gov.vn','dantri.com.vn','beta-v2.vietnam.travel','ankhanh.haiphong.gov.vn'].includes(url.hostname)){
+ if(url.protocol!=='https:'||!['vnexpress.net','vietnam.travel','antoanthucpham.hanoi.gov.vn','tienphong.vn','dulich.quangninh.gov.vn','csdl.vietnamtourism.gov.vn','dantri.com.vn','beta-v2.vietnam.travel','ankhanh.haiphong.gov.vn','vietnamtourism.vn','www.vietnamairlines.com'].includes(url.hostname)){
   report.invalid.push(a.id+' '+url.hostname);continue
  }
 }
@@ -20,7 +20,7 @@ await Promise.all(Array.from({length:5},async()=>{
    let res=await fetch(a.url,{headers:{'user-agent':'Mozilla/5.0 (compatible; EditorialSourceQA/1.0)','accept':'text/html,*/*'},redirect:'follow',signal:AbortSignal.timeout(18000)});
    if(res.ok){
     const final=new URL(res.url);
-    if(!['vnexpress.net','vietnam.travel','antoanthucpham.hanoi.gov.vn','tienphong.vn','dulich.quangninh.gov.vn','csdl.vietnamtourism.gov.vn','dantri.com.vn','beta-v2.vietnam.travel','ankhanh.haiphong.gov.vn'].includes(final.hostname)){
+    if(!['vnexpress.net','vietnam.travel','antoanthucpham.hanoi.gov.vn','tienphong.vn','dulich.quangninh.gov.vn','csdl.vietnamtourism.gov.vn','dantri.com.vn','beta-v2.vietnam.travel','ankhanh.haiphong.gov.vn','vietnamtourism.vn','www.vietnamairlines.com'].includes(final.hostname)){
       report.invalid.push(a.id+' unexpected redirected hostname '+final.hostname);continue
     }
     let html=(await res.text()).slice(0,250000).toLowerCase();
