@@ -21,15 +21,21 @@ FB_GRAPH = "https://graph.facebook.com/v27.0"
 ALLOWED_DOMAINS = {"facebook.com", "www.facebook.com", "m.facebook.com"}
 
 def is_site_url(value: str, site: str) -> bool:
-    """Only the configured website is treated as a loop-back origin."""
+    """Detect this website's URL (with/without www or scheme); do not match lookalikes."""
     value = str(value or "")
-    host = urllib.parse.urlsplit(site).hostname
-    for match in re.finditer(r"https?://[^\s<>\"']+", value, flags=re.I):
+    host = str(urllib.parse.urlsplit(site).hostname or "").lower().removeprefix("www.")
+    if not host:
+        return False
+    for match in re.finditer(r"https?://[^\\s<>\\\"']+", value, flags=re.I):
         url = match.group(0).rstrip(".,;:!?)")
         parts = urllib.parse.urlsplit(url)
-        if parts.hostname == host:
+        url_host = str(parts.hostname or "").lower().removeprefix("www.")
+        if url_host == host:
             return True
-    return False
+    # Facebook captions may contain "pc-gia-tot.pages.dev/..." without https.
+    # Negative lookbehind rejects phishing/lookalike hostnames such as not-site.dev.
+    bare = r"(?<![A-Za-z0-9_.-])(?:www\\.)?" + re.escape(host) + r"(?=$|[/\\s?#.,;:!)])"
+    return re.search(bare, value, flags=re.I) is not None
 
 def normalize_page_post(post: dict, page_id: str, site: str) -> dict | None:
     """Filter to new, owned Page posts not already sourced from this website."""
@@ -60,11 +66,27 @@ def normalize_page_post(post: dict, page_id: str, site: str) -> dict | None:
         "created_time": str(post.get("created_time") or ""),
         "text": message,
         "normalized_content_hash": fingerprint,
+        "idempotency_key": page_id + ":" + fingerprint,
         "approved": False,
         "publicationStatus": "draft_for_review",
         "publishToFacebook": False,
         "neverRepublishToFacebook": True,
     }
+
+def stage_candidates(posts: list[dict], page_id: str, site: str) -> list[dict]:
+    """Deduplicate by both Page post ID and normalized content, even across repost IDs."""
+    items, post_ids, content_keys = [], set(), set()
+    for post in posts:
+        candidate = normalize_page_post(post, page_id, site)
+        if not candidate:
+            continue
+        pid, content_key = candidate["facebook_post_id"], candidate["normalized_content_hash"]
+        if pid in post_ids or content_key in content_keys:
+            continue
+        post_ids.add(pid)
+        content_keys.add(content_key)
+        items.append(candidate)
+    return items
 
 def fetch_json(path: str, token: str, params: dict | None = None) -> dict:
     query = urllib.parse.urlencode(params or {})
@@ -97,12 +119,7 @@ def main() -> int:
         "fields": "id,from{id},message,link,permalink_url,is_published,created_time",
         "limit": 25,
     })
-    items, seen = [], set()
-    for post in response.get("data") or []:
-        candidate = normalize_page_post(post, expected, site)
-        if candidate and candidate["facebook_post_id"] not in seen:
-            seen.add(candidate["facebook_post_id"])
-            items.append(candidate)
+    items = stage_candidates(response.get("data") or [], expected, site)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps({
         "schema": 1,
