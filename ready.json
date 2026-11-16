@@ -136,11 +136,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-oc-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bún ốc Hà Nội: phân biệt bát nóng và cách ăn chua thanh; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/vi/things-to-do/eating-vietnam-anthony-bourdain/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Bài Cổng Du lịch Việt Nam nhắc tới bún ốc ăn ven đường tại Hà Nội trong hành trình của Anthony Bourdain; không xác minh từng quán hay giá.",
+        "scope": "Nguồn xác nhận món bún ốc thuộc văn hóa ẩm thực Hà Nội, không chứng minh công thức riêng, cửa hàng, ảnh, giá hoặc giờ mở cửa."
+      }
     },
     {
       "id": "bun-moc-ha-noi",
@@ -277,11 +284,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/o-mai-lam-qua.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Ô mai Hà Nội: chọn đúng vị và quy cách trước khi làm quà; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/things-to-do/vietnamese-snacks/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Trang '10 tasty Vietnamese snacks to try' có mục 'Dried fruits | ô mai', mô tả các loại quả khô trộn đường, muối, gừng và là đặc sản Hà Nội.",
+        "scope": "Chỉ đối chiếu món ô mai và nguyên liệu khái quát, không xác nhận nhà bán, hạn sử dụng hay quyền ảnh."
+      }
     },
     {
       "id": "banh-khuc-ha-noi",
@@ -655,11 +669,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-ngan.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bún ngan: chọn kiểu ăn nước hay trộn trước khi gọi; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/things-to-do/must-try-food-in-hanoi/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Trang 'Must-try food in Ha Noi' giới thiệu bún ngan là món bún với thịt ngan và măng.",
+        "scope": "Chỉ xác nhận loại món và bối cảnh Hà Nội; danh bạ, địa chỉ, giá và hình ảnh cần xác minh độc lập."
+      }
     },
     {
       "id": "nuoc-sau-da",
@@ -982,11 +1003,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-xeo-mien-nam-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh xèo miền Nam ở Hà Nội: chọn cách cuốn và khẩu phần; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/things-to-do/10-delicious-vietnamese-rolls/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Trang '10 delicious Vietnamese rolls' có mục Bánh xèo với bột nghệ, giá đỗ, thịt, tôm và cách ăn cuốn rau.",
+        "scope": "Chỉ đối chiếu thành phần phổ biến, không xác nhận địa điểm phục vụ tại Hà Nội, giá, ảnh hay bản quyền."
+      }
     },
     {
       "id": "cha-muc-ha-long-lam-qua",
