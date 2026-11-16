@@ -57,7 +57,15 @@ async function run(){
  if(missingStructuredData.length)errors.push('Published articles without JSON-LD: '+missingStructuredData.length);
  if(missingTitle.length)errors.push('Published articles without title: '+missingTitle.length);
  if(noindexArticles.length)errors.push('Published articles incorrectly noindex: '+noindexArticles.length);
- const report={checkedAt:new Date().toISOString(),site:base,readOnly:true,homepage:{canonical:true},rss:{itemCount:itemXml.length,validLinks:articleLinks.length,duplicateLinks:duplicateRSS},sitemap:{urls:sitemapUrls.length,missingRSSArticles:missingFromSitemap.length},articles:{sampled:sample.length,totalPublished:articleLinks.length,broken:failures,missingCanon,missingOG,missingTitle,missingDescription,missingStructuredData,noindexArticles},status:errors.length?'failed':warnings.length?'needs_review':'healthy',errors,warnings};
+ const privatePaths=['/draft-index.json','/draft-batches/0.json','/editorial-review.json','/api/admin/editorial','/api/admin/backups','/admin/backups/'];
+ const privateAccess=[];
+ for(const path of privatePaths){const r=await fetch(base+path,{redirect:'manual',signal:AbortSignal.timeout(20000)});privateAccess.push({path,status:r.status});if(r.status!==403)errors.push('Private resource exposed or unexpected response: '+path+' HTTP '+r.status)}
+ const publicEditorial=JSON.parse(await get('/api/editorial'));
+ const publicOnly=Array.isArray(publicEditorial.articles)&&publicEditorial.articles.every(a=>a.approved===true&&a.publicationStatus==='published'&&!a.id.startsWith('nhap-'));
+ if(!publicOnly)errors.push('Public editorial API contains non-published content');
+ if(publicEditorial.articles?.length!==articleLinks.length)errors.push('Public API count differs from RSS');
+ if(/draft-batches|draft-index|\/admin\//i.test(rss+sitemap))errors.push('Private draft/admin URL in RSS or sitemap');
+ const report={checkedAt:new Date().toISOString(),site:base,readOnly:true,privateAccess,publicOnly,homepage:{canonical:true},rss:{itemCount:itemXml.length,validLinks:articleLinks.length,duplicateLinks:duplicateRSS},sitemap:{urls:sitemapUrls.length,missingRSSArticles:missingFromSitemap.length},articles:{sampled:sample.length,totalPublished:articleLinks.length,broken:failures,missingCanon,missingOG,missingTitle,missingDescription,missingStructuredData,noindexArticles},status:errors.length?'failed':warnings.length?'needs_review':'healthy',errors,warnings};
  fs.mkdirSync('reports',{recursive:true});
  fs.writeFileSync('reports/food-live-qa.json',JSON.stringify(report,null,2)+'\n');
  const summary=['# Ăn Ngon Có Deal – kiểm tra website thật',
@@ -65,6 +73,8 @@ async function run(){
   '| Bài trong RSS | '+itemXml.length+' |','| URL sitemap | '+sitemapUrls.length+' |',
   '| Bài được kiểm tra thực tế | '+sample.length+' |',
   '| Bài lỗi truy cập | '+failures.length+' |',
+  '| Tài nguyên riêng chặn khách 403 | '+privateAccess.filter(x=>x.status===403).length+'/'+privatePaths.length+' |',
+  '| API chỉ chứa bài đã xuất bản | '+publicOnly+' |',
   '| Bài thiếu canonical | '+missingCanon.length+' |',
   '| Bài thiếu ảnh OG | '+missingOG.length+' |',
   '| Bài thiếu meta description | '+missingDescription.length+' |',
@@ -72,7 +82,7 @@ async function run(){
   '| Bài bị noindex sai | '+noindexArticles.length+' |',
   '| Bài từ RSS chưa có trong sitemap | '+missingFromSitemap.length+' |','',
   '**Trạng thái:** '+report.status.toUpperCase(),'',
-  'Chỉ kiểm tra nội dung công khai. Không truy cập admin, không xuất bản nháp, không gửi Facebook.',
+  'Kiểm tra bài công khai và xác minh khách chưa đăng nhập bị chặn ở tài nguyên riêng. Không đăng nhập admin, không xuất bản nháp, không gửi Facebook.',
   ...errors.map(e=>'LỖI: '+e),...warnings.map(e=>'CẦN RÀ SOÁT: '+e),''].join('\n');
  fs.writeFileSync('reports/food-live-qa.md',summary);
  if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary+'\n');
