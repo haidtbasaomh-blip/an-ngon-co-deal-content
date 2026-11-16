@@ -151,7 +151,7 @@
       "image": "",
       "intro": "Một tô bún mọc phù hợp không chỉ ở lượng bún mà còn ở phần mọc, rau và cách nêm nước dùng.",
       "body": "Bún mọc thường gợi cảm giác nhẹ nhàng hơn một số món nước có vị cay đậm. Điểm cần chú ý là phần mọc trong tô được chế biến như thế nào và có những món bổ sung nào. Cùng một tên gọi nhưng người bán có thể thiết kế thực đơn rất khác nhau.\n\nKhi gọi suất đặc biệt, hỏi rõ các loại thịt, nấm hoặc nguyên liệu thêm. Nếu đang chọn món cho người lớn tuổi hay trẻ nhỏ, bạn có thể trao đổi về độ nóng, cách cắt món và phần gia vị để riêng. Chỉ coi yêu cầu được đáp ứng khi quán xác nhận.\n\nNgười mua mang về cần kiểm tra đủ nước, bún và món ăn kèm trước khi rời quán. Việc giữ phần nước riêng có thể giúp dễ điều chỉnh khẩu phần khi tới nơi, nhưng thời gian vận chuyển và bảo quản vẫn phải theo hướng dẫn của người bán.\n\nBài viết không xác nhận quán nào có bún mọc ngon nhất. Những đánh giá về giá cả và địa chỉ chỉ có ý nghĩa khi gắn với một cơ sở được kiểm tra cụ thể.",
-      "source": "",
+      "source": "https://vnexpress.net/doi-song-cooking-bun-moc-suon-ha-noi-4774929.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -159,11 +159,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-moc-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bún mọc Hà Nội: chọn bát nước trong và phần mọc vừa ý; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/doi-song-cooking-bun-moc-suon-ha-noi-4774929.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Bún mọc sườn có mọc, nấm hương/mộc nhĩ và nước dùng thanh trong.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "chao-suon-buoi-chieu",
@@ -174,7 +182,7 @@
       "image": "",
       "intro": "Cháo sườn có thể dùng như bữa nhẹ, nhưng cần xem rõ phần ăn kèm và khẩu phần thực tế.",
       "body": "Cháo sườn hấp dẫn ở độ sánh của cháo và cảm giác ấm khi ăn. Người muốn bát cháo đậm đà có thể thêm gia vị theo sở thích, nhưng nên thử vị ban đầu trước. Cách xay hoặc nấu gạo khác nhau cũng tạo ra kết cấu không giống nhau giữa các hàng.\n\nMột bát cơ bản có thể không gồm quẩy, ruốc hoặc món thêm. Hỏi rõ những phần này trước khi gọi sẽ giúp dự tính số lượng và chi phí. Nếu mua cho trẻ em, cần kiểm tra độ nóng và thành phần nêm; đừng tự cho rằng cháo là món phù hợp với mọi người.\n\nVới món giao tận nơi, xem thực đơn có ghi rõ dung tích hoặc trọng lượng không. Ảnh chụp một bát lớn có thể không phản ánh suất bạn đặt. Khi nhận hàng, hãy tuân thủ hướng dẫn sử dụng của cơ sở đối với đồ ăn nóng.\n\nBài viết mang tính gợi ý trải nghiệm, không thay lời khuyên dinh dưỡng cá nhân hay công bố thông tin của một cửa hàng cụ thể.",
-      "source": "",
+      "source": "https://vnexpress.net/doi-song-cooking-chao-suon-ha-noi-4816507.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -182,11 +190,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/chao-suon-buoi-chieu.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Cháo sườn: một món nóng cho buổi chiều nhiều gió; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/doi-song-cooking-chao-suon-ha-noi-4816507.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Cháo sườn Hà Nội có kết cấu sánh, ăn nóng; quẩy và ruốc là món kèm tùy chọn.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "nem-ran-bua-co",
@@ -197,7 +213,7 @@
       "image": "",
       "intro": "Nem rán xuất hiện trong nhiều bữa cơm và mâm cỗ; cách tính phần và kích thước từng chiếc cần hỏi rõ.",
       "body": "Nem rán dễ trở thành món mọi người cùng gắp, nhưng không phải chiếc nem nào cũng có kích thước hay nhân giống nhau. Khi so hai thực đơn, đừng chỉ nhìn số chiếc; hãy xem đó là nem dài, nem nhỏ hay suất cắt sẵn. Phần nhân cũng có thể khác theo người nấu.\n\nĐể gọi cho cả nhóm, hỏi một đĩa gồm bao nhiêu chiếc và có kèm nước chấm hoặc rau không. Người có dị ứng với trứng, hải sản hoặc nguyên liệu khác nên trao đổi trực tiếp với quán về thành phần nhân. Không suy ra từ màu sắc của vỏ.\n\nNem vừa rán thường nóng; khi chia cho trẻ nhỏ nên đợi bớt nóng và cắt phù hợp. Nếu mua mang về, hỏi quán cách đóng gói để giữ kết cấu và hướng dẫn dùng. Không thể đánh giá độ giòn của món sau giao hàng chỉ từ ảnh trên mạng.\n\nMón có thể xuất hiện dưới nhiều tên gọi vùng miền. Bài này không khẳng định một công thức duy nhất là chuẩn của mọi gia đình.",
-      "source": "",
+      "source": "https://vnexpress.net/doi-song-cooking-meo-tru-dong-ran-nem-gion-rum-ngay-tet-4842987.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -205,11 +221,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/nem-ran-bua-co.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Nem rán: món ăn chia sẻ và cách gọi đủ cho cả bàn; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/doi-song-cooking-meo-tru-dong-ran-nem-gion-rum-ngay-tet-4842987.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Nem rán là món quen thuộc trong mâm cỗ; thành phần và cách cuốn có biến thể.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "banh-tom-ho-tay",
@@ -292,7 +316,7 @@
       "image": "",
       "intro": "Bánh rán mặn có thể là món ăn vặt dễ chia sẻ, nhưng mỗi hàng làm nhân, vỏ và nước chấm theo cách riêng.",
       "body": "Khi dừng lại trước một hàng bánh rán mặn, hãy nhìn xem bánh được bán theo chiếc, theo phần hay combo. Độ lớn mỗi chiếc và lượng nhân khác nhau sẽ ảnh hưởng đến cảm giác no, vì thế so giá theo tên món đôi khi không chính xác.\n\nNước chấm là phần quan trọng với nhiều người, nhưng không cần thêm tất cả gia vị ngay từ đầu. Bạn có thể hỏi cách dùng mà quán gợi ý hoặc xin để riêng nếu được hỗ trợ. Nếu có dị ứng thực phẩm, yêu cầu người bán xác nhận nguyên liệu nhân và nước chấm.\n\nMón rán thường được dùng khi còn nóng. Người mua mang về nên hỏi về đóng gói và thời điểm ăn phù hợp; đừng kỳ vọng kết cấu món sau một hành trình dài sẽ giống lúc vừa lấy khỏi chảo.\n\nBài viết không giới thiệu một cửa hàng cụ thể hay khẳng định quy trình chế biến tại bất kỳ quán nào.",
-      "source": "",
+      "source": "https://vnexpress.net/hang-quan-do-an-vat-cho-ngay-tro-lanh-o-ha-noi-5143228.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -300,11 +324,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-ran-man.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh rán mặn: chọn chiếc vừa ăn và nước chấm hợp khẩu vị; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/hang-quan-do-an-vat-cho-ngay-tro-lanh-o-ha-noi-5143228.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Bánh rán mặn nhân thịt/miến/mộc nhĩ ăn cùng nước chấm chua ngọt, dùng khi nóng.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "banh-troi-tau",
@@ -315,7 +347,7 @@
       "image": "",
       "intro": "Khi chọn bánh trôi tàu, hãy để ý loại nhân và mức độ ngọt mà người bán có thể điều chỉnh.",
       "body": "Bánh trôi tàu là kiểu món ngọt có phần bánh và nước dùng, mang lại trải nghiệm khác những món chè lạnh. Người ăn có thể chú ý trước hết tới lớp vỏ mềm, phần nhân và hương thơm của nước. Tên gọi chung chưa cho biết một bát chứa bao nhiêu viên.\n\nTrước khi gọi, hãy hỏi các loại nhân, số lượng viên và những món thêm nếu có. Người có dị ứng với vừng, lạc hoặc thành phần khác cần yêu cầu người bán xác nhận thay vì chỉ dựa vào màu của bánh.\n\nNếu muốn ít ngọt hơn, bạn có thể hỏi xem món có thể phục vụ phần nước riêng hay không; không phải quán nào cũng điều chỉnh được. Với món mua về, hãy kiểm tra cách đóng gói, thời gian sử dụng và hướng dẫn làm nóng từ chính cơ sở.\n\nBài giới thiệu cách chọn món, không cung cấp công thức xác thực cho mọi cửa hàng hoặc quảng cáo một ưu đãi đang có.",
-      "source": "",
+      "source": "https://vnexpress.net/doi-song-cooking-banh-troi-tau-4194656.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -323,11 +355,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-troi-tau.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh trôi tàu: một món ngọt cho những ngày muốn ăn chậm; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/doi-song-cooking-banh-troi-tau-4194656.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Bánh trôi tàu thường có vỏ bột nếp, nhân và nước đường gừng, ăn nóng.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "che-sen-ha-noi",
@@ -338,7 +378,7 @@
       "image": "",
       "intro": "Một bát chè sen nên được chọn theo độ ngọt, cách dùng nóng lạnh và những thành phần đi kèm.",
       "body": "Chè sen thường được nhiều người nghĩ tới khi muốn chọn món tráng miệng nhẹ nhàng. Tuy nhiên, tên gọi không bảo đảm hai quán sử dụng cùng nguyên liệu, tỷ lệ đường hoặc cách nấu. Người thử lần đầu có thể bắt đầu từ suất cơ bản rồi điều chỉnh theo khẩu vị.\n\nNếu ăn cùng gia đình, hỏi rõ phần chè có những thành phần nào, nhất là khi mua cho trẻ nhỏ hoặc người có nhu cầu ăn uống riêng. Đừng tự suy ra món có tác dụng sức khỏe chỉ vì tên gọi gắn với một nguyên liệu quen thuộc.\n\nVới chè đóng hộp mang về, đọc nhãn và hướng dẫn bảo quản. Với chè bán tại quầy, hỏi cách dùng và thời hạn giữ món mà cơ sở khuyến nghị. Không dùng thông tin của một nơi để áp dụng cho mọi sản phẩm có tên chè sen.\n\nWebsite chỉ giới thiệu cách chọn món và không đưa ra lời khuyên y tế, điều trị hay xác nhận công dụng dinh dưỡng cá nhân.",
-      "source": "",
+      "source": "https://vnexpress.net/doi-song-cooking-che-sen-ha-noi-4606006.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -346,11 +386,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/che-sen-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Chè sen: chọn vị thanh và khẩu phần vừa đủ; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/doi-song-cooking-che-sen-ha-noi-4606006.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Chè sen Hà Nội dùng hạt sen và nước đường, có thể thêm dừa và thạch, điều chỉnh độ ngọt.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "banh-com-lam-qua",
@@ -481,7 +529,7 @@
       "image": "",
       "intro": "Sữa chua nếp cẩm thường được dùng như món tráng miệng; nên kiểm tra mức ngọt và thành phần từng phần.",
       "body": "Sự kết hợp giữa sữa chua và nếp cẩm tạo ra nhiều kiểu khẩu phần khác nhau. Một số nơi cho nếp nhiều, một số nơi thêm các thành phần khác. Người mua có thể bắt đầu từ một phần nhỏ để biết mình thích độ chua, độ ngọt và kết cấu như thế nào.\n\nTrước khi gọi, đọc rõ loại sữa chua, phần nếp và các món thêm. Nếu không dùng sữa hoặc có dị ứng, cần hỏi thành phần và khả năng thay thế từ người bán. Tên món không đủ để suy đoán chế độ ăn hay công dụng đối với từng người.\n\nVới món giao về, yêu cầu người bán cho biết cách giữ lạnh và thời gian sử dụng. Không nên tự quy định hạn dùng chỉ vì sản phẩm được đóng nắp. Khi đặt qua nền tảng, kiểm tra đúng chi nhánh, kích cỡ và giá cuối.\n\nĐây là hướng dẫn chọn món, không phải lời khuyên sức khỏe và không quảng cáo một thương hiệu cụ thể.",
-      "source": "",
+      "source": "https://vnexpress.net/che-sua-chua-nep-cam-4311348.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -489,11 +537,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/sua-chua-nep-cam.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Sữa chua nếp cẩm: chọn món tráng miệng theo khẩu vị; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/che-sua-chua-nep-cam-4311348.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Sữa chua kết hợp nếp cẩm trong món chè tráng miệng.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "com-rang-dua-bo",
@@ -504,7 +560,7 @@
       "image": "",
       "intro": "Cơm rang dưa bò là lựa chọn quen thuộc của nhiều bữa ăn nhanh; cần xem suất bán có những gì.",
       "body": "Một đĩa cơm rang dưa bò có thể khác nhau ở lượng cơm, phần thịt bò và cách chế biến dưa. Có người thích dưa nổi bật, có người lại muốn vị cơm rang rõ hơn. Đọc mô tả món là cách đơn giản để biết mình đang đặt một đĩa cơ bản hay suất thêm thịt.\n\nKhi gọi theo nhóm, hỏi một suất có phù hợp để chia không và có rau, trứng hoặc nước dùng kèm theo không. Các món thêm nếu bán riêng cần được ghi rõ để so tổng chi phí. Đừng dùng ảnh minh họa của suất đặc biệt làm căn cứ suy ra phần cơ bản.\n\nMón thường được dùng nóng. Nếu đặt giao, kiểm tra thời gian dự kiến từ ứng dụng và yêu cầu đóng gói phù hợp nếu quán hỗ trợ. Người có yêu cầu tránh trứng, thịt hoặc gia vị nên hỏi thành phần cụ thể trước khi đặt.\n\nBài này không giới thiệu một quán cơm rang xác định; địa chỉ, giá và giờ phục vụ cần nguồn riêng còn hiệu lực.",
-      "source": "",
+      "source": "https://vnexpress.net/doi-song-cooking-com-rang-dua-bo-ha-noi-4665837.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -512,11 +568,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/com-rang-dua-bo.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Cơm rang dưa bò: hỏi rõ thành phần một đĩa cơm đầy; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/doi-song-cooking-com-rang-dua-bo-ha-noi-4665837.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Cơm rang dưa bò Hà Nội kết hợp cơm, thịt bò và dưa cải chua.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "banh-mi-pate-ha-noi",
@@ -527,7 +591,7 @@
       "image": "",
       "intro": "Một ổ bánh mì có thể trở thành bữa sáng hoặc bữa nhẹ; phần nhân và sốt quan trọng hơn tên gọi chung.",
       "body": "Bánh mì pa-tê có nhiều cách kết hợp với rau, thịt và các loại sốt. Hai ổ cùng tên trên thực đơn không nhất thiết có cùng lượng nhân. Người mới thử có thể chọn phiên bản cơ bản trước, rồi lần sau thay đổi thành phần theo khẩu vị thay vì gọi quá nhiều món thêm.\n\nNếu bạn tránh một nguyên liệu, hãy yêu cầu người bán xác nhận toàn bộ phần nhân và nước sốt. Không mặc định món được gọi là bánh mì pa-tê chỉ chứa một loại pa-tê. Với suất combo, xem nước uống và món phụ được tính thế nào.\n\nMua mang về, cần kiểm tra đúng loại bánh, mức cay và ghi chú. Nếu định ăn sau nhiều giờ, hỏi cơ sở về hướng dẫn giữ món; một ổ bánh mì đã kẹp nhân không có thời hạn bảo quản giống bánh mì không.\n\nBài không khẳng định địa chỉ hay thương hiệu nào là lâu đời nhất. Các câu chuyện lịch sử của quán phải có nguồn riêng để kiểm chứng.",
-      "source": "",
+      "source": "https://vietnam.travel/vi/things-to-do/21-must-try-vietnamese-dishes/",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -535,11 +599,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-mi-pate-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh mì pa-tê Hà Nội: chọn nhân và nước sốt hợp ý; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/vi/things-to-do/21-must-try-vietnamese-dishes/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Bánh mì có thể phết pa-tê và kẹp rau/dưa và các loại nhân khác; cấu phần tùy quán.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "mien-luon",
@@ -622,7 +694,7 @@
       "image": "",
       "intro": "Một buổi uống trà chanh còn là dịp trò chuyện; cần kiểm tra nơi ngồi và cách tính giá trước khi gọi.",
       "body": "Trà chanh có thể là thức uống cho một cuộc hẹn ngắn. Tuy nhiên, trải nghiệm còn phụ thuộc không gian, vị trà, lượng đường và cách phục vụ. Một hình ảnh bàn ghế ngoài phố chưa đủ để xác nhận nơi đó có chỗ ngồi phù hợp hoặc được phép sử dụng vỉa hè.\n\nKhi đi theo nhóm, hãy xác định mỗi người gọi một ly hay chọn thêm đồ ăn vặt. Hỏi quán về nước uống, các món thêm và khoản phụ thu nếu có. Với đồ uống pha theo yêu cầu, chỉ coi lựa chọn ít đường được chấp nhận khi cơ sở xác nhận.\n\nNếu đi cùng trẻ nhỏ hoặc người cần hỗ trợ di chuyển, nên xem lối vào và nhà vệ sinh. Trước khi chụp ảnh mọi người trong quán, hãy tôn trọng sự riêng tư của khách khác và nhân viên.\n\nBài này hướng tới cách chọn địa điểm trò chuyện, không khẳng định quán nào đang mở hay có chương trình giảm giá.",
-      "source": "",
+      "source": "https://vnexpress.net/nhung-pho-tra-chanh-hot-nhat-ha-noi-2231012.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -630,11 +702,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/tra-chanh-pho.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Trà chanh phố: chọn chỗ ngồi và đồ uống vừa ý; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/nhung-pho-tra-chanh-hot-nhat-ha-noi-2231012.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Văn hóa uống trà chanh và tụ tập tại các phố Hà Nội, không dùng giá/địa chỉ cũ làm dữ liệu hiện tại.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "banh-trang-tron-ha-noi",
@@ -645,7 +725,7 @@
       "image": "",
       "intro": "Bánh tráng trộn được biến tấu nhiều kiểu; thành phần và mức độ cay nên được hỏi rõ trước khi đặt.",
       "body": "Một phần bánh tráng trộn có thể mang nhiều hương vị tùy rau, sốt và các món thêm. Người mua thường nhìn màu sắc của món trước, nhưng ảnh không thể cho biết chính xác lượng gia vị hoặc phần nhân. Hãy xem mô tả suất thay vì chỉ dựa vào hình.\n\nNếu bạn không quen cay, hãy hỏi người bán có thể để riêng sốt hay điều chỉnh không. Người có dị ứng với trứng, hải sản hoặc thành phần khác cần xác nhận từ cơ sở; việc không nhìn thấy nguyên liệu không có nghĩa món không chứa chúng.\n\nMua giao đi xa, kiểm tra phần trộn sẵn hay để riêng vì điều này ảnh hưởng đến kết cấu. Nếu đặt nhiều loại, ghi rõ từng lựa chọn và kiểm tra số phần lúc nhận. Không suy đoán giá từ một combo khác trên ảnh.\n\nBài không đánh giá vệ sinh hoặc mức độ an toàn của một cửa hàng bánh tráng trộn cụ thể.",
-      "source": "",
+      "source": "https://vnexpress.net/banh-trang-tron-mien-nam-hut-khach-ha-noi-4089816.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -653,11 +733,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-trang-tron-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh tráng trộn: đọc thành phần trước khi chọn phần ăn vặt; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/banh-trang-tron-mien-nam-hut-khach-ha-noi-4089816.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Bánh tráng trộn có nhiều thành phần/topping, đã phổ biến ở Hà Nội.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "che-khuc-bach",
@@ -668,7 +756,7 @@
       "image": "",
       "intro": "Một cốc chè khúc bạch có thể có nhiều topping; nên đối chiếu thành phần thay vì chỉ nhìn ảnh.",
       "body": "Chè khúc bạch thường được lựa chọn như món tráng miệng mát. Người ăn có thể thích phần khúc bạch mềm, nước chè thanh hoặc những loại topping giòn. Tuy vậy, mỗi cửa hàng có thể dùng công thức và kích cỡ suất khác nhau.\n\nKhi gọi, hỏi rõ cốc cơ bản có thành phần nào và các loại trái cây hay topping khác có tính riêng không. Nếu bạn tránh sữa, hạt hoặc một nguyên liệu gây dị ứng, cần hỏi người bán vì tên món không thể hiện đầy đủ thành phần.\n\nVới đơn giao về nhà, cần kiểm tra hướng dẫn bảo quản lạnh và thời gian dùng do cửa hàng đưa ra. Không mặc định món đóng hộp có thể để lâu. Khi chụp ảnh chia sẻ, ghi rõ đúng địa điểm nếu đó là ảnh mua thực tế.\n\nBài hướng dẫn chọn món và không cam kết dinh dưỡng, chất lượng hay giá của một sản phẩm cụ thể.",
-      "source": "",
+      "source": "https://vnexpress.net/bi-quyet-nau-che-khuc-bach-4151618.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -676,11 +764,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/che-khuc-bach.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Chè khúc bạch: xem rõ topping và cách tính suất; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/bi-quyet-nau-che-khuc-bach-4151618.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Chè khúc bạch là món tráng miệng có nhiều thành phần và topping, độ ngọt điều chỉnh tùy quán.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "bo-bia-ngot",
@@ -691,7 +787,7 @@
       "image": "",
       "intro": "Bò bía ngọt là lựa chọn ăn vặt có nhiều cách làm; nên tìm hiểu phần nhân và số cuốn trước khi mua.",
       "body": "Một cuốn bò bía ngọt thường được lựa chọn khi muốn thử món nhỏ trong hành trình ăn vặt. Phần vỏ, nhân và cách cuốn có thể khác nhau tùy người làm. Một ảnh chụp cuốn bánh không cho biết người bán phục vụ theo chiếc hay theo phần.\n\nKhi mua, hỏi về nguyên liệu trong nhân, đặc biệt nếu bạn có dị ứng với dừa, vừng hoặc các loại hạt. Nếu mua cho nhóm, nên xác nhận số lượng cuốn và giá một phần để tránh nhầm lẫn với loại bò bía mặn.\n\nMón được cuốn sẵn có thể cần dùng trong khoảng thời gian do người bán khuyến nghị. Nếu định mang đi xa, hãy hỏi cách đóng gói và bảo quản thay vì tự suy ra món có thể để ngoài trời bao lâu.\n\nBài viết không xác nhận một địa điểm bán hay khẳng định công thức của mọi hàng bò bía ngọt. Người mua cần hỏi rõ thông tin hiện tại tại đúng cơ sở dự định ghé.",
-      "source": "",
+      "source": "https://vnexpress.net/banh-bao-la-mon-an-duong-pho-ngon-nhat-viet-nam-4384721.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -699,11 +795,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bo-bia-ngot.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bò bía ngọt: món cuốn nhỏ và cách chọn phần ăn; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/banh-bao-la-mon-an-duong-pho-ngon-nhat-viet-nam-4384721.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Bò bía ngọt miền Bắc gồm lớp bánh mềm, dừa nạo, kẹo mạch nha và mè.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "khoai-lang-nuong",
@@ -714,7 +818,7 @@
       "image": "",
       "intro": "Khoai lang nướng dễ gợi cảm giác gần gũi, nhưng khối lượng và cách bán cần được hỏi trước.",
       "body": "Một củ khoai lang nướng có thể là món ăn vặt giản dị. Người chọn mua nên để ý kích cỡ củ và cách người bán tính tiền. Cùng tên món nhưng một nơi bán theo củ, nơi khác theo trọng lượng, vì vậy so giá cần cùng đơn vị.\n\nKhi mua, hãy hỏi loại khoai đang có và mức độ chín theo cảm nhận của người bán. Không nên tự khẳng định tất cả khoai có cùng độ ngọt hoặc kết cấu. Với trẻ nhỏ, cần để khoai nguội bớt trước khi ăn.\n\nNếu muốn mang về, kiểm tra lại số lượng và cách đóng gói. Đừng dựa vào mùi thơm hoặc lớp vỏ để đánh giá toàn bộ thời hạn sử dụng; món đã chế biến cần được dùng theo hướng dẫn phù hợp của cơ sở.\n\nBài viết mang tính trải nghiệm, không cung cấp giá hiện tại, không xếp hạng điểm bán và không nhận đặt hàng hộ.",
-      "source": "",
+      "source": "https://tienphong.vn/nguoi-ha-noi-dot-lua-suoi-am-nuong-ngo-khoai-giua-dem-dong-gia-lanh-post1592168.tpo",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -722,11 +826,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/khoai-lang-nuong.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Khoai lang nướng: chọn món nóng vừa đủ cho buổi tối; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://tienphong.vn/nguoi-ha-noi-dot-lua-suoi-am-nuong-ngo-khoai-giua-dem-dong-gia-lanh-post1592168.tpo",
+        "checkedAt": "2026-11-16",
+        "evidence": "Khoai lang nướng là quà vặt nóng dùng trong ngày lạnh ở Hà Nội, không xác nhận địa chỉ/giá hiện tại.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "dua-gop-an-kem",
@@ -737,7 +849,7 @@
       "image": "",
       "intro": "Khi gọi món Việt, phần rau và dưa góp đi kèm cần được hiểu đúng trước khi yêu cầu thêm.",
       "body": "Nhiều món ăn có phần dưa góp, rau hoặc nước chấm phục vụ cùng. Những món phụ này tạo điểm nhấn, nhưng không phải thực đơn nào cũng bao gồm giống nhau. Khi xem combo, hãy kiểm tra phần ăn kèm đã tính trong giá hay cần gọi riêng.\n\nNếu bạn không ăn được một loại rau hoặc gia vị, nên nói cụ thể với người phục vụ. Đừng mặc định chỉ cần gạt bỏ khỏi đĩa là đã phù hợp khi có dị ứng; cần hỏi kỹ cả cách chế biến và khả năng tiếp xúc chéo.\n\nKhi đặt mang về, hãy xem phần rau và dưa được để riêng không, nhất là nếu bạn muốn giữ kết cấu của món chính. Với đơn lớn, kiểm tra số phần nước chấm và đồ ăn kèm để mọi người đều có suất như mô tả.\n\nThông tin này là mẹo gọi món, không phản ánh quy định phục vụ tại một nhà hàng cụ thể.",
-      "source": "",
+      "source": "https://vnexpress.net/cach-lam-dua-gop-gion-ngon-cho-ngay-tet-4416439.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -745,11 +857,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/dua-gop-an-kem.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Dưa góp và rau ăn kèm: phần nhỏ giúp bữa ăn cân bằng; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/cach-lam-dua-gop-gion-ngon-cho-ngay-tet-4416439.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Dưa góp chế biến từ rau củ và gia vị chua ngọt, ăn kèm nhiều món để cân bằng vị.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "sua-dau-nanh",
@@ -760,7 +880,7 @@
       "image": "",
       "intro": "Một ly sữa đậu nành nóng hoặc lạnh nên được chọn theo thành phần, kích cỡ và sở thích vị ngọt.",
       "body": "Sữa đậu nành có thể được phục vụ như thức uống riêng hoặc dùng cùng món ăn vặt. Người mua nên biết đó là sản phẩm đóng gói hay đồ uống pha tại quầy. Hai loại có thể khác nhau về thông tin nhãn, thời gian bảo quản và cách sử dụng.\n\nKhi đặt, hãy hỏi có đường hay không và cỡ ly thực tế. Người dị ứng đậu nành cần tránh sản phẩm phù hợp với tình trạng của mình và tham khảo chuyên môn khi cần; không dựa vào màu sắc đồ uống để quyết định thành phần.\n\nVới chai hoặc hộp có nhãn, đọc hạn sử dụng và điều kiện bảo quản của nhà sản xuất. Với đồ uống tại quầy, hỏi người bán về cách dùng phù hợp. Không suy ra sữa tự nấu có thời hạn sử dụng giống đồ uống tiệt trùng đóng hộp.\n\nBài viết không đưa ra công dụng chữa bệnh hay quảng cáo một cơ sở sản xuất cụ thể.",
-      "source": "",
+      "source": "https://vnexpress.net/thom-ngon-sua-dau-nanh-tu-che-4311281.html",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -768,11 +888,19 @@
       "publicationStatus": "ready_for_site",
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
-      "sourceStatus": "needs_research",
+      "sourceStatus": "topic_matched",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/sua-dau-nanh.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Sữa đậu nành: đọc thành phần và lựa chọn độ ngọt; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vnexpress.net/thom-ngon-sua-dau-nanh-tu-che-4311281.html",
+        "checkedAt": "2026-11-16",
+        "evidence": "Sữa đậu nành chế biến từ đậu nành xay/nấu với nước; độ ngọt và thành phần phụ có thể chọn.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn/thành phần thông thường. Không xác nhận địa điểm, giá hiện tại, giờ bán, giấy phép ảnh hoặc lời khuyên y tế."
+      }
     },
     {
       "id": "bun-ca-cay-hai-phong",
