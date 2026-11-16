@@ -60,6 +60,16 @@ def main():
     if token.lower().startswith("bearer "):
         print("BUFFER_API: INVALID format; GitHub secret must contain raw API key without Bearer prefix")
         return 3
+    # Report only Boolean-quality categories; do not emit credential values.
+    has_control = any(ord(ch) < 32 or ord(ch) == 127 for ch in token)
+    looks_masked = any(marker in token for marker in ("••", "****", "...", "…", "<", ">"))
+    if has_control or looks_masked or len(token) < 20:
+        print("BUFFER_KEY_FORMAT: INVALID_OR_MASKED (no key disclosed)")
+        return 8
+    if token.lower().startswith("bearer ") or token.startswith(("'", '"')) or token.endswith(("'", '"')):
+        print("BUFFER_KEY_FORMAT: WRAPPED_OR_PREFIXED (no key disclosed)")
+        return 9
+    print("BUFFER_KEY_FORMAT: plausible (no key disclosed)")
     try:
         result = gql(token, "query { account { organizations { id } } }")
         orgs = (result.get("account") or {}).get("organizations") or []
