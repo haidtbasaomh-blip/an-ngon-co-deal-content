@@ -11,6 +11,8 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     timeout-minutes: 12
+    outputs:
+      summary: ${{ steps.result.outputs.summary }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -29,3 +31,15 @@ jobs:
           name: food-browser-a11y
           path: reports/food-*
           retention-days: 7
+      - name: Summarize public audit without write permissions
+        id: result
+        if: always()
+        run: |
+          node --input-type=module -e 'import fs from "node:fs"; const p="reports/food-browser-a11y.json"; const r=fs.existsSync(p)?JSON.parse(fs.readFileSync(p)):{errors:["No report"]}; const s=JSON.stringify({errors:r.errors,warnings:r.warnings,wcag:r.accessibility?.criticalOrSerious,views:r.views?.length,admin:r.admin}); fs.appendFileSync(process.env.GITHUB_OUTPUT,"summary="+s+"\n");'
+  evidence:
+    needs: audit
+    if: always()
+    runs-on: ubuntu-latest
+    name: ${{ needs.audit.outputs.summary || 'Audit report unavailable' }}
+    steps:
+      - run: echo "Read-only public audit complete; full report remains in artifacts."
