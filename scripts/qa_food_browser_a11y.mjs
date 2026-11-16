@@ -48,7 +48,7 @@ try {
     }));
     try {
       const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa']).analyze();
-      report.accessibility={criticalOrSerious:axe.violations.filter(x=>['critical','serious'].includes(x.impact)).map(x=>({id:x.id,impact:x.impact,help:x.help,affected:x.nodes.length})),other:axe.violations.filter(x=>!['critical','serious'].includes(x.impact)).map(x=>({id:x.id,impact:x.impact,affected:x.nodes.length})),passes:axe.passes.length};
+      report.accessibility={criticalOrSerious:axe.violations.filter(x=>['critical','serious'].includes(x.impact)).map(x=>({id:x.id,impact:x.impact,help:x.help,affected:x.nodes.length,targets:x.nodes.map(n=>({target:n.target,summary:n.failureSummary})).slice(0,8)})),other:axe.violations.filter(x=>!['critical','serious'].includes(x.impact)).map(x=>({id:x.id,impact:x.impact,affected:x.nodes.length})),passes:axe.passes.length};
     }catch(e){report.warnings.push('Axe failed: '+String(e))}
    }
   }
