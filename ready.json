@@ -911,7 +911,7 @@
       "image": "",
       "intro": "Tìm món mang phong cách vùng khác tại Hà Nội cần đọc kỹ cách quán giới thiệu và mức độ cay.",
       "body": "Bún cá cay có thể xuất hiện trong danh sách món ăn được giới thiệu theo phong cách Hải Phòng. Tuy vậy, khi món được nấu ở nhiều địa phương, cách nêm và đồ ăn kèm có thể thay đổi. Người mới thử không nên mặc định phiên bản nào cũng có độ cay giống nhau.\n\nKhi gọi, xem phần cá và rau trong suất, hỏi quán có thể để riêng gia vị cay hay không. Nếu bạn có dị ứng với cá hoặc hải sản, hãy yêu cầu xác nhận toàn bộ thành phần. Một từ cay trong tên món không đủ nói rõ thành phần hay mức cay thực tế.\n\nĐối với đơn mang về, nên kiểm tra nước và bún có tách riêng không. Nếu có suất đặc biệt, cần xem thêm gì so với suất cơ bản trước khi so giá. Giữ đúng tên chi nhánh khi lưu quán để không nhầm nơi phục vụ.\n\nBài này chỉ giúp lựa chọn kiểu món, không xác minh tính chính gốc hay chất lượng của một quán cụ thể.",
-      "source": "https://ankhanh.haiphong.gov.vn/tin-tuc-su-kien/pho-di-bo-am-thuc-dem-hai-phong-bo-tri-22-30-gian-hang-du-kien-khai-mac-18h-ngay-28-8-tai-quang--955474",
+      "source": "https://www.vietnamairlines.com/be/vi/plan-book/travel/travel-guide/food-tour-hai-phong",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -920,11 +920,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": "2026-11-16",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-ca-cay-hai-phong.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bún cá cay kiểu Hải Phòng: chọn mức cay khi ăn ở Hà Nội; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://www.vietnamairlines.com/be/vi/plan-book/travel/travel-guide/food-tour-hai-phong",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Airlines mô tả đúng bún cá cay Hải Phòng, nước dùng nóng, cá chiên, chả cá, rau sống.",
+        "scope": "Chỉ xác minh nguồn đúng món. Không sử dụng hình/giá/quán trong bài làm ảnh thương mại."
+      }
     },
     {
       "id": "banh-da-cua",
@@ -935,7 +942,7 @@
       "image": "",
       "intro": "Bánh đa cua được nhiều người tìm thử khi khám phá món vùng miền; nên xem rõ sợi bánh và thành phần của suất.",
       "body": "Người chưa quen bánh đa cua có thể bắt đầu bằng việc hỏi loại bánh đa được dùng và cách phục vụ nước. Món có thể có những phần ăn kèm khác nhau tùy nơi bán. Đó là lý do cùng một tên món nhưng hình ảnh thực đơn có thể khá khác nhau.\n\nKhi gọi theo nhóm, hỏi về suất cơ bản, những loại nhân và mức giá của phần thêm. Nếu muốn tránh một nguyên liệu, hãy trao đổi trực tiếp với cơ sở. Không nên dựa vào ảnh chụp từ quán khác để quyết định món tại nơi mình đặt.\n\nVới đơn giao xa, kiểm tra người bán có để riêng phần bánh, nước và rau không. Cách đóng gói có thể ảnh hưởng đến trải nghiệm, nhưng người mua không nên tự suy đoán thời hạn dùng hay chất lượng vệ sinh từ hình ảnh bao bì.\n\nBài giới thiệu món vùng miền, không khẳng định mỗi phiên bản ở Hà Nội đều giống món tại Hải Phòng.",
-      "source": "https://ankhanh.haiphong.gov.vn/tin-tuc-su-kien/pho-di-bo-am-thuc-dem-hai-phong-bo-tri-22-30-gian-hang-du-kien-khai-mac-18h-ngay-28-8-tai-quang--955474",
+      "source": "https://vietnamtourism.vn/index.php/about/items/2021",
       "icon": "🍲",
       "checked": "2026-11-14",
       "approved": true,
@@ -944,11 +951,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": "2026-11-16",
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-da-cua.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh đa cua: một món Hải Phòng có nhiều phiên bản; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnamtourism.vn/index.php/about/items/2021",
+        "checkedAt": "2026-11-16",
+        "evidence": "Cục Du lịch Quốc gia giới thiệu bánh đa cua Hải Phòng làm từ bánh đa đỏ, cua đồng và rau/chả ăn kèm.",
+        "scope": "Chỉ xác minh nguồn đúng món. Không sử dụng hình/giá/quán trong bài làm ảnh thương mại."
+      }
     },
     {
       "id": "banh-xeo-mien-nam-ha-noi",
