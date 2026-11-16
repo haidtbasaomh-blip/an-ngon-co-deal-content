@@ -23,10 +23,12 @@ jobs:
           python-version: '3.12'
       - name: Capture public site and verify checksums
         run: python scripts/site_public_backup.py
+      - name: Simulate restoring the backup and verify files and counts
+        run: python scripts/verify_public_recovery.py
       - name: Upload public-only recovery copy (private Actions access if repository private)
         uses: actions/upload-artifact@v4
         with:
           name: an-ngon-co-deal-public-recovery
           path: backups/public-site/
-          retention-days: 7
+          retention-days: 90
           if-no-files-found: error
