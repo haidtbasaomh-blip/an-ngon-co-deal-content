@@ -1,0 +1,30 @@
+name: AN NGON Buffer Free migration - read only verify
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/food_buffer_free_audit.py'
+      - '.github/workflows/food-buffer-free-audit.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    env:
+      FOOD_BUFFER_API_KEY: ${{ secrets.FOOD_BUFFER_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check exact production Food RSS and read Buffer organization, channel and sent/queued posts
+        run: python scripts/food_buffer_free_audit.py
+      - name: Confirm no posts were created or scheduled
+        if: always()
+        run: |
+          echo 'READ ONLY: No posts were created, no Pages/Buffer/Zapier settings were changed.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Only connect/replace FOOD_BUFFER_API_KEY if the audit reports missing/401.' >> "$GITHUB_STEP_SUMMARY"
