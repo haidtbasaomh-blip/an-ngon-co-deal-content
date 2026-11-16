@@ -81,7 +81,14 @@
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
       "source": "https://vietnam.travel/vi/things-to-do/eating-vietnam-anthony-bourdain/",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Bài Cổng Du lịch Việt Nam nhắc tới bún ốc ăn ven đường tại Hà Nội trong hành trình của Anthony Bourdain; không xác minh từng quán hay giá.",
+        "scope": "Nguồn xác nhận món bún ốc thuộc văn hóa ẩm thực Hà Nội, không chứng minh công thức riêng, cửa hàng, ảnh, giá hoặc giờ mở cửa.",
+        "url": "https://vietnam.travel/vi/things-to-do/eating-vietnam-anthony-bourdain/",
+        "verified": true
+      },
       "sourceStatus": "topic_matched",
       "title": "Bún ốc Hà Nội: phân biệt bát nóng và cách ăn chua thanh"
     },
@@ -222,7 +229,14 @@
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
       "source": "https://vietnam.travel/vi/things-to-do/vietnamese-snacks/",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Trang '10 tasty Vietnamese snacks to try' có mục 'Dried fruits | ô mai', mô tả các loại quả khô trộn đường, muối, gừng và là đặc sản Hà Nội.",
+        "scope": "Chỉ đối chiếu món ô mai và nguyên liệu khái quát, không xác nhận nhà bán, hạn sử dụng hay quyền ảnh.",
+        "url": "https://vietnam.travel/things-to-do/vietnamese-snacks/",
+        "verified": true
+      },
       "sourceStatus": "topic_matched",
       "title": "Ô mai Hà Nội: chọn đúng vị và quy cách trước khi làm quà"
     },
@@ -600,7 +614,14 @@
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
       "source": "https://vietnam.travel/vi/things-to-do/must-try-food-in-hanoi/",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Trang 'Must-try food in Ha Noi' giới thiệu bún ngan là món bún với thịt ngan và măng.",
+        "scope": "Chỉ xác nhận loại món và bối cảnh Hà Nội; danh bạ, địa chỉ, giá và hình ảnh cần xác minh độc lập.",
+        "url": "https://vietnam.travel/things-to-do/must-try-food-in-hanoi/",
+        "verified": true
+      },
       "sourceStatus": "topic_matched",
       "title": "Bún ngan: chọn kiểu ăn nước hay trộn trước khi gọi"
     },
@@ -927,7 +948,14 @@
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
       "source": "https://vietnam.travel/vi/things-to-do/10-delicious-vietnamese-rolls/",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Trang '10 delicious Vietnamese rolls' có mục Bánh xèo với bột nghệ, giá đỗ, thịt, tôm và cách ăn cuốn rau.",
+        "scope": "Chỉ đối chiếu thành phần phổ biến, không xác nhận địa điểm phục vụ tại Hà Nội, giá, ảnh hay bản quyền.",
+        "url": "https://vietnam.travel/things-to-do/10-delicious-vietnamese-rolls/",
+        "verified": true
+      },
       "sourceStatus": "topic_matched",
       "title": "Bánh xèo miền Nam ở Hà Nội: chọn cách cuốn và khẩu phần"
     },
