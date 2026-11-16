@@ -40,7 +40,12 @@ async function run(){
     if(!/property=['"]og:image['"]/i.test(html))missingOG.push(path);
     if(!/<title\b[^>]*>[^<]+<\/title>/i.test(html))missingTitle.push(path);
     if(!/<meta\b[^>]*name=['"]description['"]/i.test(html))missingDescription.push(path);
-    if(!/<script\b[^>]*type=['"]application\/ld\+json['"]/i.test(html))missingStructuredData.push(path);
+    const jsonScripts=[...html.matchAll(/<script\b[^>]*type=['"]application\/ld\+json['"][^>]*>([\s\S]*?)<\/script>/gi)];
+    try {
+      const nodes=jsonScripts.flatMap(m=>{const j=JSON.parse(m[1]);return Array.isArray(j['@graph'])?j['@graph']:[j]});
+      const article=nodes.find(j=>['Article','BlogPosting','NewsArticle'].includes(j['@type']));
+      if(!article || article.url!==url || !article.headline || !article.image || !nodes.some(j=>j['@type']==='BreadcrumbList'))missingStructuredData.push(path);
+    } catch {missingStructuredData.push(path)}
     if(/<meta\b[^>]*name=['"]robots['"][^>]*noindex/i.test(html))noindexArticles.push(path);
    }catch(e){failures.push(path+': '+String(e.message||e))}
   }
@@ -49,7 +54,7 @@ async function run(){
  if(missingCanon.length)errors.push('Published articles without canonical: '+missingCanon.length);
  if(missingOG.length)warnings.push('Published articles without OG image: '+missingOG.length);
  if(missingDescription.length)warnings.push('Published articles without meta description: '+missingDescription.length);
- if(missingStructuredData.length)warnings.push('Published articles without JSON-LD: '+missingStructuredData.length);
+ if(missingStructuredData.length)errors.push('Published articles without JSON-LD: '+missingStructuredData.length);
  if(missingTitle.length)errors.push('Published articles without title: '+missingTitle.length);
  if(noindexArticles.length)errors.push('Published articles incorrectly noindex: '+noindexArticles.length);
  const report={checkedAt:new Date().toISOString(),site:base,readOnly:true,homepage:{canonical:true},rss:{itemCount:itemXml.length,validLinks:articleLinks.length,duplicateLinks:duplicateRSS},sitemap:{urls:sitemapUrls.length,missingRSSArticles:missingFromSitemap.length},articles:{sampled:sample.length,totalPublished:articleLinks.length,broken:failures,missingCanon,missingOG,missingTitle,missingDescription,missingStructuredData,noindexArticles},status:errors.length?'failed':warnings.length?'needs_review':'healthy',errors,warnings};
