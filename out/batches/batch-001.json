@@ -864,8 +864,15 @@
       "intro": "Tìm món mang phong cách vùng khác tại Hà Nội cần đọc kỹ cách quán giới thiệu và mức độ cay.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "https://ankhanh.haiphong.gov.vn/tin-tuc-su-kien/pho-di-bo-am-thuc-dem-hai-phong-bo-tri-22-30-gian-hang-du-kien-khai-mac-18h-ngay-28-8-tai-quang--955474",
-      "sourceChecked": "2026-11-14",
+      "source": "https://www.vietnamairlines.com/be/vi/plan-book/travel/travel-guide/food-tour-hai-phong",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Airlines mô tả đúng bún cá cay Hải Phòng, nước dùng nóng, cá chiên, chả cá, rau sống.",
+        "scope": "Chỉ xác minh nguồn đúng món. Không sử dụng hình/giá/quán trong bài làm ảnh thương mại.",
+        "url": "https://www.vietnamairlines.com/be/vi/plan-book/travel/travel-guide/food-tour-hai-phong",
+        "verified": true
+      },
       "sourceStatus": "topic_matched",
       "title": "Bún cá cay kiểu Hải Phòng: chọn mức cay khi ăn ở Hà Nội"
     },
@@ -888,8 +895,15 @@
       "intro": "Bánh đa cua được nhiều người tìm thử khi khám phá món vùng miền; nên xem rõ sợi bánh và thành phần của suất.",
       "publicationStatus": "ready_for_site",
       "region": "Miền Bắc",
-      "source": "https://ankhanh.haiphong.gov.vn/tin-tuc-su-kien/pho-di-bo-am-thuc-dem-hai-phong-bo-tri-22-30-gian-hang-du-kien-khai-mac-18h-ngay-28-8-tai-quang--955474",
-      "sourceChecked": "2026-11-14",
+      "source": "https://vietnamtourism.vn/index.php/about/items/2021",
+      "sourceChecked": "2026-11-16",
+      "sourceReview": {
+        "checkedAt": "2026-11-16",
+        "evidence": "Cục Du lịch Quốc gia giới thiệu bánh đa cua Hải Phòng làm từ bánh đa đỏ, cua đồng và rau/chả ăn kèm.",
+        "scope": "Chỉ xác minh nguồn đúng món. Không sử dụng hình/giá/quán trong bài làm ảnh thương mại.",
+        "url": "https://vietnamtourism.vn/index.php/about/items/2021",
+        "verified": true
+      },
       "sourceStatus": "topic_matched",
       "title": "Bánh đa cua: một món Hải Phòng có nhiều phiên bản"
     },
