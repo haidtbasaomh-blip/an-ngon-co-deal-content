@@ -21,21 +21,24 @@ FB_GRAPH = "https://graph.facebook.com/v27.0"
 ALLOWED_DOMAINS = {"facebook.com", "www.facebook.com", "m.facebook.com"}
 
 def is_site_url(value: str, site: str) -> bool:
-    """Detect a website-origin link without matching lookalike domains."""
+    """Find this site's URLs without treating subdomains of lookalikes as a match."""
     value = str(value or "")
     host = str(urllib.parse.urlsplit(site).hostname or "").lower().removeprefix("www.")
     if not host:
         return False
-    for match in re.finditer(r"https?://[^\s<>\"']+", value, flags=re.I):
+    full_url_pattern = r"https?://[^\s<>\"']+"
+    # Parse qualified URLs first, then remove them before examining bare domains.
+    # A lookalike such as site.example.evil.test must not be interpreted as a bare
+    # mention of site.example.
+    for match in re.finditer(full_url_pattern, value, flags=re.I):
         url = match.group(0).rstrip(".,;:!?)")
         parts = urllib.parse.urlsplit(url)
         url_host = str(parts.hostname or "").lower().removeprefix("www.")
         if url_host == host:
             return True
-    # Facebook captions sometimes omit "https://"; prevent loop-back.
-    # Do not match lookalike hosts such as not-pc-gia-tot.pages.dev.
+    without_urls = re.sub(full_url_pattern, " ", value, flags=re.I)
     bare = r"(?<![A-Za-z0-9_.-])(?:www\.)?" + re.escape(host) + r"(?=$|[/\s?#.,;:!)])"
-    return re.search(bare, value, flags=re.I) is not None
+    return re.search(bare, without_urls, flags=re.I) is not None
 
 def normalize_page_post(post: dict, page_id: str, site: str) -> dict | None:
     """Filter to new, owned Page posts not already sourced from this website."""
