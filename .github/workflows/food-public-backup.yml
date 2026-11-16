@@ -1,0 +1,32 @@
+name: an-ngon-co-deal public recovery snapshot (safe)
+on:
+  push:
+    paths:
+      - 'scripts/site_public_backup.py'
+      - '.github/workflows/food-public-backup.yml'
+  schedule:
+    - cron: '45 2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      SITE_BASE: 'https://an-ngon-co-deal.bvthn-1903.chatgpt.site'
+      BACKUP_PROJECT: 'an-ngon-co-deal'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Capture public site and verify checksums
+        run: python scripts/site_public_backup.py
+      - name: Upload public-only recovery copy (private Actions access if repository private)
+        uses: actions/upload-artifact@v4
+        with:
+          name: an-ngon-co-deal-public-recovery
+          path: backups/public-site/
+          retention-days: 7
+          if-no-files-found: error
