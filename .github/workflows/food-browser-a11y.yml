@@ -4,9 +4,11 @@ on:
     paths:
       - 'scripts/qa_food_browser_a11y.mjs'
       - '.github/workflows/food-browser-a11y.yml'
+      - 'scripts/notify_food_browser_a11y_issue.mjs'
   workflow_dispatch:
 permissions:
   contents: read
+  issues: write
 jobs:
   audit:
     runs-on: ubuntu-latest
@@ -31,6 +33,11 @@ jobs:
           name: food-browser-a11y
           path: reports/food-*
           retention-days: 7
+      - name: Alert on changed WCAG failures without repeat spam
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/notify_food_browser_a11y_issue.mjs
       - name: Summarize public audit without write permissions
         id: result
         if: always()
