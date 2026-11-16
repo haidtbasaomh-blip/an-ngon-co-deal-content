@@ -22,11 +22,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-rieu-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bún riêu Hà Nội: chọn vị thanh hay đậm ngay từ đầu; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://dantri.com.vn/du-lich/khach-my-nghien-mot-mon-an-o-ha-noi-san-sang-di-ca-tieng-de-thuong-thuc-20250826211447469.htm",
+        "checkedAt": "2026-11-16",
+        "evidence": "Dân trí 27/08/2025 ghi nhận trải nghiệm bún riêu cua Hà Nội, nước dùng và rau hoa chuối ăn kèm.",
+        "scope": "Chỉ đối chiếu đặc trưng món bún riêu; không dùng giá, giờ mở cửa, địa chỉ quán hoặc ảnh từ bài cũ làm dữ liệu hiện tại."
+      }
     },
     {
       "id": "banh-cuon-thanh-tri",
@@ -260,11 +267,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-tom-ho-tay.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh tôm Hồ Tây: xem kỹ phần bánh, tôm và rau ăn kèm; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/vi/things-to-do/exploring-ha-noi-street-food-sens-asia/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Tourism - Khám phá ẩm thực đường phố Hà Nội cùng Sens Asia mô tả bánh tôm chiên giòn có con tôm đặt phía trên.",
+        "scope": "Bài nguồn xác minh món bánh tôm ở Hà Nội, không xác nhận giá, cơ sở, nguồn tôm tại Hồ Tây hay giấy phép ảnh."
+      }
     },
     {
       "id": "o-mai-lam-qua",
@@ -315,11 +329,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-khuc-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh khúc: chọn món gói lá khi muốn đổi bữa sáng; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/vi/things-to-do/exploring-ha-noi-street-food-sens-asia/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Tourism - Khám phá ẩm thực đường phố Hà Nội cùng Sens Asia có bánh khúc gói lá chuối, nhân thịt và đậu xanh, lá khúc.",
+        "scope": "Đối chiếu thành phần và hình thức phổ biến; không bảo đảm mọi cơ sở làm cùng công thức, giá và giờ bán."
+      }
     },
     {
       "id": "banh-ran-man",
@@ -432,11 +453,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-com-lam-qua.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh cốm làm quà: đọc nhãn trước khi chọn hộp; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/vi/things-to-do/unlocking-hanoi%E2%80%99s-heritage-journey-beyond-sightseeing/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Tourism - Khám phá di sản Hà Nội mô tả trải nghiệm làm bánh cốm đặc trưng Hà Nội tại Toa Gạo & Cốm.",
+        "scope": "Đối chiếu sự hiện diện của bánh cốm trong văn hóa Hà Nội, không xác nhận nhãn hàng, giá hiện tại hay quyền ảnh."
+      }
     },
     {
       "id": "pho-cuon-ngu-xa",
@@ -456,11 +484,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/pho-cuon-ngu-xa.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Phở cuốn: chọn món cuốn nhẹ cho một bữa chia sẻ; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/vi/things-to-do/3-walking-tours-ha-noi/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Tourism - 3 tour đi bộ Hà Nội nhắc phở cuốn tại khu Ngũ Xã/Trúc Bạch và mô tả bánh phở cuộn với nhân.",
+        "scope": "Chỉ xác nhận món và khu vực ẩm thực Ngũ Xã, không xác thực địa chỉ/quán/giá và thông tin kinh doanh đang hoạt động."
+      }
     },
     {
       "id": "pho-chien-phong",
@@ -480,11 +515,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/pho-chien-phong.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Phở chiên phồng: đọc kỹ khẩu phần trước khi gọi; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/vi/things-to-do/3-walking-tours-ha-noi/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Tourism - 3 tour đi bộ Hà Nội mô tả phở chiên phồng tại Ngũ Xã, bánh phở chiên ăn kèm sốt thịt bò và rau.",
+        "scope": "Chỉ xác nhận món và bối cảnh Ngũ Xã, không xác minh quán cụ thể, giá hay nguồn ảnh."
+      }
     },
     {
       "id": "bun-bo-nam-bo-ha-noi",
@@ -504,11 +546,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-bo-nam-bo-ha-noi.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bún bò Nam Bộ ở Hà Nội: đọc phần rau và nước trộn; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/vi/things-to-do/explore-relax-and-play-northern-vietnam%C2%A0",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Tourism - Explore, Relax, and Play in Northern Vietnam xác nhận bún bò Nam Bộ không chan nước dùng và phổ biến tại Hà Nội.",
+        "scope": "Chỉ đối chiếu bối cảnh món ăn; không khẳng định xuất xứ tên món là địa điểm hiện tại, giá hoặc chủ quán."
+      }
     },
     {
       "id": "nem-chua-ran",
@@ -528,11 +577,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/nem-chua-ran.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Nem chua rán: hiểu đúng món ăn vặt trước khi gọi; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://beta-v2.vietnam.travel/vi/things-to-do/ha-noi-food-guide-best-street-food-dishes-sample",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Tourism - Cẩm nang Ẩm thực Hà Nội liệt kê nem chua rán thường bán cạnh bánh gối và các món ăn vặt chiên.",
+        "scope": "Nguồn xác nhận tên món trong bối cảnh ẩm thực phố, không đủ để xác nhận toàn bộ nguyên liệu, thương hiệu, cửa hàng, giá hoặc vệ sinh."
+      }
     },
     {
       "id": "sua-chua-nep-cam",
@@ -645,11 +701,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/mien-luon.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Miến lươn: phân biệt phiên bản trộn và phiên bản nước; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://beta-v2.vietnam.travel/vi/things-to-do/ha-noi-food-guide-best-street-food-dishes-sample",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Tourism - Cẩm nang Ẩm thực Hà Nội mô tả miến xào lươn và miến trộn lươn với các thành phần ăn kèm.",
+        "scope": "Chỉ đối chiếu biến thể miến lươn phổ biến, không xác minh nhà hàng, giá bán, hình ảnh hoặc công thức duy nhất."
+      }
     },
     {
       "id": "bun-ngan",
@@ -700,11 +763,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/nuoc-sau-da.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Nước sấu đá: lựa chọn vị chua ngọt cho một khoảng nghỉ; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://vietnam.travel/vi/things-to-do/experience-poetry-autumn-hanoi/",
+        "checkedAt": "2026-11-16",
+        "evidence": "Vietnam Tourism - Trải nghiệm nét thơ mộng của mùa thu Hà Nội mô tả quả sấu ngâm si-rô và thức uống giải khát.",
+        "scope": "Đối chiếu nước sấu trong văn hóa Hà Nội; không khẳng định loại si-rô, hạn dùng hoặc giá và nơi bán."
+      }
     },
     {
       "id": "tra-chanh-pho",
@@ -1034,11 +1104,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/cha-muc-ha-long-lam-qua.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Chả mực làm quà: chọn đúng loại sản phẩm và hướng dẫn bảo quản; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://dulich.quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=2037",
+        "checkedAt": "2026-11-16",
+        "evidence": "Cổng du lịch Quảng Ninh - Chả mực Hạ Long: Chất riêng của ẩm thực Quảng Ninh (13/10/2020) mô tả chả mực giã tay, chiên vàng và làm quà.",
+        "scope": "Chỉ đối chiếu món đặc sản và quy trình truyền thống; không tái sử dụng giá 2020, hình thương mại hoặc địa chỉ quán như hiện tại."
+      }
     },
     {
       "id": "banh-gai-lam-qua",
@@ -1058,11 +1135,18 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "sourceChecked": "2026-11-14",
+      "sourceChecked": true,
       "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-gai-lam-qua.svg",
       "imageType": "original_editorial_illustration",
       "imageAlt": "Bìa minh họa biên tập cho bài Bánh gai làm quà: phân biệt tên món và nơi sản xuất; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán"
+      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "sourceReview": {
+        "verified": true,
+        "url": "https://csdl.vietnamtourism.gov.vn/shop/?item=656",
+        "checkedAt": "2026-11-16",
+        "evidence": "Cơ sở dữ liệu ngành Du lịch ghi bánh gai là đặc sản Hải Dương, vỏ từ lá gai và bột nếp, nhân đỗ xanh.",
+        "scope": "Nguồn cung cấp bối cảnh món bánh; không sử dụng địa chỉ/điện thoại cơ sở cũ làm danh bạ hiện hành hoặc lấy ảnh thương mại."
+      }
     }
   ]
 }
