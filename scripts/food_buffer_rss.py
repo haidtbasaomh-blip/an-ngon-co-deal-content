@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Safe RSS -> Buffer queue for An Ngon Co Deal (never PC GIA TOT)."""
 import html
+import datetime as dt
+import email.utils
 import json
 import os
 import re
@@ -34,7 +36,11 @@ def read_feed(data):
             continue
         if url in seen or len(title) < 8 or len(abstract) < 15:
             continue
-        articles.append({"url": url, "title": title, "summary": abstract[:330]})
+        published = email.utils.parsedate_to_datetime(node.findtext("pubDate") or "") if node.findtext("pubDate") else None
+        if published is None or published.tzinfo is None:
+            continue  # Fail closed on missing/invalid publication timestamp
+        articles.append({"url": url, "title": title, "summary": abstract[:330],
+                         "published": published.astimezone(dt.timezone.utc)})
         seen.add(url)
     return articles
 
@@ -111,11 +117,20 @@ def main():
             or not policy.get("otherPublishers", {}).get("github_buffer_direct", {}).get("mayPublish", False)):
         print("SAFE HOLD: Food RSS publishing belongs to Zapier -> Buffer; GitHub direct queue is disabled.")
         return
+    # Defense in depth: enable only after the Zapier RSS publisher is manually switched OFF.
+    # Never backfill old public feed entries during cutover.
+    cutover_raw = policy.get("githubBufferCutoverUtc")
+    if not cutover_raw:
+        print("SAFE HOLD: no verified Zapier-off cutover timestamp; no posting.")
+        return
+    cutover = dt.datetime.fromisoformat(cutover_raw.replace("Z", "+00:00"))
+    if cutover.tzinfo is None:
+        raise RuntimeError("Cutover timestamp must be UTC and timezone-aware")
 
     req = urllib.request.Request(FEED, headers={"User-Agent": "FoodBufferBridge/1.0"})
     with urllib.request.urlopen(req, timeout=20) as res:
         articles = read_feed(res.read(1600000))
-    print("Public food RSS articles:", len(articles))
+    print("Public approved RSS articles:", len(articles))
     key = os.getenv("FOOD_BUFFER_API_KEY", "").strip()
     channel = (os.getenv("FOOD_BUFFER_CHANNEL_ID") or FOOD_CHANNEL_ID).strip()
     if channel != FOOD_CHANNEL_ID:
@@ -133,7 +148,9 @@ def main():
     buffer_text = "\n".join(str(p.get("text") or "") for p in scheduled + sent)
     history = json.loads(STATE.read_text("utf-8")) if STATE.exists() else {}
     seen = set(history.get("queued_urls", []))
-    for article in articles:  # RSS feed is newest-first; publish the freshest approved article
+    for article in articles:  # RSS feed is newest-first; post only AFTER verified Zapier-off cutoff
+        if article["published"] <= cutover:
+            continue
         url = article["url"]
         if url in seen:
             continue
