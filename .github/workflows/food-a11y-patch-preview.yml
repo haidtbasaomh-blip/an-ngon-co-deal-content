@@ -1,0 +1,30 @@
+name: Food WCAG patch preview in disposable Chrome only
+on:
+  push:
+    paths:
+      - 'scripts/food_a11y_patch_preview.mjs'
+      - '.github/workflows/food-a11y-patch-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install standalone disposable Chrome/a11y test dependencies
+        run: npm install --no-save playwright@latest @axe-core/playwright@latest
+      - name: Test exact CSS and ARIA patch in Chrome memory only
+        run: node scripts/food_a11y_patch_preview.mjs
+      - name: Preserve before-after a11y result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-a11y-patch-preview-only
+          path: reports/food-a11y-patch-preview.json
+          if-no-files-found: error
+          retention-days: 14
