@@ -1,0 +1,20 @@
+name: Food Buffer canonical deduplication unit tests (offline)
+on:
+  push:
+    paths:
+      - 'tests/test_food_buffer_dedupe.py'
+      - '.github/workflows/food-buffer-offline-dedupe-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Replay same canonical twice without network or Buffer posts
+        run: python -m unittest discover -s tests -p 'test_food_buffer_dedupe.py' -v
