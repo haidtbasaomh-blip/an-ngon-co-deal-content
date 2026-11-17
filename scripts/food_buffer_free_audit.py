@@ -70,6 +70,13 @@ def main():
         print("BUFFER_KEY_FORMAT: WRAPPED_OR_PREFIXED (no key disclosed)")
         return 9
     print("BUFFER_KEY_FORMAT: plausible (no key disclosed)")
+    # Compare only safe, owner-visible 4-character key labels, never print any part of a secret.
+    if token.endswith("LdSB"):
+        print("BUFFER_KEY_IDENTITY: ANNGON existing key (displayed last-four match)")
+    elif token.endswith("lNvu"):
+        print("BUFFER_KEY_IDENTITY: PCGT existing key (wrong key selected for this check)")
+    else:
+        print("BUFFER_KEY_IDENTITY: NEITHER of the two existing key labels (possible incomplete copy)")
     try:
         result = gql(token, "query { account { organizations { id } } }")
         orgs = (result.get("account") or {}).get("organizations") or []
