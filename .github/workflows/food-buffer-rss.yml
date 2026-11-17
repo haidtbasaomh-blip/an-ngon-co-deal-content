@@ -3,6 +3,8 @@ name: Food RSS to Buffer - safe queue
 on:
   workflow_dispatch: # Manual verification; publishes only newly approved public articles after verified cutover.
   push:
+    branches:
+      - main
     paths:
       - 'scripts/food_buffer_rss.py'
       - '.github/workflows/food-buffer-rss.yml'
@@ -18,6 +20,8 @@ concurrency:
 
 jobs:
   buffer-food:
+    # Never send Facebook posts from feature branches or manual branch dispatch.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
@@ -40,5 +44,7 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/buffer_food_seen.json
             git commit -m "chore(food): track Buffer queue URLs"
-            git push
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
