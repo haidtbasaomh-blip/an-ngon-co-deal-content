@@ -1,4 +1,5 @@
 // Read-only browser accessibility/mobile/admin & geographic-filter discovery
+// Live re-verification 2026-11-17 for ANW-18; no content write, no publish.
 // for ĂN NGON CÓ DEAL existing live site.
 import fs from 'node:fs';
 import {chromium} from 'playwright';
