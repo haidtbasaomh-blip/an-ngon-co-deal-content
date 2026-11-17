@@ -4,7 +4,7 @@
   "autoPublish": false,
   "imagesCopied": false,
   "fullTextCopied": false,
-  "count": 49,
+  "count": 54,
   "ideas": [
     {
       "id": "55fa540fb8f95e49b1e7",
@@ -187,6 +187,30 @@
       "rights": "reference_only_no_republication"
     },
     {
+      "id": "f2aa191bd681bf39e337",
+      "source": "Ngôi Sao - Ẩm thực",
+      "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
+      "sourceUrl": "https://ngoisao.vnexpress.net/hang-nem-nuong-ba-doi-o-nha-trang-5145392.html",
+      "sourceTitle": "Hàng nem nướng 'ba đời' nổi tiếng ở Nha Trang",
+      "sourceDate": "Tue, 17 Nov 2026 00:03:00 +0700",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "7a6218db7edc48c3d303",
+      "source": "Ngôi Sao - Ẩm thực",
+      "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
+      "sourceUrl": "https://ngoisao.vnexpress.net/an-com-tam-40-000-dong-thuong-thuc-violin-trong-ngo-nho-ha-noi-5144408.html",
+      "sourceTitle": "Ăn cơm tấm 40.000 đồng, thưởng thức violin trong ngõ nhỏ Hà Nội",
+      "sourceDate": "Mon, 16 Nov 2026 11:12:42 +0700",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
       "id": "45b563713c277234a0b1",
       "source": "Ngôi Sao - Ẩm thực",
       "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
@@ -343,24 +367,24 @@
       "rights": "reference_only_no_republication"
     },
     {
-      "id": "48de9da8efff0714fa38",
-      "source": "Ngôi Sao - Ẩm thực",
-      "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
-      "sourceUrl": "https://ngoisao.vnexpress.net/quan-chay-bo-pho-ve-lang-trong-con-ngo-nho-khu-long-bien-5136424.html",
-      "sourceTitle": "Quán chay 'bỏ phố về làng' trong con ngõ nhỏ khu Long Biên",
-      "sourceDate": "Thu, 05 Nov 2026 00:03:00 +0700",
+      "id": "ed0f0f89d25d9f0154b5",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/16/ricotta-dumplings-sage-butter-rocket-lemon-recipe-jess-elliott-dennison",
+      "sourceTitle": "Jess Elliott Dennison’s quick and easy recipe for ricotta dumplings with sage butter, rocket and lemon | Quick and easy",
+      "sourceDate": "Mon, 16 Nov 2026 13:00:02 GMT",
       "editorialStatus": "idea_only",
       "approved": false,
       "publicationStatus": "not_published",
       "rights": "reference_only_no_republication"
     },
     {
-      "id": "d5066d2c3cfcb1936c55",
-      "source": "Ngôi Sao - Ẩm thực",
-      "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
-      "sourceUrl": "https://ngoisao.vnexpress.net/lau-ca-duoi-mon-an-phu-song-tu-quan-binh-dan-den-nha-hang-o-vung-tau-5138758.html",
-      "sourceTitle": "Lẩu cá đuối - món ăn 'phủ sóng' từ quán bình dân đến nhà hàng ở Vũng Tàu",
-      "sourceDate": "Tue, 03 Nov 2026 00:01:00 +0700",
+      "id": "fa8b642939276313e6eb",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/16/sweet-sour-recipes-whipped-beans-radicchio-squash-chickpea-curry-marie-mitchell",
+      "sourceTitle": "Squash and chickpea curry, and whipped beans with radicchio: Marie Mitchell’s sweet-and-sour recipes",
+      "sourceDate": "Mon, 16 Nov 2026 06:00:35 GMT",
       "editorialStatus": "idea_only",
       "approved": false,
       "publicationStatus": "not_published",
@@ -427,30 +451,6 @@
       "rights": "reference_only_no_republication"
     },
     {
-      "id": "5fb22877210918924bb4",
-      "source": "The Guardian Food – ẩm thực quốc tế",
-      "sourceFeed": "https://www.theguardian.com/food/rss",
-      "sourceUrl": "https://www.theguardian.com/food/live/2026/nov/10/reader-q-and-a-ask-bestselling-roasting-tin-cookbook-recipe-writer-rukmini-iyer-a-question",
-      "sourceTitle": "‘How do we get out of our midweek menu rut’? – Feast’s Rukmini Iyer answered your cooking questions",
-      "sourceDate": "Wed, 11 Nov 2026 14:47:24 GMT",
-      "editorialStatus": "idea_only",
-      "approved": false,
-      "publicationStatus": "not_published",
-      "rights": "reference_only_no_republication"
-    },
-    {
-      "id": "2bebc00af528224caf65",
-      "source": "The Guardian Food – ẩm thực quốc tế",
-      "sourceFeed": "https://www.theguardian.com/food/rss",
-      "sourceUrl": "https://www.theguardian.com/food/2026/nov/12/christmas-chefs-eight-easy-things-to-do-now-relax-day",
-      "sourceTitle": "‘Christmas is all in the preparation!’ Chefs on eight easy things to do now – so you can relax on the big day",
-      "sourceDate": "Thu, 12 Nov 2026 05:00:11 GMT",
-      "editorialStatus": "idea_only",
-      "approved": false,
-      "publicationStatus": "not_published",
-      "rights": "reference_only_no_republication"
-    },
-    {
       "id": "27b3615e081446efed1d",
       "source": "The Guardian Food – ẩm thực quốc tế",
       "sourceFeed": "https://www.theguardian.com/food/rss",
@@ -499,6 +499,18 @@
       "rights": "reference_only_no_republication"
     },
     {
+      "id": "a1059856aa5893206a07",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/12/torta-tenerina-rich-chocolate-cake-rachel-roddy-recipe",
+      "sourceTitle": "Rachel Roddy’s recipe for torta tenerina, or rich chocolate cake | A kitchen in Rome",
+      "sourceDate": "Thu, 12 Nov 2026 06:00:11 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
       "id": "24449022b776887922f9",
       "source": "The Guardian Food – ẩm thực quốc tế",
       "sourceFeed": "https://www.theguardian.com/food/rss",
@@ -529,6 +541,54 @@
       "sourceUrl": "https://www.theguardian.com/food/2026/nov/10/school-lunchbox-bento-box-ideas-inspiration",
       "sourceTitle": "How to brighten up a school lunchbox | Kitchen aide",
       "sourceDate": "Tue, 10 Nov 2026 13:00:53 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "48de9da8efff0714fa38",
+      "source": "Ngôi Sao - Ẩm thực",
+      "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
+      "sourceUrl": "https://ngoisao.vnexpress.net/quan-chay-bo-pho-ve-lang-trong-con-ngo-nho-khu-long-bien-5136424.html",
+      "sourceTitle": "Quán chay 'bỏ phố về làng' trong con ngõ nhỏ khu Long Biên",
+      "sourceDate": "Thu, 05 Nov 2026 00:03:00 +0700",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "d5066d2c3cfcb1936c55",
+      "source": "Ngôi Sao - Ẩm thực",
+      "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
+      "sourceUrl": "https://ngoisao.vnexpress.net/lau-ca-duoi-mon-an-phu-song-tu-quan-binh-dan-den-nha-hang-o-vung-tau-5138758.html",
+      "sourceTitle": "Lẩu cá đuối - món ăn 'phủ sóng' từ quán bình dân đến nhà hàng ở Vũng Tàu",
+      "sourceDate": "Tue, 03 Nov 2026 00:01:00 +0700",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "5fb22877210918924bb4",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/live/2026/nov/10/reader-q-and-a-ask-bestselling-roasting-tin-cookbook-recipe-writer-rukmini-iyer-a-question",
+      "sourceTitle": "‘How do we get out of our midweek menu rut’? – Feast’s Rukmini Iyer answered your cooking questions",
+      "sourceDate": "Wed, 11 Nov 2026 14:47:24 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "2bebc00af528224caf65",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/12/christmas-chefs-eight-easy-things-to-do-now-relax-day",
+      "sourceTitle": "‘Christmas is all in the preparation!’ Chefs on eight easy things to do now – so you can relax on the big day",
+      "sourceDate": "Thu, 12 Nov 2026 05:00:11 GMT",
       "editorialStatus": "idea_only",
       "approved": false,
       "publicationStatus": "not_published",
