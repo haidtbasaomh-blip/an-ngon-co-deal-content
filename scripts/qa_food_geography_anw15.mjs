@@ -89,12 +89,15 @@ try {
   await trial('Cao Bang excludes Hanoi cafe','Cao Bằng','Giảng',[]);
   await trial('Hanoi unknown place','Hà Nội','_unlisted_test_20261117_',[]);
   await trial('All provinces cafe search','Tất cả','Giảng',['/dia-diem/giang/']);
+  await trial('Hanoi district Hoan Kiem','Hà Nội','Hoàn Kiếm',['/dia-diem/giang/','/dia-diem/pho-khoi/','/dia-diem/cha-ca/']);
+  await trial('Hanoi different district Ba Dinh','Hà Nội','Ba Đình',[]);
+  await trial('Hanoi street Nguyen Huu Huan','Hà Nội','Nguyễn Hữu Huân',['/dia-diem/giang/']);
  }catch(e){result.errors.push('Live geography interaction test: '+String(e?.message||e).slice(0,350));}
  finally{await testCtx.close();}
 
  // Additional public read-only search form evidence; do NOT infer province accuracy from a static label.
  result.searchControls=all.filter(c=>c.tag==='input'&&c.type!=='file').map(c=>({route:c.route,id:c.id,placeholder:c.placeholder}));
- if(result.filterTrials?.length===7&&result.filterTrials.every(t=>t.pass)&&result.provinceCoverage.missing.length===0&&result.errors.length===0) {
+ if(result.filterTrials?.length===10&&result.filterTrials.every(t=>t.pass)&&result.provinceCoverage.missing.length===0&&result.errors.length===0) {
   result.acceptance='PASS_VISIBLE_3_PLACES';
   result.missing=[];
  } else if(result.missing.length===0) {
@@ -120,3 +123,4 @@ console.log(summary);
 console.log('CONTROLS '+JSON.stringify(result.geoSelectors));
 console.log('PROVINCE_COVERAGE '+JSON.stringify(result.provinceCoverage));
 if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary);
+if(result.acceptance!=='PASS_VISIBLE_3_PLACES')process.exitCode=1;
