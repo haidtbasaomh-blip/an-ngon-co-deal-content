@@ -34,5 +34,5 @@ try{
 finally{await browser.close()}
 fs.mkdirSync("reports",{recursive:true});
 fs.writeFileSync("reports/food-a11y-patch-preview.json",JSON.stringify(r,null,2)+"\n");
-console.log(JSON.stringify({outcome:r.outcome,before:r.pre,after:r.post,productionChanged:false}));
+console.log(JSON.stringify({outcome:r.outcome,error:r.error||null,before:r.pre,after:r.post,productionChanged:false}));
 if(r.outcome!=="BROWSER_ONLY_FIX_PASS")process.exitCode=1;
