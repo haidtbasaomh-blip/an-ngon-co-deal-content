@@ -56,9 +56,48 @@ try {
  if(unknownOptions.length)result.errors.push('Unrecognized province choices: '+unknownOptions.join(', '));
 
  for (const level of ['province','district','ward']) if(selectors[level]===0)result.missing.push(level+' select+nondefault option not proved in public rendered UI');
+ // Interact with the ACTUAL production search (province + locality text), not just static labels.
+ // The public catalog explicitly describes 3 Hanoi reference listings, not a full VN directory.
+ result.filterTrials=[];
+ const testCtx=await browser.newContext({viewport:{width:1280,height:900}});
+ try {
+  const p=await testCtx.newPage();
+  const response=await p.goto(site+'/#/directory',{waitUntil:'domcontentloaded',timeout:35000});
+  await p.waitForTimeout(900);
+  if(response?.status()!==200)throw new Error('Live directory HTTP '+response?.status());
+  const province=p.locator('#geo-province');
+  const local=p.locator('#geo-local');
+  const submit=p.getByRole('button',{name:'Tìm địa điểm',exact:true});
+  if(await province.count()!==1||await local.count()!==1||await submit.count()!==1)
+   throw new Error('Live geographic form selector not unique');
+  const visibleSlugs=async()=>p.locator('a[href^="/dia-diem/"]').evaluateAll(
+   anchors=>[...new Set(anchors.filter(a=>a.getClientRects().length>0).map(a=>a.getAttribute('href')).filter(Boolean))].sort());
+  const trial=async(label,provinceValue,locality,expected)=>{
+   await province.selectOption(provinceValue);
+   await local.fill(locality);
+   await submit.click();
+   await p.waitForTimeout(350);
+   const found=await visibleSlugs();
+   const pass=JSON.stringify(found)===JSON.stringify([...expected].sort());
+   result.filterTrials.push({label,province:provinceValue,search:locality,found,expected,pass});
+   if(!pass)result.errors.push('Live filter failure: '+label+' expected '+expected.join('|')+' got '+found.join('|'));
+  };
+  await trial('All provinces, no search','Tất cả','',['/dia-diem/giang/','/dia-diem/pho-khoi/','/dia-diem/cha-ca/']);
+  await trial('Only Hanoi','Hà Nội','',['/dia-diem/giang/','/dia-diem/pho-khoi/','/dia-diem/cha-ca/']);
+  await trial('Cao Bang (empty)','Cao Bằng','',[]);
+  await trial('Hanoi cafe title','Hà Nội','Giảng',['/dia-diem/giang/']);
+  await trial('Cao Bang excludes Hanoi cafe','Cao Bằng','Giảng',[]);
+  await trial('Hanoi unknown place','Hà Nội','_unlisted_test_20261117_',[]);
+  await trial('All provinces cafe search','Tất cả','Giảng',['/dia-diem/giang/']);
+ }catch(e){result.errors.push('Live geography interaction test: '+String(e?.message||e).slice(0,350));}
+ finally{await testCtx.close();}
+
  // Additional public read-only search form evidence; do NOT infer province accuracy from a static label.
  result.searchControls=all.filter(c=>c.tag==='input'&&c.type!=='file').map(c=>({route:c.route,id:c.id,placeholder:c.placeholder}));
- if(result.missing.length===0) {
+ if(result.filterTrials?.length===7&&result.filterTrials.every(t=>t.pass)&&result.provinceCoverage.missing.length===0&&result.errors.length===0) {
+  result.acceptance='PASS_VISIBLE_3_PLACES';
+  result.missing=[];
+ } else if(result.missing.length===0) {
   result.acceptance='REVIEW_FILTER_OUTCOMES';
   result.errors.push('Three selectors detected, but field-level matching and returned place addresses still need live option-transition proof');
  } else result.acceptance='OPEN';
