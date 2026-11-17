@@ -101,6 +101,16 @@ def canonical_facebook_url(url: str) -> str:
     path = p.path.rstrip("/")
     if not path or path == "/":
         raise ValueError("Facebook post permalink path is missing")
+    # Legacy Meta permalinks carry identity in query parameters. Keep their
+    # identity keys, but drop click-tracking data (utm_*, ref, mibextid...).
+    identity_keys = ("story_fbid", "id", "fbid", "v")
+    if path.lower() in ("/story.php", "/permalink.php", "/photo.php", "/watch"):
+        params = urllib.parse.parse_qs(p.query, keep_blank_values=False)
+        identity = [(key, params[key][0]) for key in identity_keys
+                    if params.get(key) and params[key][0]]
+        if not identity:
+            raise ValueError("Facebook permalink identity parameter is missing")
+        return "https://www.facebook.com" + path + "?" + urllib.parse.urlencode(identity)
     return "https://www.facebook.com" + path
 
 
