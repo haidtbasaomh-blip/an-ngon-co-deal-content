@@ -1,13 +1,13 @@
 name: Food RSS to Buffer - safe queue
 
 on:
-  workflow_dispatch: # Free cutover can be tested manually; publish still gated by policy.
+  workflow_dispatch: # Manual verification; publishes only newly approved public articles after verified cutover.
   push:
     paths:
       - 'scripts/food_buffer_rss.py'
       - '.github/workflows/food-buffer-rss.yml'
   schedule:
-    - cron: '15 3,12 * * *' # 10:15 and 19:15 Hanoi; no posts until verified cutover.
+    - cron: '15 2,7,12 * * *' # 09:15, 14:15, 19:15 Vietnam: max one new approved RSS article per run.
 
 permissions:
   contents: write
@@ -23,7 +23,7 @@ jobs:
     env:
       FOOD_BUFFER_API_KEY: ${{ secrets.FOOD_BUFFER_API_KEY }}
       FOOD_BUFFER_CHANNEL_ID: ${{ vars.FOOD_BUFFER_CHANNEL_ID }}
-      FOOD_BUFFER_AUTO_QUEUE: ${{ vars.FOOD_BUFFER_AUTO_QUEUE || 'false' }} # SAFE DEFAULT: Zapier owns food publishing; GitHub direct remains disabled
+      FOOD_BUFFER_AUTO_QUEUE: 'true' # Enabled ONLY after owner turned off Zapier RSS publisher; script checks repository cutover and policy first.
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
