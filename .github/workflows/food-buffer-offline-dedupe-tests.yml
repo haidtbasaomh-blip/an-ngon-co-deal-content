@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'tests/test_food_buffer_dedupe.py'
+      - 'scripts/food_buffer_rss.py'
       - '.github/workflows/food-buffer-offline-dedupe-tests.yml'
   workflow_dispatch:
 permissions:
