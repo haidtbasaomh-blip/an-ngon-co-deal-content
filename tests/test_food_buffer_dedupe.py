@@ -38,6 +38,8 @@ class ReplayTest(unittest.TestCase):
         self.bad_pagination = False
         self.create_calls = 0
         self.feed = fixture()
+        self.page_mode = "ok"
+        self.page_reads = 0
         self.stack = [
             patch.object(bridge, "STATE", self.path),
             patch.object(bridge.urllib.request, "urlopen", side_effect=self.feed_response),
@@ -51,8 +53,18 @@ class ReplayTest(unittest.TestCase):
             self.addCleanup(patcher.stop)
 
     def feed_response(self, req, timeout=20):
-        self.assertEqual(req.full_url, bridge.FEED)
-        return io.BytesIO(self.feed)
+        if req.full_url == bridge.FEED:
+            return io.BytesIO(self.feed)
+        self.assertEqual(req.full_url, URL, "Unexpected page fetch or cross-site request")
+        self.page_reads += 1
+        if self.page_mode == "http404":
+            raise bridge.urllib.error.HTTPError(req.full_url, 404, "Not found", {}, None)
+        canonical = URL if self.page_mode != "wrong_canonical" else URL + "other/"
+        robots = "noindex,nofollow" if self.page_mode == "noindex" else "index,follow"
+        og = "" if self.page_mode == "missing_og" else '<meta property="og:title" content="Bai viet da duyet">'
+        markup = (f'<html><head><link rel="canonical" href="{canonical}">'
+                  f'<meta name="robots" content="{robots}">{og}</head><body>OK</body></html>')
+        return io.BytesIO(markup.encode("utf-8"))
 
     def api(self, key, query, variables=None):
         self.assertEqual(key, "OFFLINE_TEST_ONLY")
@@ -89,6 +101,26 @@ class ReplayTest(unittest.TestCase):
         bridge.main()
         self.assertEqual(self.create_calls, 1, "Second run duplicated a post")
         self.assertEqual(len(self.posts), 1)
+
+    def test_public_page_is_checked_before_first_buffer_post(self):
+        bridge.main()
+        self.assertEqual(self.page_reads, 1)
+        self.assertEqual(self.create_calls, 1)
+
+    def test_noindex_or_wrong_canonical_or_missing_og_fails_closed(self):
+        for mode in ("noindex", "wrong_canonical", "missing_og"):
+            with self.subTest(mode=mode):
+                self.page_mode = mode
+                with self.assertRaisesRegex(RuntimeError, "canonical/indexable OG"):
+                    bridge.main()
+                self.assertEqual(self.create_calls, 0)
+                self.assertFalse(self.path.exists())
+
+    def test_live_article_http_404_does_not_queue(self):
+        self.page_mode = "http404"
+        with self.assertRaises(bridge.urllib.error.HTTPError):
+            bridge.main()
+        self.assertEqual(self.create_calls, 0)
 
     def test_lost_ledger_still_dedupes_from_buffer_queue(self):
         bridge.main()
