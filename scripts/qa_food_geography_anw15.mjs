@@ -122,5 +122,6 @@ fs.writeFileSync('reports/food-geography-anw15.md',summary+'\n');
 console.log(summary);
 console.log('CONTROLS '+JSON.stringify(result.geoSelectors));
 console.log('PROVINCE_COVERAGE '+JSON.stringify(result.provinceCoverage));
+console.log('FILTER_TRIALS '+JSON.stringify(result.filterTrials));
 if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary);
 if(result.acceptance!=='PASS_VISIBLE_3_PLACES')process.exitCode=1;
