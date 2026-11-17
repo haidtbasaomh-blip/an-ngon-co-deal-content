@@ -1,0 +1,29 @@
+name: Food ANW-15 public geography controls audit (read-only)
+on:
+  push:
+    paths:
+      - 'scripts/qa_food_geography_anw15.mjs'
+      - '.github/workflows/food-geography-anw15.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test package (no publishing)
+        run: npm install --no-save playwright@latest
+      - name: Inspect published geography filters with Chrome
+        run: node scripts/qa_food_geography_anw15.mjs
+      - name: Preserve discovery report; never mutate production
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-anw15-geography-audit
+          path: reports/food-geography-anw15.*
+          retention-days: 14
