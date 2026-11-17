@@ -34,6 +34,8 @@ class ReplayTest(unittest.TestCase):
         self.addCleanup(self.tmp.cleanup)
         self.path = Path(self.tmp.name) / "buffer_food_seen.json"
         self.posts = []
+        self.sent_posts = []
+        self.bad_pagination = False
         self.create_calls = 0
         self.feed = fixture()
         self.stack = [
@@ -61,9 +63,17 @@ class ReplayTest(unittest.TestCase):
                                   "service": "facebook", "name": "Ăn Ngon Có Deal"}]}
         if "posts(first:" in query:
             if "status: [scheduled]" in query:
-                return {"posts": {"edges": [{"node": p} for p in self.posts]}}
+                return {"posts": {"edges": [{"node": p} for p in self.posts],
+                                  "pageInfo": {"hasNextPage": False, "endCursor": None}}}
             if "status: [sent]" in query:
-                return {"posts": {"edges": []}}
+                second = 'after: "sent-page-2"' in query
+                items = self.sent_posts[100:] if second else self.sent_posts[:100]
+                more = not second and len(self.sent_posts) > 100
+                cursor = "sent-page-2" if more else None
+                if self.bad_pagination:
+                    more, cursor = True, None
+                return {"posts": {"edges": [{"node": p} for p in items],
+                                  "pageInfo": {"hasNextPage": more, "endCursor": cursor}}}
             self.fail("Unexpected Buffer post filter")
         if "createPost" in query:
             self.create_calls += 1
@@ -98,6 +108,28 @@ class ReplayTest(unittest.TestCase):
         os.environ["FOOD_BUFFER_CHANNEL_ID"] = "INVALID-CHANNEL"
         with self.assertRaisesRegex(RuntimeError, "channel ID mismatch"):
             bridge.main()
+        self.assertEqual(self.create_calls, 0)
+
+    def test_sent_post_on_second_buffer_page_is_not_reposted(self):
+        # Buffer limits reads to 100 posts/page. A link at position 101 must be detected.
+        self.sent_posts = [{"id": "old-" + str(i), "text": "Unrelated old post"}
+                           for i in range(100)]
+        self.sent_posts.append({"id": "old-101", "text": "Previously sent: " + URL})
+        bridge.main()
+        self.assertEqual(self.create_calls, 0, "A previously sent article was queued again")
+        self.assertEqual(json.loads(self.path.read_text())["queued_urls"], [URL])
+
+    def test_missing_buffer_cursor_fails_closed_before_posting(self):
+        self.bad_pagination = True
+        self.sent_posts = [{"id": "old", "text": "Unrelated"}]
+        with self.assertRaisesRegex(RuntimeError, "cursor"):
+            bridge.main()
+        self.assertEqual(self.create_calls, 0)
+
+    def test_buffer_queue_near_free_limit_does_not_overfill(self):
+        self.posts = [{"id": "pending-" + str(i), "text": "Another queued post"}
+                      for i in range(9)]
+        bridge.main()
         self.assertEqual(self.create_calls, 0)
 
 if __name__ == "__main__":
