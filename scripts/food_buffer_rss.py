@@ -85,18 +85,39 @@ def ensure_channel(key, channel_id):
 
 
 def recent_posts(key, channel_id, status):
+    """Read paginated Buffer history; fail closed if dedupe cannot inspect it safely.
+
+    Buffer caps a response at 100 items. Looking only at page one risks replaying
+    an older Facebook post when the local GitHub ledger is lost or stale.
+    """
     organizations = graphql(key, "query { account { organizations { id } } }")
     orgs = (organizations.get("account") or {}).get("organizations") or []
     if len(orgs) != 1:
         raise RuntimeError("Multiple Buffer organizations; cannot select safely.")
     org = json.dumps(str(orgs[0]["id"]))
     channel = json.dumps(channel_id)
-    q = ("query { posts(first: 100, input: {organizationId: " + org
-         + ", filter: {status: [" + status + "], channelIds: [" + channel
-         + "]}}) { edges { node { id text } } } }")
-    return [x["node"] for x in
-            (graphql(key, q).get("posts") or {}).get("edges", [])
-            if x.get("node")]
+    posts = []
+    after = None
+    used_cursors = set()
+    for _ in range(3):  # Hard cap: max 300 historical posts per status; never spin/overuse Free API.
+        after_arg = ", after: " + json.dumps(after) if after else ""
+        q = ("query { posts(first: 100" + after_arg
+             + ", input: {organizationId: " + org
+             + ", filter: {status: [" + status + "], channelIds: [" + channel
+             + "]}}) { edges { node { id text } } pageInfo { hasNextPage endCursor } } }")
+        response = (graphql(key, q).get("posts") or {})
+        posts.extend(x["node"] for x in response.get("edges", []) if x.get("node"))
+        page = response.get("pageInfo") or {}
+        if not isinstance(page.get("hasNextPage"), bool):
+            raise RuntimeError("Buffer pagination metadata missing; no posts created.")
+        if not page["hasNextPage"]:
+            return posts
+        cursor = page.get("endCursor")
+        if not isinstance(cursor, str) or not cursor or cursor in used_cursors:
+            raise RuntimeError("Buffer pagination cursor is missing or repeated; no posts created.")
+        used_cursors.add(cursor)
+        after = cursor
+    raise RuntimeError("Buffer history exceeds safe 300-post audit cap; no posts created.")
 
 
 def caption(article):
