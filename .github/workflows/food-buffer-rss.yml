@@ -21,7 +21,7 @@ concurrency:
 jobs:
   buffer-food:
     # Never send Facebook posts from feature branches or manual branch dispatch.
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
