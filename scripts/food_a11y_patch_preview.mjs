@@ -14,7 +14,8 @@ const patchCss=[
 const r={url,readOnly:true,sourceChanged:false,pre:[],post:[],patchCss,patchDom:"Remove misleading aria-label='Trang chủ' from home logo anchor, retaining visible brand text as accessible name."};
 const browser=await chromium.launch({channel:"chrome",headless:true,args:["--no-sandbox","--disable-dev-shm-usage"]});
 try{
- const page=await browser.newPage({viewport:{width:1440,height:900}});
+ const context=await browser.newContext({viewport:{width:1440,height:900}});
+ const page=await context.newPage();
  const resp=await page.goto(url,{waitUntil:"domcontentloaded",timeout:30000});
  if(resp?.status()!==200)throw Error("Home HTTP "+resp?.status());
  await page.waitForTimeout(400);
@@ -30,6 +31,7 @@ try{
  r.post=result.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.length,targets:v.nodes.slice(0,5).map(n=>n.target)}));
  r.outcome=!r.post.some(v=>v.impact==="critical"||v.impact==="serious")?"BROWSER_ONLY_FIX_PASS":"PATCH_PREVIEW_FAILED";
  await page.close();
+ await context.close();
 }catch(e){r.outcome="ERROR";r.error=String(e).slice(0,450)}
 finally{await browser.close()}
 fs.mkdirSync("reports",{recursive:true});
