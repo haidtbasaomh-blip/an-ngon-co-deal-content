@@ -10,6 +10,7 @@ import hashlib
 import json
 import os
 import re
+import tempfile
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -66,6 +67,7 @@ def normalize_page_post(post: dict, page_id: str, site: str) -> dict | None:
         "facebook_page_id": page_id,
         "facebook_post_id": post_id,
         "permalink_url": permalink,
+        "canonical_url": "https://www.facebook.com" + parsed.path.rstrip("/"),
         "created_time": str(post.get("created_time") or ""),
         "text": message,
         "normalized_content_hash": fingerprint,
@@ -90,6 +92,84 @@ def stage_candidates(posts: list[dict], page_id: str, site: str) -> list[dict]:
         content_keys.add(content_key)
         items.append(candidate)
     return items
+
+def canonical_facebook_url(url: str) -> str:
+    """Stable canonical URL: omit tracking query/fragment, preserve post path."""
+    p = urllib.parse.urlsplit(str(url or ""))
+    if p.scheme != "https" or (p.hostname or "").lower() not in ALLOWED_DOMAINS:
+        raise ValueError("Unexpected Facebook permalink origin")
+    path = p.path.rstrip("/")
+    if not path or path == "/":
+        raise ValueError("Facebook post permalink path is missing")
+    # Legacy Meta permalinks carry identity in query parameters. Keep their
+    # identity keys, but drop click-tracking data (utm_*, ref, mibextid...).
+    identity_keys = ("story_fbid", "id", "fbid", "v")
+    if path.lower() in ("/story.php", "/permalink.php", "/photo.php", "/watch"):
+        params = urllib.parse.parse_qs(p.query, keep_blank_values=False)
+        identity = [(key, params[key][0]) for key in identity_keys
+                    if params.get(key) and params[key][0]]
+        if not identity:
+            raise ValueError("Facebook permalink identity parameter is missing")
+        return "https://www.facebook.com" + path + "?" + urllib.parse.urlencode(identity)
+    return "https://www.facebook.com" + path
+
+
+def reconcile_snapshot(
+    existing: dict | None,
+    incoming: list[dict],
+    project: str,
+    page_id: str,
+    site: str,
+) -> dict:
+    """Keep already staged candidates and reviewer notes; avoid duplicates on replay.
+
+    This is staging-only and never approves, publishes or writes to a website.
+    """
+    if existing is None:
+        saved = []
+    else:
+        if not isinstance(existing, dict) or existing.get("schema") not in (1, 2):
+            raise RuntimeError("Unexpected existing Facebook staging schema")
+        if (existing.get("targetProject") != project
+                or existing.get("targetSite") != site
+                or existing.get("sourcePage") != page_id
+                or existing.get("autoPublish") is not False):
+            raise RuntimeError("Existing staging belongs to another Page/site or is unsafe")
+        saved = existing.get("candidates")
+        if not isinstance(saved, list):
+            raise RuntimeError("Existing staged candidates must be a list")
+
+    result, seen_ids, seen_hashes, seen_canonicals = [], set(), set(), set()
+    for row in [*saved, *incoming]:
+        if not isinstance(row, dict):
+            raise RuntimeError("Malformed staged candidate")
+        if (row.get("facebook_page_id") != page_id
+                or row.get("source") != "own_facebook_page"
+                or row.get("publishToFacebook") is not False
+                or row.get("neverRepublishToFacebook") is not True
+                or row.get("idempotency_key") != page_id + ":" + str(row.get("normalized_content_hash") or "")):
+            raise RuntimeError("Unsafe or cross-Page staged candidate; refusing overwrite")
+        post_id = str(row.get("facebook_post_id") or "")
+        digest = str(row.get("normalized_content_hash") or "")
+        try:
+            canonical = canonical_facebook_url(str(row.get("permalink_url") or ""))
+        except ValueError as exc:
+            raise RuntimeError("Untrusted staged Facebook permalink") from exc
+        if not post_id.startswith(page_id + "_") or not digest:
+            raise RuntimeError("Missing post identity or normalized hash")
+        if post_id in seen_ids or digest in seen_hashes or canonical in seen_canonicals:
+            continue
+        seen_ids.add(post_id)
+        seen_hashes.add(digest)
+        seen_canonicals.add(canonical)
+        result.append(row)  # Existing reviewer fields retain priority over replay.
+
+    return {
+        "schema": 2, "targetProject": project, "targetSite": site,
+        "sourcePage": page_id, "autoPublish": False,
+        "count": len(result), "candidates": result,
+    }
+
 
 def fetch_json(path: str, token: str, params: dict | None = None) -> dict:
     query = urllib.parse.urlencode(params or {})
@@ -124,16 +204,25 @@ def main() -> int:
     })
     items = stage_candidates(response.get("data") or [], expected, site)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(json.dumps({
-        "schema": 1,
-        "targetProject": policy["project"],
-        "targetSite": site,
-        "sourcePage": expected,
-        "autoPublish": False,
-        "count": len(items),
-        "candidates": items,
-    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("Read-only candidates prepared:", len(items))
+    try:
+        existing = json.loads(OUTPUT.read_text(encoding="utf-8")) if OUTPUT.exists() else None
+    except (ValueError, UnicodeError) as exc:
+        raise RuntimeError("Existing staging file is invalid; refusing to overwrite") from exc
+    snapshot = reconcile_snapshot(existing, items, policy["project"], expected, site)
+    # Atomic update: do not truncate a previously reviewed private candidate list.
+    temp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8",
+                                         dir=OUTPUT.parent, prefix=OUTPUT.name + ".",
+                                         suffix=".tmp", delete=False) as fp:
+            temp_path = Path(fp.name)
+            fp.write(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n")
+        os.replace(temp_path, OUTPUT)
+    finally:
+        if temp_path is not None:
+            temp_path.unlink(missing_ok=True)
+    print("Read-only new candidates:", len(items),
+          "total candidates after idempotent merge:", snapshot["count"])
     print("No website, Buffer, Metricool, Zapier or Facebook post was published.")
     return 0
 
