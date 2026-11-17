@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Safe RSS -> Buffer queue for An Ngon Co Deal (never PC GIA TOT)."""
 import html
+from html.parser import HTMLParser
 import datetime as dt
 import email.utils
 import json
@@ -120,6 +121,45 @@ def recent_posts(key, channel_id, status):
     raise RuntimeError("Buffer history exceeds safe 300-post audit cap; no posts created.")
 
 
+
+class PublicPageMeta(HTMLParser):
+    """Only read metadata on a publicly published Food article; do not edit it."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.canonical = ""
+        self.og_title = ""
+        self.noindex = False
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() != "link" and tag.lower() != "meta":
+            return
+        attr = dict((str(k).lower(), str(v or "")) for k, v in attrs)
+        if tag.lower() == "link" and "canonical" in attr.get("rel", "").lower().split():
+            self.canonical = attr.get("href", "").strip()
+        elif tag.lower() == "meta":
+            if attr.get("property", "").lower() == "og:title":
+                self.og_title = attr.get("content", "").strip()
+            if attr.get("name", "").lower() in ("robots", "googlebot"):
+                self.noindex |= "noindex" in attr.get("content", "").lower()
+
+
+def verify_public_article(url):
+    """Fail closed before Buffer creation unless the actual HTML is indexable and canonical."""
+    if not (url.startswith(SITE + "/bai-viet/") and url.endswith("/")):
+        raise RuntimeError("Food URL is outside the approved public article area")
+    req = urllib.request.Request(url, headers={"User-Agent": "FoodBufferBridge/1.0"})
+    with urllib.request.urlopen(req, timeout=20) as res:
+        headers = getattr(res, "headers", None)
+        if headers and "noindex" in str(headers.get("X-Robots-Tag", "")).lower():
+            raise RuntimeError("Live Food article is marked noindex in response headers")
+        page = res.read(500000).decode("utf-8", errors="replace")
+    meta = PublicPageMeta()
+    meta.feed(page)
+    if meta.noindex or meta.canonical != url or not meta.og_title:
+        raise RuntimeError("Live Food article lacks matching canonical/indexable OG metadata")
+    return True
+
+
 def caption(article):
     return ("🍜 " + article["title"] + "\n\n"
             + article["summary"] + "\n\n"
@@ -178,6 +218,7 @@ def main():
         if url in buffer_text:
             seen.add(url)
             continue
+        verify_public_article(url)  # Live HTTP/canonical/OG/noindex gate before Facebook queueing.
         mutation = """mutation($input: CreatePostInput!) {
           createPost(input:$input) {
             ... on PostActionSuccess {post{id text dueAt}}
