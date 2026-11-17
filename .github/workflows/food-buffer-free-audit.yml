@@ -1,5 +1,5 @@
 name: AN NGON Buffer Free migration - read only verify
-# Recheck 2026-11-16 after user refreshed FOOD_BUFFER_API_KEY in GitHub Actions.
+# Recheck 2026-11-17 after owner re-saved FOOD_BUFFER_API_KEY; passive auth and channel check only.
 
 on:
   workflow_dispatch:
