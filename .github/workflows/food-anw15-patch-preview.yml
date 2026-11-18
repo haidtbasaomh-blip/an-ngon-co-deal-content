@@ -1,0 +1,31 @@
+name: Food ANW-15 address-aware 12 cases preview only (NO SITE WRITE)
+on:
+  push:
+    paths:
+      - 'scripts/food_anw15_patch_preview.js'
+      - 'scripts/food_anw15_patch_preview_test.mjs'
+      - '.github/workflows/food-anw15-patch-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Use disposable Chrome and free Playwright
+        run: npm install --no-save playwright@latest
+      - name: Test real public location cards with in-memory patch; no backend or publishing actions
+        run: node scripts/food_anw15_patch_preview_test.mjs
+      - name: Preserve before-after results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-anw15-preview-no-deploy
+          path: reports/food-anw15-locality-patch-preview.json
+          retention-days: 14
+          if-no-files-found: warn
