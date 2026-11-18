@@ -1,0 +1,28 @@
+name: Food ANW-17 complete sitemap SEO and OG audit (read-only)
+on:
+  push:
+    paths:
+      - 'scripts/qa_food_full_seo_og_image_provenance.mjs'
+      - '.github/workflows/food-anw17-full-seo.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Review all public sitemap pages and image-source hosts; no site edit
+        run: node scripts/qa_food_full_seo_og_image_provenance.mjs
+      - name: Save audit results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-anw17-public-seo
+          path: reports/food-anw17-full-seo.json
+          retention-days: 21
+          if-no-files-found: warn
