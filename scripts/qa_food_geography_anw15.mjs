@@ -70,6 +70,21 @@ try {
   const submit=p.getByRole('button',{name:'Tìm địa điểm',exact:true});
   if(await province.count()!==1||await local.count()!==1||await submit.count()!==1)
    throw new Error('Live geographic form selector not unique');
+  // Public restaurant directory snapshots: exact visible labels and nearby address text only.
+  // Needed to distinguish a real search implementation bug from an inaccurate test expectation.
+  result.directoryPlaceSnapshots=await p.locator('a[href^="/dia-diem/"]').evaluateAll(links=>
+   [...new Map(links.filter(a=>a.getClientRects().length>0).map(a=>{
+     const ancestor=a.closest('article, .card, li, [class*="place"], [class*="listing"]')||a.parentElement;
+     const text=(ancestor?.innerText||a.textContent||'').replace(/\\s+/g,' ').trim().slice(0,650);
+     return [a.getAttribute('href'),{path:a.getAttribute('href'),visibleTitle:(a.textContent||'').trim().slice(0,100),nearbyText:text}];
+   })).values()].slice(0,12)
+  );
+  result.locationSearchSourceMarkers=await p.evaluate(()=>({
+   selectId:document.querySelector('#geo-province')?.id||null,
+   localInputId:document.querySelector('#geo-local')?.id||null,
+   nearbyHeadings:[...document.querySelectorAll('h1,h2,h3')].filter(e=>e.getClientRects().length>0).map(e=>(e.textContent||'').trim()).slice(0,8),
+   localInputType:document.querySelector('#geo-local')?.type||null
+  }));
   const visibleSlugs=async()=>p.locator('a[href^="/dia-diem/"]').evaluateAll(
    anchors=>[...new Set(anchors.filter(a=>a.getClientRects().length>0).map(a=>a.getAttribute('href')).filter(Boolean))].sort());
   const trial=async(label,provinceValue,locality,expected)=>{
@@ -123,5 +138,7 @@ console.log(summary);
 console.log('CONTROLS '+JSON.stringify(result.geoSelectors));
 console.log('PROVINCE_COVERAGE '+JSON.stringify(result.provinceCoverage));
 console.log('FILTER_TRIALS '+JSON.stringify(result.filterTrials));
+console.log('DIRECTORY_PLACES '+JSON.stringify(result.directoryPlaceSnapshots||[]));
+console.log('LOCALITY_CONTROLS '+JSON.stringify(result.locationSearchSourceMarkers||{}));
 if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary);
 if(result.acceptance!=='PASS_VISIBLE_3_PLACES')process.exitCode=1;
