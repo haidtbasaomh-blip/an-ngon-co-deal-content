@@ -11,8 +11,8 @@ async function fetchText(url,accept='text/html'){
  return r.text();
 }
 const [siteMap,feed,robots]=await Promise.all([fetchText(base+'/sitemap.xml','application/xml'),fetchText(base+'/rss.xml','application/rss+xml'),fetchText(base+'/robots.txt','text/plain')]);
-const sitemapUrls=[...siteMap.matchAll(/<loc>([^<]+)<\\/loc>/gi)].map(x=>decode(x[1].trim()));
-const rssUrls=[...feed.matchAll(/<item[\\s>][\\s\\S]*?<link>([^<]+)<\\/link>/gi)].map(x=>decode(x[1].trim()));
+const sitemapUrls=[...siteMap.matchAll(/<loc>([^<]+)<\/loc>/gi)].map(x=>decode(x[1].trim()));
+const rssUrls=[...feed.matchAll(/<item[\s>][\s\S]*?<link>([^<]+)<\/link>/gi)].map(x=>decode(x[1].trim()));
 const urls=[...new Set(sitemapUrls)];
 if(sitemapUrls.length!==urls.length)report.errors.push('Duplicate sitemap loc');
 if(!rssUrls.length)report.errors.push('RSS empty');
@@ -27,13 +27,13 @@ await Promise.all(Array.from({length:4},async()=>{
   const path=url.slice(base.length)||'/';
   try{
    const html=await fetchText(url);
-   const links=[...html.matchAll(/<link\\b[^>]*>/gi)].map(x=>x[0]);
-   const metas=[...html.matchAll(/<meta\\b[^>]*>/gi)].map(x=>x[0]);
+   const links=[...html.matchAll(/<link\b[^>]*>/gi)].map(x=>x[0]);
+   const metas=[...html.matchAll(/<meta\b[^>]*>/gi)].map(x=>x[0]);
    const canonical=links.filter(x=>attr(x,'rel').toLowerCase()==='canonical').map(x=>attr(x,'href'));
    const robotsDirective=metas.filter(x=>attr(x,'name').toLowerCase()==='robots').map(x=>attr(x,'content')).join(';');
    const ogImg=metas.filter(x=>attr(x,'property').toLowerCase()==='og:image').map(x=>attr(x,'content'));
    const desc=metas.filter(x=>attr(x,'name').toLowerCase()==='description').map(x=>attr(x,'content'));
-   const scripts=[...html.matchAll(/<script\\b[^>]*type=["\\x27]application\\/ld\\+json["\\x27][^>]*>([\\s\\S]*?)<\\/script>/gi)].map(x=>x[1]);
+   const scripts=[...html.matchAll(/<script\b[^>]*type=["\x27]application\/ld\+json["\x27][^>]*>([\s\S]*?)<\/script>/gi)].map(x=>x[1]);
    const nodes=[];
    for(const content of scripts){try{
      const json=JSON.parse(content);
