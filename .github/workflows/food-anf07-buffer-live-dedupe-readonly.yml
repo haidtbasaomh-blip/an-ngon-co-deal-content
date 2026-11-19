@@ -1,0 +1,33 @@
+name: Food ANF-07 verified Buffer channel live dedupe audit READ ONLY
+on:
+  push:
+    paths:
+      - 'scripts/food_anf07_buffer_live_dedupe_readonly.py'
+      - '.github/workflows/food-anf07-buffer-live-dedupe-readonly.yml'
+  schedule:
+    - cron: '55 3 * * *' # 10:55 Asia/Bangkok
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    env:
+      FOOD_BUFFER_API_KEY: ${{ secrets.FOOD_BUFFER_API_KEY }}
+      FOOD_BUFFER_CHANNEL_ID: ${{ vars.FOOD_BUFFER_CHANNEL_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check actual scheduled and sent Food Facebook posts for canonical/hash duplicates
+        run: python scripts/food_anf07_buffer_live_dedupe_readonly.py
+      - name: Store read-only dedupe proof
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-anf07-buffer-live-dedupe
+          path: reports/food-anf07-buffer-live-dedupe-readonly.json
+          if-no-files-found: warn
+          retention-days: 14
