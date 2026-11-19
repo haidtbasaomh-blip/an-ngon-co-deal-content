@@ -53,6 +53,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: food-anw18-mobile-lighthouse-lab
-          path: reports/anw18-*.json, reports/food-anw18-lighthouse-summary.json
+          path: |
+            reports/anw18-*.json
+            reports/food-anw18-lighthouse-summary.json
           retention-days: 14
           if-no-files-found: warn
