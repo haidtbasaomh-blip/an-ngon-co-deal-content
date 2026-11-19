@@ -1,0 +1,30 @@
+name: Food Buffer safe GraphQL schema read only
+on:
+  push:
+    paths:
+      - 'scripts/food_buffer_graphql_schema_readonly.py'
+      - '.github/workflows/food-buffer-graphql-schema-readonly.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      FOOD_BUFFER_API_KEY: ${{ secrets.FOOD_BUFFER_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check Buffer Post field names only, never create a post
+        run: python scripts/food_buffer_graphql_schema_readonly.py
+      - name: Save only type names and field names
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-buffer-graphql-type-metadata
+          path: reports/food-buffer-graphql-schema-readonly.json
+          retention-days: 14
+          if-no-files-found: warn
