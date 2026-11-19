@@ -4,8 +4,20 @@
   "autoPublish": false,
   "imagesCopied": false,
   "fullTextCopied": false,
-  "count": 58,
+  "count": 61,
   "ideas": [
+    {
+      "id": "f4f39f905618e3ad05b2",
+      "source": "Thanh Niên - Ẩm thực",
+      "sourceFeed": "https://thanhnien.vn/rss/doi-song/am-thuc.rss",
+      "sourceUrl": "https://thanhnien.vn/bun-cot-quy-nhon-ten-goi-la-cach-che-bien-cung-la-18526111215094749.htm",
+      "sourceTitle": "Bún cột Quy Nhơn: Tên gọi lạ, cách chế biến cũng lạ",
+      "sourceDate": "Wed, 18 Nov 26 11:28:00 +0700",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
     {
       "id": "e04a05f0138713ebe913",
       "source": "Thanh Niên - Ẩm thực",
@@ -169,18 +181,6 @@
       "sourceUrl": "https://thanhnien.vn/nho-to-canh-rieu-cua-dong-nau-rau-tap-tang-cua-ma-o-mien-tay-185261019091401351.htm",
       "sourceTitle": "Nhớ tô canh riêu cua đồng nấu rau tập tàng của má ở miền Tây",
       "sourceDate": "Fri, 30 Oct 26 19:30:00 +0700",
-      "editorialStatus": "idea_only",
-      "approved": false,
-      "publicationStatus": "not_published",
-      "rights": "reference_only_no_republication"
-    },
-    {
-      "id": "efd5d8e95af777ec5b57",
-      "source": "Thanh Niên - Ẩm thực",
-      "sourceFeed": "https://thanhnien.vn/rss/doi-song/am-thuc.rss",
-      "sourceUrl": "https://thanhnien.vn/tphcm-sap-co-le-hoi-am-thuc-cho-lon-60-gian-hang-khach-duoc-trai-nghiem-gi-185261028171737264.htm",
-      "sourceTitle": "TP.HCM sắp có lễ hội ẩm thực Chợ Lớn: 60 gian hàng, khách được trải nghiệm gì?",
-      "sourceDate": "Wed, 28 Oct 26 19:30:00 +0700",
       "editorialStatus": "idea_only",
       "approved": false,
       "publicationStatus": "not_published",
@@ -367,6 +367,30 @@
       "rights": "reference_only_no_republication"
     },
     {
+      "id": "be07ed377b23cd7a1436",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/18/instant-coffee-vegan-cake-recipe-zero-waste-cooking",
+      "sourceTitle": "How to turn the dregs of an instant coffee jar into a brilliant vegan cake – recipe | Waste not",
+      "sourceDate": "Wed, 18 Nov 2026 13:00:03 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "ac5d7845a28f1bbecb21",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/18/prawn-masala-and-spiced-roast-cauliflower-indian-recipes-romy-gill",
+      "sourceTitle": "Prawn masala and spiced roast cauliflower: Romy Gill’s Indian recipes for chilly nights",
+      "sourceDate": "Wed, 18 Nov 2026 06:00:33 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
       "id": "a53e973e0b9b3b2557cd",
       "source": "The Guardian Food – ẩm thực quốc tế",
       "sourceFeed": "https://www.theguardian.com/food/rss",
@@ -427,30 +451,6 @@
       "rights": "reference_only_no_republication"
     },
     {
-      "id": "68f3b4d74ca51509a740",
-      "source": "The Guardian Food – ẩm thực quốc tế",
-      "sourceFeed": "https://www.theguardian.com/food/rss",
-      "sourceUrl": "https://www.theguardian.com/food/2026/nov/15/blacklock-birmingham-b3-grace-dent-restaurant-review",
-      "sourceTitle": "Blacklock, Birmingham B3: ‘A very, very cool version of an Angus Steakhouse’ – restaurant review",
-      "sourceDate": "Sun, 15 Nov 2026 06:00:06 GMT",
-      "editorialStatus": "idea_only",
-      "approved": false,
-      "publicationStatus": "not_published",
-      "rights": "reference_only_no_republication"
-    },
-    {
-      "id": "3263525b17dd82fa953f",
-      "source": "The Guardian Food – ẩm thực quốc tế",
-      "sourceFeed": "https://www.theguardian.com/food/rss",
-      "sourceUrl": "https://www.theguardian.com/thefilter/2026/nov/14/best-supermarket-instant-coffee-tasted-rated",
-      "sourceTitle": "‘All I could smell was fertiliser’: the best (and worst) supermarket instant coffee, tasted and rated",
-      "sourceDate": "Sat, 14 Nov 2026 13:00:45 GMT",
-      "editorialStatus": "idea_only",
-      "approved": false,
-      "publicationStatus": "not_published",
-      "rights": "reference_only_no_republication"
-    },
-    {
       "id": "27b3615e081446efed1d",
       "source": "The Guardian Food – ẩm thực quốc tế",
       "sourceFeed": "https://www.theguardian.com/food/rss",
@@ -499,6 +499,18 @@
       "rights": "reference_only_no_republication"
     },
     {
+      "id": "2cc761c9709e638dde70",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/13/sova-amber-martini-recipe-cocktail-of-the-week",
+      "sourceTitle": "Cocktail of the week: Sova’s amber martini – recipe | The good mixer",
+      "sourceDate": "Fri, 13 Nov 2026 13:00:19 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
       "id": "bbf47bf19ecdaf0d4326",
       "source": "The Guardian Food – ẩm thực quốc tế",
       "sourceFeed": "https://www.theguardian.com/food/rss",
@@ -529,6 +541,42 @@
       "sourceUrl": "https://www.theguardian.com/food/2026/nov/11/how-to-turn-excess-crumpets-into-a-hearty-breakfast-recipe-zero-waste-cooking",
       "sourceTitle": "How to turn excess crumpets into a hearty breakfast – recipe | Waste not",
       "sourceDate": "Wed, 11 Nov 2026 13:00:50 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "efd5d8e95af777ec5b57",
+      "source": "Thanh Niên - Ẩm thực",
+      "sourceFeed": "https://thanhnien.vn/rss/doi-song/am-thuc.rss",
+      "sourceUrl": "https://thanhnien.vn/tphcm-sap-co-le-hoi-am-thuc-cho-lon-60-gian-hang-khach-duoc-trai-nghiem-gi-185261028171737264.htm",
+      "sourceTitle": "TP.HCM sắp có lễ hội ẩm thực Chợ Lớn: 60 gian hàng, khách được trải nghiệm gì?",
+      "sourceDate": "Wed, 28 Oct 26 19:30:00 +0700",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "68f3b4d74ca51509a740",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/15/blacklock-birmingham-b3-grace-dent-restaurant-review",
+      "sourceTitle": "Blacklock, Birmingham B3: ‘A very, very cool version of an Angus Steakhouse’ – restaurant review",
+      "sourceDate": "Sun, 15 Nov 2026 06:00:06 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "3263525b17dd82fa953f",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/thefilter/2026/nov/14/best-supermarket-instant-coffee-tasted-rated",
+      "sourceTitle": "‘All I could smell was fertiliser’: the best (and worst) supermarket instant coffee, tasted and rated",
+      "sourceDate": "Sat, 14 Nov 2026 13:00:45 GMT",
       "editorialStatus": "idea_only",
       "approved": false,
       "publicationStatus": "not_published",
@@ -577,18 +625,6 @@
       "sourceUrl": "https://www.theguardian.com/food/2026/nov/14/sauteed-cabbage-cheese-cream-sunflower-seeds-vegetarian-recipe-jackson-boxer",
       "sourceTitle": "Jackson Boxer’s vegetarian recipe for sauteed cabbage with cheese cream and sunflower seeds",
       "sourceDate": "Sat, 14 Nov 2026 06:00:39 GMT",
-      "editorialStatus": "idea_only",
-      "approved": false,
-      "publicationStatus": "not_published",
-      "rights": "reference_only_no_republication"
-    },
-    {
-      "id": "2cc761c9709e638dde70",
-      "source": "The Guardian Food – ẩm thực quốc tế",
-      "sourceFeed": "https://www.theguardian.com/food/rss",
-      "sourceUrl": "https://www.theguardian.com/food/2026/nov/13/sova-amber-martini-recipe-cocktail-of-the-week",
-      "sourceTitle": "Cocktail of the week: Sova’s amber martini – recipe | The good mixer",
-      "sourceDate": "Fri, 13 Nov 2026 13:00:19 GMT",
       "editorialStatus": "idea_only",
       "approved": false,
       "publicationStatus": "not_published",
