@@ -29,13 +29,24 @@ def main():
     sent=recent_posts(key,channel,"sent")
     by_url={}
     by_hash={}
+    missing_text_posts=0
+    posts_without_food_canonical=0
+    auditable_text_posts=0
     for status,entries in [("scheduled",scheduled),("sent",sent)]:
         for item in entries:
             id=str(item.get("id") or "")
-            content=str(item.get("text") or "")
+            content=str(item.get("text") or "").strip()
+            # Buffer may return no text for media-only or provider imported posts.
+            # Empty strings MUST NOT hash as duplicate Facebook posts.
+            if not content:
+                missing_text_posts+=1
+                continue
+            auditable_text_posts+=1
             digest=normhash(content)
             by_hash.setdefault(digest,[]).append({"id":id,"status":status})
-            for url in canonical_urls(content):
+            links=canonical_urls(content)
+            if not links:posts_without_food_canonical+=1
+            for url in links:
                 by_url.setdefault(url,[]).append({"id":id,"status":status})
     duplicate_urls={u:v for u,v in by_url.items() if len(v)>1}
     duplicate_bodies={h:v for h,v in by_hash.items() if len(v)>1}
@@ -46,13 +57,17 @@ def main():
         "mode":"read_only","channelVerified":"AN NGON CO DEAL Facebook via Buffer exact channel",
         "scheduledCount":len(scheduled),"sentCount":len(sent),
         "publicApprovedRssCount":len(articles),
+        "postsWithAuditableText":auditable_text_posts,
+        "postsWithNoTextReturnedByBufferApi":missing_text_posts,
+        "postsWithTextButNoCanonicalLink":posts_without_food_canonical,
         "distinctFoodCanonicalLinksInBuffer":len(by_url),
         "duplicateCanonicalCount":len(duplicate_urls),
         "duplicateContentHashCount":len(duplicate_bodies),
         "duplicateCanonicalPostRefs":{u:[v["status"] for v in posts] for u,posts in duplicate_urls.items()},
         "duplicateBodyHashes":{h:[v["status"] for v in posts] for h,posts in duplicate_bodies.items()},
-        "autoPostingPaused":False,"writes":0,"secretsExposed":False,
-        "note":"Live queue/history dedupe observation, not proof that a new approved article was replayed or posted. Do not count ANF-07 100% without an E2E replay."
+        "decision":("DUPLICATE_FOUND" if duplicate_urls or duplicate_bodies else "INCONCLUSIVE_INCOMPLETE_PROVIDER_TEXT" if missing_text_posts or posts_without_food_canonical else "NO_DUPLICATES_IN_RETURNED_TEXT"),
+        "writes":0,"secretsExposed":False,
+        "note":"Empty Buffer API text is not a duplicate. Unavailable text/content prevents full page-level dedupe proof; do not count ANF-07 100% without a real E2E retry."
     }
     Path("reports").mkdir(exist_ok=True)
     Path("reports/food-anf07-buffer-live-dedupe-readonly.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
