@@ -13,7 +13,9 @@ try:
     d=graphql(key,q)
     fields=sorted((a.get("name") or "") for a in ((d.get("postType") or {}).get("fields") or []))
     create=sorted((a.get("name") or "") for a in ((d.get("createType") or {}).get("inputFields") or []))
-    report={"mode":"READ_ONLY","postFields":fields,"createPostInputFields":create,
+    postTypes={x.get("name"):x.get("type") for x in ((d.get("postType") or {}).get("fields") or []) if x.get("name") in ("externalLink","metadata","assets","contentItemId","text")}
+    inputTypes={x.get("name"):x.get("type") for x in ((d.get("createType") or {}).get("inputFields") or []) if x.get("name") in ("source","metadata")}
+    report={"mode":"READ_ONLY","postFields":fields,"createPostInputFields":create,"postTypesOfInterest":postTypes,"inputTypesOfInterest":inputTypes,
       "textAvailabilityAlternatives":[x for x in fields if any(y in x.lower() for y in ("text","media","content","asset","link","url","metadata","source"))],
       "serverIdempotencyInputCandidates":[x for x in create if any(y in x.lower() for y in ("key","external","idempot","dedup","source"))],
       "writes":0,"credentialsLogged":False}
