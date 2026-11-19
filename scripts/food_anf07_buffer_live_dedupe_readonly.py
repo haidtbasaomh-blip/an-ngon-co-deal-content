@@ -5,6 +5,7 @@ approved-RSS publisher; does not call createPost or any write mutation.
 """
 import hashlib,json,os,re,sys,urllib.request
 from pathlib import Path
+from datetime import datetime,timezone
 from food_buffer_rss import FOOD_CHANNEL_ID,SITE,FEED,ensure_channel,recent_posts,read_feed
 
 def canonical_urls(text):
@@ -53,10 +54,15 @@ def main():
     req=urllib.request.Request(FEED,headers={"User-Agent":"Food-Buffer-ReadOnly-Dedupe-Audit/1"})
     with urllib.request.urlopen(req,timeout=20) as resp:
         articles=read_feed(resp.read(1600000))
+    policy=json.loads((Path(__file__).resolve().parents[1]/"config"/"social_publishing_policy.json").read_text(encoding="utf-8"))
+    cutover=datetime.fromisoformat(policy["githubBufferCutoverUtc"].replace("Z","+00:00"))
+    approved_after_cutover=[a for a in articles if a["published"]>cutover]
     report={
         "mode":"read_only","channelVerified":"AN NGON CO DEAL Facebook via Buffer exact channel",
         "scheduledCount":len(scheduled),"sentCount":len(sent),
         "publicApprovedRssCount":len(articles),
+        "approvedNewRssAfterVerifiedCutoverCount":len(approved_after_cutover),
+        "noNewApprovedPostCutoverInput":len(approved_after_cutover)==0,
         "postsWithAuditableText":auditable_text_posts,
         "postsWithNoTextReturnedByBufferApi":missing_text_posts,
         "postsWithTextButNoCanonicalLink":posts_without_food_canonical,
