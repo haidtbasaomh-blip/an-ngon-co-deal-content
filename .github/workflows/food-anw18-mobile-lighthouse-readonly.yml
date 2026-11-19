@@ -1,0 +1,58 @@
+name: Food ANW-18 mobile Lighthouse evidence READ ONLY
+on:
+  push:
+    paths:
+      - '.github/workflows/food-anw18-mobile-lighthouse-readonly.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install free pinned Lighthouse CLI
+        run: npm install -g lighthouse@12.8.2
+      - name: Measure homepage and live restaurant article page
+        shell: bash
+        run: |
+          mkdir -p reports
+          for p in home giang; do
+            if [ "$p" = home ]; then url="https://an-ngon-co-deal.bvthn-1903.chatgpt.site/"; else url="https://an-ngon-co-deal.bvthn-1903.chatgpt.site/dia-diem/giang/"; fi
+            lighthouse "$url" --only-categories=performance,accessibility,best-practices,seo \
+              --chrome-flags="--headless --no-sandbox --disable-gpu" \
+              --form-factor=mobile --output=json --output-path="reports/anw18-$p.json" \
+              --max-wait-for-load=45000 --quiet
+          done
+      - name: Summarize metrics and a11y issues without writing to site
+        run: |
+          node --input-type=module <<'EOF'
+          import fs from 'node:fs';
+          let report={readOnly:true,site:'https://an-ngon-co-deal.bvthn-1903.chatgpt.site/',checks:[],note:'Lab measurements only; does not independently verify admin security, commercial photo rights, or real-user INP.'};
+          for(const page of ['home','giang']){
+            const j=JSON.parse(fs.readFileSync('reports/anw18-'+page+'.json','utf8'));
+            const score=x=>Math.round((j.categories?.[x]?.score??0)*100);
+            const num=x=>j.audits?.[x]?.numericValue??null;
+            let issues=Object.values(j.audits||{}).filter(a=>a.details?.type==='table'&&a.score!==null&&a.score<1&&a.id?.startsWith('aria-')).map(a=>a.id).slice(0,12);
+            report.checks.push({page,performance:score('performance'),accessibility:score('accessibility'),
+              bestPractices:score('best-practices'),seo:score('seo'),
+              LCP_ms:num('largest-contentful-paint'),CLS:num('cumulative-layout-shift'),
+              TBT_ms:num('total-blocking-time'),FCP_ms:num('first-contentful-paint'),
+              runtimeErrorCount:j.audits?.['errors-in-console']?.details?.items?.length??null,
+              ariaIssues:issues});
+          }
+          fs.writeFileSync('reports/food-anw18-lighthouse-summary.json',JSON.stringify(report,null,2)+'\n');
+          console.log('FOOD_ANW18_LIGHTHOUSE_SUMMARY',JSON.stringify(report));
+          EOF
+      - name: Save anonymized audit reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-anw18-mobile-lighthouse-lab
+          path: reports/anw18-*.json, reports/food-anw18-lighthouse-summary.json
+          retention-days: 14
+          if-no-files-found: warn
