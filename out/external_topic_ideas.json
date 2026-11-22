@@ -4,7 +4,7 @@
   "autoPublish": false,
   "imagesCopied": false,
   "fullTextCopied": false,
-  "count": 74,
+  "count": 79,
   "ideas": [
     {
       "id": "f4f39f905618e3ad05b2",
@@ -187,6 +187,18 @@
       "rights": "reference_only_no_republication"
     },
     {
+      "id": "850eb899849130dcd4a6",
+      "source": "Ngôi Sao - Ẩm thực",
+      "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
+      "sourceUrl": "https://ngoisao.vnexpress.net/le-hoi-van-hoa-am-thuc-quoc-te-2026-chen-chan-thuong-thuc-mon-ngon-46-quoc-gia-tai-le-hoi-am-thuc-5147483.html",
+      "sourceTitle": "Chen chân thưởng thức món ngon 46 quốc gia tại lễ hội ẩm thực",
+      "sourceDate": "Sat, 21 Nov 2026 19:31:24 +0700",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
       "id": "286fc0dc50a3583ef236",
       "source": "Ngôi Sao - Ẩm thực",
       "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
@@ -355,12 +367,48 @@
       "rights": "reference_only_no_republication"
     },
     {
-      "id": "165a2fc4d75e477c894c",
-      "source": "Ngôi Sao - Ẩm thực",
-      "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
-      "sourceUrl": "https://ngoisao.vnexpress.net/mon-banh-mien-tay-co-ten-goi-la-tu-chiec-khuon-chien-5142137.html",
-      "sourceTitle": "Món bánh miền Tây có tên gọi lạ từ chiếc khuôn chiên",
-      "sourceDate": "Mon, 09 Nov 2026 15:46:11 +0700",
+      "id": "82d8b260135a3e1d0461",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/thefilter/2026/nov/21/best-worst-supermarket-porridge-oats-tasted-rated",
+      "sourceTitle": "‘Bland, faintly sugary and cardboardy’: the best (and worst) supermarket porridge oats, tasted and rated",
+      "sourceDate": "Sat, 21 Nov 2026 13:00:01 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "7f10df5767b4bb4e131b",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/21/the-spirit-of-a-borderless-europe-steams-from-the-pots-and-pans-of-vienna",
+      "sourceTitle": "‘The spirit of a borderless Europe steams from the pots and pans of Vienna’",
+      "sourceDate": "Sat, 21 Nov 2026 10:00:55 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "3f450b3b8539f81ccb2c",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/21/vienna-on-a-plate-a-food-lovers-guide-to-the-austrian-capital",
+      "sourceTitle": "Vienna on a plate: a food lover’s guide to the Austrian capital",
+      "sourceDate": "Sat, 21 Nov 2026 10:00:55 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "036e63aba723a08289a9",
+      "source": "The Guardian Food – ẩm thực quốc tế",
+      "sourceFeed": "https://www.theguardian.com/food/rss",
+      "sourceUrl": "https://www.theguardian.com/food/2026/nov/21/vegan-almond-sorbet-grape-granita-recipe-jackson-boxer",
+      "sourceTitle": "Jackson Boxer’s vegan recipe for almond sorbet with grape granita",
+      "sourceDate": "Sat, 21 Nov 2026 06:00:50 GMT",
       "editorialStatus": "idea_only",
       "approved": false,
       "publicationStatus": "not_published",
@@ -493,6 +541,18 @@
       "sourceUrl": "https://www.theguardian.com/food/2025/may/24/vegan-recipe-aubergine-braised-soy-sauce-sake-sesame-oil-meera-sodha",
       "sourceTitle": "Meera Sodha’s vegan recipe for soy, sake and sesame oil-braised aubergines | The new vegan",
       "sourceDate": "Sat, 24 May 2025 05:00:52 GMT",
+      "editorialStatus": "idea_only",
+      "approved": false,
+      "publicationStatus": "not_published",
+      "rights": "reference_only_no_republication"
+    },
+    {
+      "id": "165a2fc4d75e477c894c",
+      "source": "Ngôi Sao - Ẩm thực",
+      "sourceFeed": "https://ngoisao.vnexpress.net/rss/am-thuc.rss",
+      "sourceUrl": "https://ngoisao.vnexpress.net/mon-banh-mien-tay-co-ten-goi-la-tu-chiec-khuon-chien-5142137.html",
+      "sourceTitle": "Món bánh miền Tây có tên gọi lạ từ chiếc khuôn chiên",
+      "sourceDate": "Mon, 09 Nov 2026 15:46:11 +0700",
       "editorialStatus": "idea_only",
       "approved": false,
       "publicationStatus": "not_published",
