@@ -167,6 +167,33 @@ def caption(article):
             + "#AnNgonCoDeal #AmThucViet #MonNgon")
 
 
+def report_queue_status(status, detail=""):
+    """Write an observable GitHub Actions outcome without leaking credentials or post data.
+
+    A green workflow means a safe audit completed; it does not imply that
+    a new Buffer item was scheduled or that Facebook published anything.
+    """
+    allowed = {
+        "hold_publisher", "hold_cutover", "hold_credentials",
+        "hold_queue_full", "no_eligible_article", "queued_one"
+    }
+    if status not in allowed:
+        raise ValueError("Unknown Food Buffer queue status")
+    print("FOOD_BUFFER_QUEUE_RESULT=" + status)
+    summary_path = os.getenv("GITHUB_STEP_SUMMARY", "")
+    if summary_path:
+        row = (
+            "\n### Food RSS → Buffer: result\n"
+            "- Status: **" + status + "**\n"
+            "- Facebook post verified as published: **NO** "
+            "(Buffer enqueue alone is not publication evidence)\n"
+        )
+        if detail:
+            row += "- Note: " + detail + "\n"
+        with open(summary_path, "a", encoding="utf-8") as out:
+            out.write(row)
+
+
 def main():
     # Single-publisher safeguard: Zapier -> Buffer owns food Facebook publication.
     # This standalone GitHub path must never publish the same RSS article again.
@@ -176,13 +203,15 @@ def main():
         raise RuntimeError("Wrong social publishing policy; no posts sent.")
     if (policy.get("activePublisher") != "github-buffer-direct"
             or not policy.get("otherPublishers", {}).get("github_buffer_direct", {}).get("mayPublish", False)):
-        print("SAFE HOLD: Food RSS publishing belongs to Zapier -> Buffer; GitHub direct queue is disabled.")
+        print("SAFE HOLD: Food publisher policy does not authorize GitHub Buffer queue.")
+        report_queue_status("hold_publisher", "Policy blocks direct publishing")
         return
     # Defense in depth: enable only after the Zapier RSS publisher is manually switched OFF.
     # Never backfill old public feed entries during cutover.
     cutover_raw = policy.get("githubBufferCutoverUtc")
     if not cutover_raw:
         print("SAFE HOLD: no verified Zapier-off cutover timestamp; no posting.")
+        report_queue_status("hold_cutover", "No verified cutover date")
         return
     cutover = dt.datetime.fromisoformat(cutover_raw.replace("Z", "+00:00"))
     if cutover.tzinfo is None:
@@ -199,16 +228,19 @@ def main():
     enabled = os.getenv("FOOD_BUFFER_AUTO_QUEUE", "").lower() == "true"
     if not (key and channel and enabled):
         print("SAFE MODE: missing credentials or enable flag; no Buffer posts created.")
+        report_queue_status("hold_credentials", "Queue permission or configuration missing")
         return
     ensure_channel(key, channel)
     scheduled = recent_posts(key, channel, "scheduled")
     if len(scheduled) >= 9:
         print("Buffer queue has at least 9 posts; skipping.")
+        report_queue_status("hold_queue_full", "Safe queue cap reached")
         return
     sent = recent_posts(key, channel, "sent")
     buffer_text = "\n".join(str(p.get("text") or "") for p in scheduled + sent)
     history = json.loads(STATE.read_text("utf-8")) if STATE.exists() else {}
     seen = set(history.get("queued_urls", []))
+    queued_this_run = False
     for article in articles:  # RSS feed is newest-first; post only AFTER verified Zapier-off cutoff
         if article["published"] <= cutover:
             continue
@@ -233,6 +265,7 @@ def main():
             raise RuntimeError("Buffer could not add to queue: " +
                                str(result.get("message") or "Unknown error"))
         print("One public food article added to Buffer queue.")
+        queued_this_run = True
         seen.add(url)
         break  # MAXIMUM ONE NEW POST PER RUN
     STATE.parent.mkdir(exist_ok=True)
@@ -240,6 +273,9 @@ def main():
         json.dumps({"schema": 1, "site": SITE, "queued_urls": sorted(seen)},
                    ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Saved anti-duplicate state. No secrets stored.")
+    report_queue_status("queued_one" if queued_this_run else "no_eligible_article",
+                        "One approved article queued; Facebook publication not yet verified" if queued_this_run
+                        else "No new verified post-cutover article to enqueue")
 
 
 if __name__ == "__main__":
