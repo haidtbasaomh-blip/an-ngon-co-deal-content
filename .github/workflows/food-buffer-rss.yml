@@ -19,6 +19,22 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  validate-bridge:
+    # Only inspect code. No Buffer credentials, no GraphQL mutations, no Facebook posts.
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check Food Buffer script syntax
+        run: python -m py_compile scripts/food_buffer_rss.py
+      - name: Run offline anti-duplicate and safety tests
+        run: python -m unittest discover -s tests -p 'test_food_buffer_dedupe.py' -v
   buffer-food:
     # Never send Facebook posts from feature branches or manual branch dispatch.
     if: github.ref == 'refs/heads/main' && github.event_name != 'push'
