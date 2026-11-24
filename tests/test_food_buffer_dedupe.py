@@ -164,5 +164,44 @@ class ReplayTest(unittest.TestCase):
         bridge.main()
         self.assertEqual(self.create_calls, 0)
 
+class FeedParsingTest(unittest.TestCase):
+    def test_reasons_account_for_every_feed_item(self):
+        good = fixture().decode("utf-8").split("<item>",1)[1].split("</item>",1)[0]
+        def item(slug, date, title=None, desc=None):
+            u = bridge.SITE + "/bai-viet/" + slug
+            return ("<item><title>" + (title or "Bai viet am thuc duoc kiem tra") +
+                    "</title><link>" + u + "</link><description>" +
+                    (desc or "Noi dung am thuc thuc te duoc kiem tra ky.") +
+                    "</description><pubDate>" + date + "</pubDate></item>")
+        date = "Tue, 17 Nov 2026 14:00:00 GMT"
+        xml = ("<rss><channel><item>" + good + "</item>"
+               + "<item>" + good + "</item>"
+               + item("bad-date/", "not a timestamp")
+               + item("missing-date/", "")
+               + item("timezone-missing/", "Tue, 17 Nov 2026 14:00:00")
+               + item("future/", "Fri, 17 Nov 2099 14:00:00 GMT")
+               + item("wrong-path", date)
+               + item("query/?p=1", date)
+               + item("short-title/", date, title="ABC")
+               + item("short-desc/", date, desc="ABC")
+               + item("valid-second/", date) + "</channel></rss>")
+        audit = {}
+        found = bridge.read_feed(xml.encode(), audit, dt.datetime(2026,11,24,tzinfo=dt.timezone.utc))
+        self.assertEqual(len(found), 2)
+        self.assertEqual(audit["rssItems"], 11)
+        self.assertEqual(audit["parsedEligibleArticles"], 2)
+        self.assertEqual(audit["excludedCounts"], {
+            "duplicate_url": 1, "invalid_pubdate": 1, "missing_pubdate": 1,
+            "timezone_missing": 1, "future_pubdate": 1,
+            "noncanonical_article_url": 2, "title_too_short": 1, "description_too_short": 1
+        })
+        self.assertEqual(sum(audit["excludedCounts"].values()), 9)
+
+    def test_invalid_date_does_not_block_valid_new_article(self):
+        xml = fixture("not-a-date").decode().replace(URL, bridge.SITE + "/bai-viet/bad-date/")
+        xml = xml.replace("</channel>", fixture().decode().split("<channel>")[1].split("</channel>")[0] + "</channel>")
+        found = bridge.read_feed(xml.encode(), now=dt.datetime(2026,11,24,tzinfo=dt.timezone.utc))
+        self.assertEqual([a["url"] for a in found], [URL])
+
 if __name__ == "__main__":
     unittest.main()
