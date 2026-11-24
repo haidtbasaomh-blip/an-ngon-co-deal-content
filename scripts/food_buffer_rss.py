@@ -26,25 +26,61 @@ def fold(s):
                    if not unicodedata.combining(c))
 
 
-def read_feed(data):
+def read_feed(data, diagnostics=None, now=None):
+    """Keep the existing publication gate; explain each excluded RSS item.
+    A single malformed publication date must not abort the entire feed.
+    """
     articles, seen = [], set()
-    for node in ET.fromstring(data).findall("./channel/item"):
+    items = ET.fromstring(data).findall("./channel/item")
+    now = now or dt.datetime.now(dt.timezone.utc)
+    excluded = {}
+    rejected = []
+    def reject(reason, url):
+        excluded[reason] = excluded.get(reason, 0) + 1
+        # Report only a simple public article slug, never arbitrary external URLs.
+        match = re.fullmatch(re.escape(SITE) + r"/bai-viet/([a-z0-9-]+)/?", url)
+        rejected.append({"reason": reason, "slug": match.group(1) if match else None})
+    for node in items:
         url = (node.findtext("link") or "").strip()
         title = " ".join(html.unescape(node.findtext("title") or "").split())
         abstract = re.sub("<[^>]*>", " ", node.findtext("description") or "")
         abstract = " ".join(html.unescape(abstract).split())
-        if not (url.startswith(SITE + "/bai-viet/") and url.endswith("/")):
+        if not re.fullmatch(re.escape(SITE) + r"/bai-viet/[a-z0-9-]+/", url):
+            reject("noncanonical_article_url", url)
             continue
-        if url in seen or len(title) < 8 or len(abstract) < 15:
+        if url in seen:
+            reject("duplicate_url", url)
             continue
-        published = email.utils.parsedate_to_datetime(node.findtext("pubDate") or "") if node.findtext("pubDate") else None
-        if published is None or published.tzinfo is None:
-            continue  # Fail closed on missing/invalid publication timestamp
+        if len(title) < 8:
+            reject("title_too_short", url)
+            continue
+        if len(abstract) < 15:
+            reject("description_too_short", url)
+            continue
+        raw_date = node.findtext("pubDate") or ""
+        if not raw_date.strip():
+            reject("missing_pubdate", url)
+            continue
+        try:
+            published = email.utils.parsedate_to_datetime(raw_date)
+            if published is None or published.tzinfo is None:
+                reject("timezone_missing", url)
+                continue
+            published = published.astimezone(dt.timezone.utc)
+        except (TypeError, ValueError, OverflowError):
+            reject("invalid_pubdate", url)
+            continue
+        if published > now:
+            reject("future_pubdate", url)
+            continue
         articles.append({"url": url, "title": title, "summary": abstract[:330],
-                         "published": published.astimezone(dt.timezone.utc)})
+                         "published": published})
         seen.add(url)
+    if diagnostics is not None:
+        diagnostics.update({"rssItems": len(items), "parsedEligibleArticles": len(articles),
+                            "excludedCounts": excluded, "excludedArticles": rejected})
+        assert len(items) == len(articles) + sum(excluded.values())
     return articles
-
 
 def graphql(key, query, variables=None):
     body = json.dumps({"query": query, "variables": variables or {}}).encode("utf-8")
@@ -219,7 +255,14 @@ def main():
 
     req = urllib.request.Request(FEED, headers={"User-Agent": "FoodBufferBridge/1.0"})
     with urllib.request.urlopen(req, timeout=20) as res:
-        articles = read_feed(res.read(1600000))
+        raw = res.read(1600001)
+    if len(raw) > 1600000:
+        raise RuntimeError("RSS exceeds safe read limit; no posts created.")
+    diagnostics = {}
+    articles = read_feed(raw, diagnostics=diagnostics)
+    diagnostics["publishedAfterCutover"] = sum(a["published"] > cutover for a in articles)
+    diagnostics["atOrBeforeCutover"] = sum(a["published"] <= cutover for a in articles)
+    print("FOOD_RSS_PARSE_AUDIT " + json.dumps(diagnostics, ensure_ascii=False), flush=True)
     print("Public approved RSS articles:", len(articles))
     key = os.getenv("FOOD_BUFFER_API_KEY", "").strip()
     channel = (os.getenv("FOOD_BUFFER_CHANNEL_ID") or FOOD_CHANNEL_ID).strip()
