@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'scripts/food_buffer_rss.py'
+      - 'tests/test_food_buffer_dedupe.py'
       - '.github/workflows/food-buffer-rss.yml'
   schedule:
     - cron: '15 2,7,12 * * *' # 09:15, 14:15, 19:15 Vietnam: max one new approved RSS article per run.
@@ -35,6 +36,41 @@ jobs:
         run: python -m py_compile scripts/food_buffer_rss.py
       - name: Run offline anti-duplicate and safety tests
         run: python -m unittest discover -s tests -p 'test_food_buffer_dedupe.py' -v
+      - name: Reconcile all live RSS entries without Buffer credentials or writes
+        run: |
+          python - <<'PY'
+          import datetime as dt
+          import json
+          import pathlib
+          import sys
+          import urllib.request
+          sys.path.insert(0,"scripts")
+          import food_buffer_rss as bridge
+          policy=json.loads(pathlib.Path("config/social_publishing_policy.json").read_text())
+          cutover=dt.datetime.fromisoformat(policy["githubBufferCutoverUtc"].replace("Z","+00:00"))
+          req=urllib.request.Request(bridge.FEED,headers={"User-Agent":"Food-RSS-ReadOnly-Audit/1"})
+          with urllib.request.urlopen(req,timeout=25) as resp:
+              data=resp.read(1600001)
+          assert len(data)<=1600000
+          audit={}
+          articles=bridge.read_feed(data,diagnostics=audit)
+          audit["atOrBeforeCutover"]=sum(a["published"]<=cutover for a in articles)
+          audit["publishedAfterCutover"]=sum(a["published"]>cutover for a in articles)
+          audit["bufferWrites"]=0
+          audit["siteWrites"]=0
+          audit["publisherPolicyUnchanged"]=True
+          pathlib.Path("reports").mkdir(exist_ok=True)
+          pathlib.Path("reports/food-rss-parser-live-audit.json").write_text(json.dumps(audit,ensure_ascii=False,indent=2)+"\n")
+          print("FOOD_RSS_PARSE_LIVE "+json.dumps(audit,ensure_ascii=False),flush=True)
+          PY
+      - name: Retain read-only RSS evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-rss-parser-live-audit
+          path: reports/food-rss-parser-live-audit.json
+          retention-days: 14
+          if-no-files-found: warn
   buffer-food:
     # Never send Facebook posts from feature branches or manual branch dispatch.
     if: github.ref == 'refs/heads/main' && github.event_name != 'push'
