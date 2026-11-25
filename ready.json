@@ -83,16 +83,27 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/xoi-xeo-buoi-sang.svg",
-      "imageType": "original_editorial_illustration",
-      "imageAlt": "Bìa minh họa biên tập cho bài Xôi xéo buổi sáng: chọn phần xôi vừa đủ và món ăn kèm; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/X%C3%B4i_x%C3%A9o.jpg",
+      "imageType": "licensed_dish_photo",
+      "imageAlt": "Xôi xéo với đậu xanh, hành phi, gói trong lá",
+      "imageRights": "Ảnh chụp Xôi xéo.jpg của Viethavvh, Wikimedia Commons, CC BY-SA 4.0. Giữ nguyên ảnh gốc; hiển thị tên tác giả, nguồn và liên kết giấy phép khi sử dụng.",
       "sourceReview": {
         "verified": true,
         "url": "https://antoanthucpham.hanoi.gov.vn/giai-ma-tuyet-ky-do-xoi-hai-lua-giup-xoi-phu-thuong-deo-thom-nuc-tieng-kinh-ky-23926042015333983.htm",
         "checkedAt": "2026-11-15T11:08:16.452Z",
         "evidence": "đậu xanh làm xôi xéo cũng được xóc với một lượng muối vừa phải",
         "scope": "Đối chiếu bối cảnh xôi Hà Nội, đậu xanh và hành phi. Không xác nhận quán, giá, giờ bán hoặc thời hạn bảo quản."
+      },
+      "imageCredit": "Viethavvh / Wikimedia Commons / CC BY-SA 4.0",
+      "imageSourcePage": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_x%C3%A9o.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageReview": {
+        "checkedAt": "2026-11-25",
+        "visualDishIdentityVerified": true,
+        "commercialReuseLicenseVerified": true,
+        "originalImageUnmodified": true,
+        "requiresVisibleAttribution": true,
+        "scope": "Ảnh minh họa món xôi xéo; không xác nhận địa điểm, quán, giá hoặc ưu đãi."
       }
     },
     {
