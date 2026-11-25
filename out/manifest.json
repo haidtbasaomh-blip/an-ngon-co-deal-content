@@ -60,13 +60,13 @@
   "liveArticleCountAtLastAudit": 53,
   "missingImages": 0,
   "missingSources": 0,
-  "missingSpecificDishPhotos": 35,
+  "missingSpecificDishPhotos": 34,
   "schema": 1,
   "site": "https://an-ngon-co-deal.bvthn-1903.chatgpt.site/",
   "sitePublicationConfirmed": false,
-  "sourceSha256": "ab4690fb4cd283ccafd8119e3ae9a1439c69f1c6c0e87817cea6751e1659c8e7",
+  "sourceSha256": "a382718aae7f7544666e0dd9f4d36787087e041b8964e639041f286f7a5b6fe0",
   "stage": "ready_for_site",
   "warnings": [
-    "35 stories still have no licensed dish photo; editorial SVGs are not photos"
+    "34 stories still have no licensed dish photo; editorial SVGs are not photos"
   ]
 }
