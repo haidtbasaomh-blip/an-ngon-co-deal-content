@@ -1,0 +1,39 @@
+{
+  "reviewOnly": true,
+  "published": 0,
+  "stagingChanged": false,
+  "items": [
+    {
+      "id": "banh-gio-ha-noi",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_gi%C3%B2.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/B%C3%A1nh_gi%C3%B2.jpg",
+      "author": "Thang Nguyen",
+      "license": "CC BY-SA 2.0",
+      "originalSha256": "3b73545fbd8092f8138885c4ae4f02fd4b790d321a04a901ad5d3515d53ed34e",
+      "originalBytes": 457878,
+      "originalDimensions": [
+        1280,
+        960
+      ],
+      "reviewThumbnail": "review/exact-food-photos-20261126/banh-gio-ha-noi.jpg",
+      "reviewThumbnailSha256": "aae33b4ba50fec9100a482bc8ce5c323994ff63e747e8374df0f9b1fc577d17f",
+      "visualDishIdentityVerified": false
+    },
+    {
+      "id": "nem-ran-bua-co",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nem_r%C3%A1n_gi%C3%B2n,_ng23th9n2022_(3).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Nem_r%C3%A1n_gi%C3%B2n%2C_ng23th9n2022_%283%29.jpg",
+      "author": "Phương Huy",
+      "license": "CC BY-SA 4.0",
+      "originalSha256": "d118bc2d602577bbfa8a4ad483584bf92a2a24eea1d3b5ea651915fb1ecec335",
+      "originalBytes": 1950915,
+      "originalDimensions": [
+        2693,
+        3051
+      ],
+      "reviewThumbnail": "review/exact-food-photos-20261126/nem-ran-bua-co.jpg",
+      "reviewThumbnailSha256": "845e79577a761ec24ce17f8c060509938f79cc896cbab1441957e5b3e0fe7a4b",
+      "visualDishIdentityVerified": false
+    }
+  ]
+}
