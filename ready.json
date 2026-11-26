@@ -124,16 +124,31 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-gio-ha-noi.svg",
-      "imageType": "original_editorial_illustration",
-      "imageAlt": "Bìa minh họa biên tập cho bài Bánh giò Hà Nội: một bữa nhẹ gọn nhưng cần chọn đúng suất; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/B%C3%A1nh_gi%C3%B2.jpg",
+      "imageType": "licensed_dish_photo",
+      "imageAlt": "Bánh giò đã mở, nhìn rõ lớp bột mềm và nhân thịt",
+      "imageRights": "Ảnh chụp của Thang Nguyen, Wikimedia Commons, CC BY-SA 2.0. Dùng nguyên ảnh gốc, hiển thị ghi công, nguồn và giấy phép; nếu chỉnh sửa phải ghi rõ và tuân thủ giấy phép.",
       "sourceReview": {
         "verified": true,
         "url": "https://antoanthucpham.hanoi.gov.vn/6-mon-banh-qua-chieu-dan-da-khien-thuc-khach-me-man-khi-den-ha-noi-239261015121305584.htm",
         "checkedAt": "2026-11-15T11:08:16.452Z",
         "evidence": "Phần bột dẻo mềm bao bọc lớp nhân đậm đà",
         "scope": "Đối chiếu vỏ mềm, nhân và món ăn kèm thay đổi theo hàng. Không xác nhận cơ sở, giá, tình trạng còn hàng hoặc thời hạn bảo quản."
+      },
+      "previousCoverIllustration": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-gio-ha-noi.svg",
+      "imageCredit": "Thang Nguyen / Wikimedia Commons / CC BY-SA 2.0",
+      "imageSourcePage": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_gi%C3%B2.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "imageReview": {
+        "checkedAt": "2026-11-26",
+        "visualDishIdentityVerified": true,
+        "commercialReuseLicenseVerified": true,
+        "originalImageUnmodified": true,
+        "requiresVisibleAttribution": true,
+        "originalSha256": "3b73545fbd8092f8138885c4ae4f02fd4b790d321a04a901ad5d3515d53ed34e",
+        "originalBytes": 457878,
+        "reviewEvidence": "GitHub Actions 45835817184/45835927312; trực tiếp xem thumbnail từ bytes gốc đã kiểm tra SHA-256. Ảnh đúng món, bố cục nền chưa đẹp; chỉ dùng làm ảnh minh họa.",
+        "scope": "Ảnh minh họa món ăn; không xác nhận cơ sở, giá, địa chỉ hoặc ưu đãi."
       }
     },
     {
@@ -247,10 +262,10 @@
       "affiliateLinks": [],
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
-      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/nem-ran-bua-co.svg",
-      "imageType": "original_editorial_illustration",
-      "imageAlt": "Bìa minh họa biên tập cho bài Nem rán: món ăn chia sẻ và cách gọi đủ cho cả bàn; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Nem_r%C3%A1n_gi%C3%B2n%2C_ng23th9n2022_%283%29.jpg",
+      "imageType": "licensed_dish_photo",
+      "imageAlt": "Ba chiếc nem rán trên đĩa trắng với bát nước chấm",
+      "imageRights": "Ảnh chụp của Phương Huy, Wikimedia Commons, CC BY-SA 4.0. Dùng nguyên ảnh gốc, hiển thị ghi công, nguồn và giấy phép; nếu chỉnh sửa phải ghi rõ và tuân thủ giấy phép.",
       "sourceChecked": "2026-11-16",
       "sourceReview": {
         "verified": true,
@@ -258,6 +273,21 @@
         "checkedAt": "2026-11-16",
         "evidence": "Cổng du lịch Việt Nam nói về nem rán và cách ăn với nước mắm pha; không xác thực từng quán.",
         "scope": "Chỉ kiểm tra nguồn đúng món, không cấp quyền sử dụng ảnh/không xác minh giá hay cửa hàng."
+      },
+      "previousCoverIllustration": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/nem-ran-bua-co.svg",
+      "imageCredit": "Phương Huy / Wikimedia Commons / CC BY-SA 4.0",
+      "imageSourcePage": "https://commons.wikimedia.org/wiki/File:Nem_r%C3%A1n_gi%C3%B2n,_ng23th9n2022_(3).jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageReview": {
+        "checkedAt": "2026-11-26",
+        "visualDishIdentityVerified": true,
+        "commercialReuseLicenseVerified": true,
+        "originalImageUnmodified": true,
+        "requiresVisibleAttribution": true,
+        "originalSha256": "d118bc2d602577bbfa8a4ad483584bf92a2a24eea1d3b5ea651915fb1ecec335",
+        "originalBytes": 1950915,
+        "reviewEvidence": "GitHub Actions 45835817184/45835927312; trực tiếp xem thumbnail từ bytes gốc đã kiểm tra SHA-256. Ảnh đúng món, đĩa nem và bát nước chấm hiển thị rõ.",
+        "scope": "Ảnh minh họa món ăn; không xác nhận cơ sở, giá, địa chỉ hoặc ưu đãi."
       }
     },
     {
