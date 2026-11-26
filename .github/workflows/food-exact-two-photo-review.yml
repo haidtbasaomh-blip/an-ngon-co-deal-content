@@ -22,7 +22,7 @@ jobs:
       - name: Fetch exact public originals and create small review-only thumbnails
         run: |
           python - <<'PY'
-          import hashlib,io,json,urllib.request,urllib.parse
+          import base64,hashlib,io,json,urllib.request,urllib.parse
           from pathlib import Path
           from PIL import Image,ImageOps
           src=json.loads(Path("reports/food-photo-candidates-20261126-2100.json").read_text())
@@ -47,6 +47,7 @@ jobs:
               im.thumbnail((700,700))
               dest=out/(a["id"]+".jpg")
               im.save(dest,quality=87,optimize=True)
+              (out/(a["id"]+".jpg.b64")).write_text(base64.b64encode(dest.read_bytes()).decode("ascii")+"\n")
               result.append({"id":a["id"],"sourcePage":a["sourcePage"],"originalUrl":url,"author":a["author"],"license":a["license"],"originalSha256":hashlib.sha256(raw).hexdigest(),"originalBytes":len(raw),"originalDimensions":size,"reviewThumbnail":str(dest),"reviewThumbnailSha256":hashlib.sha256(dest.read_bytes()).hexdigest(),"visualDishIdentityVerified":False})
           (out/"proof.json").write_text(json.dumps({"reviewOnly":True,"published":0,"stagingChanged":False,"items":result},ensure_ascii=False,indent=2)+"\n")
           print("FOOD_EXACT_PHOTO_BYTES_VERIFIED",len(result),"review-only thumbnails")
