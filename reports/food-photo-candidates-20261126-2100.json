@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-26",
+  "purpose": "Candidate photo sources for existing approved staging articles only. No approval, publishing or substitution until exact original image is reviewed.",
+  "candidates": [
+    {
+      "id": "banh-gio-ha-noi",
+      "file": "Bánh giò.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_gi%C3%B2.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/B%C3%A1nh_gi%C3%B2.jpg",
+      "author": "Thang Nguyen",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceDescription": "Wikimedia file description identifies bánh giò. Flickr license reviewed by FlickreviewR 24/11/2007.",
+      "sourceLicenseVerified": true,
+      "visualDishIdentityVerified": false,
+      "originalBytesVerified": false
+    },
+    {
+      "id": "nem-ran-bua-co",
+      "file": "Nem rán giòn, ng23th9n2022 (3).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nem_r%C3%A1n_gi%C3%B2n,_ng23th9n2022_(3).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Nem_r%C3%A1n_gi%C3%B2n%2C_ng23th9n2022_%283%29.jpg",
+      "author": "Phương Huy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceDescription": "Wikimedia description identifies nem rán and uploader declares own work.",
+      "sourceLicenseVerified": true,
+      "visualDishIdentityVerified": false,
+      "originalBytesVerified": false
+    }
+  ],
+  "status": "HELD_PENDING_EXACT_IMAGE_READ",
+  "reason": "Original image endpoints could not be fetched in this session; do not mark visual verification as passed. Preserve existing covers and all approvals.",
+  "published": 0
+}
