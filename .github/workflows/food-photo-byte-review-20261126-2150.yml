@@ -1,0 +1,59 @@
+name: Food photo original-byte evidence 26 Nov (read only)
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/food-photo-byte-review-20261126-2150.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: ${{ github.repository == 'haidtbasaomh-blip/an-ngon-co-deal-content' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Read two exact licensed original JPEG files, no publication
+        shell: python
+        run: |
+          import hashlib, json, pathlib, urllib.request, urllib.parse, subprocess
+          source = json.loads(pathlib.Path("reports/food-photo-candidates-20261126-2150.json").read_text())
+          allowed = {"bun-oc-ha-noi", "banh-tom-ho-tay"}
+          assert {x["id"] for x in source["candidates"]} == allowed
+          out = pathlib.Path("photo-byte-evidence-20261126-2150")
+          out.mkdir(exist_ok=True)
+          results = []
+          for row in source["candidates"]:
+              url = row["originalUrl"]
+              u = urllib.parse.urlsplit(url)
+              assert u.scheme == "https" and u.netloc == "upload.wikimedia.org" and not u.query and u.path.startswith("/wikipedia/commons/")
+              evidence = {"id": row["id"], "url": url, "verified": False}
+              try:
+                  req = urllib.request.Request(url, headers={"User-Agent":"AnNgonCoDeal-EditorialPhotoReview/1.0 (https://an-ngon-co-deal.bvthn-1903.chatgpt.site/)"})
+                  with urllib.request.urlopen(req, timeout=25) as response:
+                      assert urllib.parse.urlsplit(response.geturl()).netloc == "upload.wikimedia.org"
+                      data = response.read(10*1024*1024+1)
+                      assert response.headers.get_content_type() == "image/jpeg"
+                  assert 1000 < len(data) <= 10*1024*1024 and data[:2] == b"\xff\xd8"
+                  target = out / (row["id"] + ".jpg")
+                  target.write_bytes(data)
+                  dims = subprocess.check_output(["identify", "-ping", "-format", "%w %h", str(target)], text=True).split()
+                  dims = [int(n) for n in dims]
+                  assert dims == row["expectedDimensions"]
+                  evidence.update({"verified":True,"originalBytes":len(data),"sha256":hashlib.sha256(data).hexdigest(),"dimensions":dims})
+              except Exception as exc:
+                  evidence["errorType"] = type(exc).__name__
+              results.append(evidence)
+          summary = {"results":results,"verifiedCount":sum(r["verified"] for r in results),"published":0,"approvedChanged":0,"sourceChanged":0}
+          (out/"proof.json").write_text(json.dumps(summary,indent=2)+"\n")
+          print(json.dumps(summary))
+          if not all(r["verified"] for r in results):
+              raise SystemExit(1)
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: food-photo-byte-evidence-20261126-2150
+          path: photo-byte-evidence-20261126-2150/
+          retention-days: 14
+          if-no-files-found: warn
