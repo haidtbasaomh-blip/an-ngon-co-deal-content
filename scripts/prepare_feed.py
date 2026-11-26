@@ -149,6 +149,46 @@ def main():
             "articles": batch,
         })
         batches.append({"path": path, "articleCount": len(batch)})
+    # Explicit one-at-a-time handoff for the existing Sites editor. The
+    # original staging queue and owner approvals are never modified here.
+    # Do not equate a decorative cover with a verified dish photograph.
+    eligible = []
+    for item in articles:
+        evidence = item.get("imageReview") or {}
+        if (item.get("sourceStatus") == "topic_matched"
+                and (item.get("sourceReview") or {}).get("verified") is True
+                and item.get("imageType") == "licensed_dish_photo"
+                and evidence.get("visualDishIdentityVerified") is True
+                and evidence.get("commercialReuseLicenseVerified") is True
+                and evidence.get("originalImageUnmodified") is True
+                and evidence.get("requiresVisibleAttribution") is True
+                and all(isinstance(item.get(k), str) and item[k].strip()
+                        for k in ("imageUrl","imageAlt","imageCredit","imageSourcePage","imageLicenseUrl"))
+                and all(item[k].startswith("https://") for k in
+                        ("imageUrl","imageSourcePage","imageLicenseUrl"))):
+            eligible.append(item)
+    # Live comparison is mandatory; an unavailable inventory must not
+    # release an article into the site editor queue.
+    chosen = eligible[:1] if live_articles is not None else []
+    save_json(out / "site_import_candidate.json", {
+        "schema": 1,
+        "site": SITE,
+        "status": "ready_for_site",
+        "mode": "one_owner_approved_article_editor_handoff",
+        "articleCount": len(chosen),
+        "articles": chosen,
+        "eligibleStagingCount": len(eligible),
+        "heldForPhotoOrSourceReview": len(articles) - len(eligible),
+        "liveInventoryVerified": live_articles is not None,
+        "sitePublicationConfirmed": False,
+        "mustRenderVisibleAttribution": True,
+        "mustRecheckLiveBeforeImport": True,
+        "autoPublish": False,
+    })
+    print("SITE_EDITOR_CANDIDATE", json.dumps({"eligible":len(eligible),
+          "selected":len(chosen),"held":len(articles)-len(eligible),
+          "ids":[x["id"] for x in chosen],"liveInventoryVerified":live_articles is not None,
+          "published":0},ensure_ascii=False))
     payload = json.dumps(staging, sort_keys=True, ensure_ascii=False).encode("utf-8")
     save_json(out / "manifest.json", {
         "schema": 1,
