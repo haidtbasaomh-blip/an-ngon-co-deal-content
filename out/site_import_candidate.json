@@ -1,0 +1,57 @@
+{
+  "articleCount": 1,
+  "articles": [
+    {
+      "affiliateLinks": [],
+      "approved": true,
+      "area": "Hà Nội",
+      "body": "Xôi xéo gợi một kiểu bữa sáng Hà Nội gọn gàng, với hạt xôi, đậu xanh và phần hành phi tạo hương vị đặc trưng. Người mới thử có thể bắt đầu từ suất cơ bản trước khi thêm các món ăn kèm. Như vậy sẽ dễ cảm nhận vị của xôi thay vì bị quá nhiều thành phần lấn át.\n\nCác quán thường có lựa chọn khác nhau, vì vậy không mặc định một suất xôi xéo nào cũng gồm chả, ruốc hoặc thịt. Hỏi rõ phần thêm và kích cỡ suất trước khi thanh toán. Nếu mua cho nhiều người, ghi riêng từng lựa chọn để tránh nhầm gói.\n\nKhi muốn mang theo đi học hoặc đi làm, hãy chú ý thời điểm nhận và cách bảo quản do người bán hướng dẫn. Thức ăn đã chế biến không nên để lâu chỉ vì được gói kín. Nếu cần ăn muộn, hãy cân nhắc chọn món phù hợp hơn.\n\nĐây là hướng dẫn chọn món chứ không phải danh sách xếp hạng quán. Địa chỉ, giá và giờ bán cần được xác nhận từ từng cơ sở đang hoạt động.",
+      "category": "Món Hà Nội",
+      "checked": "2026-11-14",
+      "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
+      "editorialStatus": "approved",
+      "icon": "🍲",
+      "id": "xoi-xeo-buoi-sang",
+      "image": "",
+      "imageAlt": "Xôi xéo với đậu xanh, hành phi, gói trong lá",
+      "imageCredit": "Viethavvh / Wikimedia Commons / CC BY-SA 4.0",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageReview": {
+        "checkedAt": "2026-11-25",
+        "commercialReuseLicenseVerified": true,
+        "originalImageUnmodified": true,
+        "requiresVisibleAttribution": true,
+        "scope": "Ảnh minh họa món xôi xéo; không xác nhận địa điểm, quán, giá hoặc ưu đãi.",
+        "visualDishIdentityVerified": true
+      },
+      "imageRights": "Ảnh chụp Xôi xéo.jpg của Viethavvh, Wikimedia Commons, CC BY-SA 4.0. Giữ nguyên ảnh gốc; hiển thị tên tác giả, nguồn và liên kết giấy phép khi sử dụng.",
+      "imageSourcePage": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_x%C3%A9o.jpg",
+      "imageType": "licensed_dish_photo",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/X%C3%B4i_x%C3%A9o.jpg",
+      "intro": "Một gói xôi xéo có thể rất đơn giản hoặc thêm nhiều món; đọc kỹ thành phần để chọn đúng phần ăn.",
+      "publicationStatus": "ready_for_site",
+      "region": "Miền Bắc",
+      "source": "https://antoanthucpham.hanoi.gov.vn/giai-ma-tuyet-ky-do-xoi-hai-lua-giup-xoi-phu-thuong-deo-thom-nuc-tieng-kinh-ky-23926042015333983.htm",
+      "sourceReview": {
+        "checkedAt": "2026-11-15T11:08:16.452Z",
+        "evidence": "đậu xanh làm xôi xéo cũng được xóc với một lượng muối vừa phải",
+        "scope": "Đối chiếu bối cảnh xôi Hà Nội, đậu xanh và hành phi. Không xác nhận quán, giá, giờ bán hoặc thời hạn bảo quản.",
+        "url": "https://antoanthucpham.hanoi.gov.vn/giai-ma-tuyet-ky-do-xoi-hai-lua-giup-xoi-phu-thuong-deo-thom-nuc-tieng-kinh-ky-23926042015333983.htm",
+        "verified": true
+      },
+      "sourceStatus": "topic_matched",
+      "title": "Xôi xéo buổi sáng: chọn phần xôi vừa đủ và món ăn kèm"
+    }
+  ],
+  "autoPublish": false,
+  "eligibleStagingCount": 1,
+  "heldForPhotoOrSourceReview": 34,
+  "liveInventoryVerified": true,
+  "mode": "one_owner_approved_article_editor_handoff",
+  "mustRecheckLiveBeforeImport": true,
+  "mustRenderVisibleAttribution": true,
+  "schema": 1,
+  "site": "https://an-ngon-co-deal.bvthn-1903.chatgpt.site/",
+  "sitePublicationConfirmed": false,
+  "status": "ready_for_site"
+}
