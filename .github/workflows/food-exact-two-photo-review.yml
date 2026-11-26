@@ -1,0 +1,61 @@
+name: Food exact Commons two-photo review evidence
+on:
+  push:
+    branches: ['review/exact-food-photos-20261126']
+    paths: ['.github/workflows/food-exact-two-photo-review.yml']
+permissions:
+  contents: write
+concurrency:
+  group: food-exact-two-photo-review
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: ${{ github.repository == 'haidtbasaomh-blip/an-ngon-co-deal-content' && github.ref == 'refs/heads/review/exact-food-photos-20261126' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pillow
+      - name: Fetch exact public originals and create small review-only thumbnails
+        run: |
+          python - <<'PY'
+          import hashlib,io,json,urllib.request,urllib.parse
+          from pathlib import Path
+          from PIL import Image,ImageOps
+          src=json.loads(Path("reports/food-photo-candidates-20261126-2100.json").read_text())
+          expected={"banh-gio-ha-noi","nem-ran-bua-co"}
+          assert {x["id"] for x in src["candidates"]}==expected
+          out=Path("review/exact-food-photos-20261126")
+          out.mkdir(parents=True,exist_ok=True)
+          result=[]
+          for a in src["candidates"]:
+              assert a["sourceLicenseVerified"] is True and a["visualDishIdentityVerified"] is False
+              url=a["originalUrl"]
+              assert urllib.parse.urlsplit(url).hostname=="upload.wikimedia.org"
+              with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"FoodLicensedPhotoReview/1.0 (https://github.com/haidtbasaomh-blip/an-ngon-co-deal-content)"}),timeout=30) as response:
+                  assert response.status==200 and urllib.parse.urlsplit(response.geturl()).hostname=="upload.wikimedia.org"
+                  assert response.headers.get_content_type()=="image/jpeg"
+                  raw=response.read(6000001)
+              assert 10000<len(raw)<=6000000
+              im=Image.open(io.BytesIO(raw));im.verify()
+              im=ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert("RGB")
+              size=list(im.size)
+              assert min(size)>=320
+              im.thumbnail((700,700))
+              dest=out/(a["id"]+".jpg")
+              im.save(dest,quality=87,optimize=True)
+              result.append({"id":a["id"],"sourcePage":a["sourcePage"],"originalUrl":url,"author":a["author"],"license":a["license"],"originalSha256":hashlib.sha256(raw).hexdigest(),"originalBytes":len(raw),"originalDimensions":size,"reviewThumbnail":str(dest),"reviewThumbnailSha256":hashlib.sha256(dest.read_bytes()).hexdigest(),"visualDishIdentityVerified":False})
+          (out/"proof.json").write_text(json.dumps({"reviewOnly":True,"published":0,"stagingChanged":False,"items":result},ensure_ascii=False,indent=2)+"\n")
+          print("FOOD_EXACT_PHOTO_BYTES_VERIFIED",len(result),"review-only thumbnails")
+          PY
+      - name: Store review evidence only on the isolated review branch
+        run: |
+          git config user.name "food-photo-review[bot]"
+          git config user.email "food-photo-review[bot]@users.noreply.github.com"
+          git add review/exact-food-photos-20261126
+          git diff --cached --quiet && exit 0
+          git commit -m "review(food): exact Commons photo download and review thumbnails; no publication"
+          git push origin HEAD:refs/heads/review/exact-food-photos-20261126
