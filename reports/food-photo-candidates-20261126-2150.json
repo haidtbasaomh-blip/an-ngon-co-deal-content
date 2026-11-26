@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-26",
+  "purpose": "Two existing staging articles: review of exact Commons photo sources. No publication or approval changes.",
+  "candidates": [
+    {
+      "id": "bun-oc-ha-noi",
+      "file": "Bun oc Hoe Nhai.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bun_oc_Hoe_Nhai.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Bun_oc_Hoe_Nhai.JPG",
+      "author": "Rungbachduong",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceLicenseVerified": true,
+      "visualDishIdentityVerified": true,
+      "originalBytesVerified": false,
+      "expectedDimensions": [
+        2592,
+        1944
+      ],
+      "visualNote": "Bowl of vermicelli soup, fried tofu, herbs and chili; Commons describes Hanoi bun oc. Illustrative only, not evidence of a current restaurant or price."
+    },
+    {
+      "id": "banh-tom-ho-tay",
+      "file": "Lễ hội ẩm thực Cửa Việt th4n2023 đặc sản bánh tôm Hồ Tây (9).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:L%E1%BB%85_h%E1%BB%99i_%E1%BA%A9m_th%E1%BB%B1c_C%E1%BB%ADa_Vi%E1%BB%87t_th4n2023_%C4%91%E1%BA%B7c_s%E1%BA%A3n_b%C3%A1nh_t%C3%B4m_H%E1%BB%93_T%C3%A2y_(9).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/L%E1%BB%85_h%E1%BB%99i_%E1%BA%A9m_th%E1%BB%B1c_C%E1%BB%ADa_Vi%E1%BB%87t_th4n2023_%C4%91%E1%BA%B7c_s%E1%BA%A3n_b%C3%A1nh_t%C3%B4m_H%E1%BB%93_T%C3%A2y_%289%29.jpg",
+      "author": "Phương Huy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceLicenseVerified": true,
+      "visualDishIdentityVerified": true,
+      "originalBytesVerified": false,
+      "expectedDimensions": [
+        3024,
+        4032
+      ],
+      "visualNote": "Fried golden shrimp cakes topped with whole orange shrimp. Photograph taken at Cua Viet food festival, Quang Tri, not at West Lake. Use only as an explicitly labeled illustration of the dish."
+    }
+  ],
+  "status": "HELD_PENDING_ORIGINAL_BYTES_SHA256",
+  "reason": "Viewed actual source images and checked license pages. Runtime original file download failed; SHA-256 and byte verification are not yet available. Keep existing covers, approvals and publication unchanged. Both require visible attribution and license link.",
+  "published": 0
+}
