@@ -43,6 +43,11 @@ class TestEditorial(unittest.TestCase):
             second = {p.relative_to(out): p.read_bytes() for p in out.rglob("*.json")}
             self.assertEqual(first, second)
             self.assertEqual(37, json.loads((out / "manifest.json").read_text())["countReady"])
+            handoff = json.loads((out / "site_import_candidate.json").read_text())
+            self.assertEqual(handoff["articleCount"], 0)
+            self.assertFalse(handoff["liveInventoryVerified"])
+            self.assertFalse(handoff["sitePublicationConfirmed"])
+            self.assertFalse(handoff["autoPublish"])
 
 
 if __name__ == "__main__":
