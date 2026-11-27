@@ -1,6 +1,15 @@
 // ANW-17: read-only, full public-sitemap coverage incl. all restaurant directory pages.
 // Does not approve drafts, mutate site, post to social, or follow affiliate redirects.
 import fs from 'node:fs';
+import assert from 'node:assert/strict';
+// Schema.org food-establishment subclasses are valid for a place page.
+const foodTypes=new Set(['Restaurant','LocalBusiness','FoodEstablishment','CafeOrCoffeeShop','Bakery','BarOrPub','Brewery','FastFoodRestaurant','IceCreamShop','Distillery','Winery']);
+const normalizeType=t=>typeof t==='string'?t.replace(/^https?:\/\/schema\.org\//,''):'';
+const hasPlaceType=types=>types.some(t=>foodTypes.has(normalizeType(t)));
+assert.equal(hasPlaceType(['CafeOrCoffeeShop']),true);
+assert.equal(hasPlaceType(['https://schema.org/Restaurant']),true);
+assert.equal(hasPlaceType(['Article','WebPage','Organization']),false);
+assert.equal(hasPlaceType(['https://untrusted.invalid/Restaurant']),false);
 const base='https://an-ngon-co-deal.bvthn-1903.chatgpt.site';
 const report={checkedAt:new Date().toISOString(),site:base,readOnly:true,pages:[],errors:[],warnings:[],imageHosts:{},imagePaths:{},rightsEvidence:'not independently verified'};
 const decode=s=>String(s||'').replace(/&amp;/g,'&').replace(/&#38;/g,'&').replace(/&quot;/g,'"');
@@ -48,7 +57,7 @@ await Promise.all(Array.from({length:4},async()=>{
    if(desc.length!==1||desc[0].trim().length<20)report.errors.push(path+' description missing/short');
    if(ogImg.length!==1||!ogImg[0])report.errors.push(path+' OG image missing');
    if(isArticle&&!types.some(t=>['Article','BlogPosting','NewsArticle'].includes(t)))report.errors.push(path+' Article JSON-LD missing');
-   if(isPlace&&!types.some(t=>['Restaurant','LocalBusiness','FoodEstablishment'].includes(t)))report.errors.push(path+' Restaurant/LocalBusiness JSON-LD missing');
+   if(isPlace&&!hasPlaceType(types))report.errors.push(path+' LocalBusiness/FoodEstablishment JSON-LD missing; observed types: '+JSON.stringify(types));
    let imageHost='',imagePath='';
    if(ogImg[0]){try{const u=new URL(ogImg[0],base);imageHost=u.hostname;imagePath=u.pathname;report.imageHosts[imageHost]=(report.imageHosts[imageHost]||0)+1;report.imagePaths[imagePath]=(report.imagePaths[imagePath]||0)+1;}catch{report.errors.push(path+' malformed OG image URL');}}
    report.pages.push({path,status:200,kind:isArticle?'article':isPlace?'place':'other',canonicalOK:canonical.length===1&&canonical[0]===url,descriptionOK:desc.length===1&&desc[0].trim().length>=20,ogImageHost:imageHost,ogImagePath:imagePath,jsonLdTypes:types,noindex:/noindex/i.test(robotsDirective)});
@@ -62,5 +71,5 @@ if(report.unknownImageRights.length)report.warnings.push('OG image on external h
 report.decision=report.errors.length?'FAIL':report.warnings.length?'REVIEW':'PASS_METADATA_ONLY';
 fs.mkdirSync('reports',{recursive:true});
 fs.writeFileSync('reports/food-anw17-full-seo.json',JSON.stringify(report,null,2)+'\n','utf8');
-console.log(JSON.stringify({decision:report.decision,counts:report.counts,imageHosts:report.imageHosts,imagePaths:report.imagePaths,errors:report.errors.slice(0,25),warnings:report.warnings,rightsEvidence:report.rightsEvidence},null,2));
+console.log(JSON.stringify({decision:report.decision,counts:report.counts,imageHosts:report.imageHosts,imagePaths:report.imagePaths,errors:report.errors.slice(0,25),warnings:report.warnings,rightsEvidence:report.rightsEvidence,placeSchema:report.pages.filter(p=>p.kind==='place').map(p=>({path:p.path,types:p.jsonLdTypes,valid:hasPlaceType(p.jsonLdTypes)})),sharedBrandCoverCount:report.imagePaths['/assets/brand-cover.webp']||0},null,2));
 if(report.errors.length)process.exitCode=1;
