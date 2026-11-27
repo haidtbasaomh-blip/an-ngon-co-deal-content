@@ -14,10 +14,16 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install JPEG decoder
+        run: python -m pip install Pillow==12.0.0
       - name: Read two exact licensed original JPEG files, no publication
         shell: python
         run: |
-          import hashlib, json, pathlib, urllib.request, urllib.parse, subprocess
+          import hashlib, json, pathlib, urllib.request, urllib.parse
+          from PIL import Image
           source = json.loads(pathlib.Path("reports/food-photo-candidates-20261126-2150.json").read_text())
           allowed = {"bun-oc-ha-noi", "banh-tom-ho-tay"}
           assert {x["id"] for x in source["candidates"]} == allowed
@@ -38,8 +44,10 @@ jobs:
                   assert 1000 < len(data) <= 10*1024*1024 and data[:2] == b"\xff\xd8"
                   target = out / (row["id"] + ".jpg")
                   target.write_bytes(data)
-                  dims = subprocess.check_output(["identify", "-ping", "-format", "%w %h", str(target)], text=True).split()
-                  dims = [int(n) for n in dims]
+                  with Image.open(target) as im:
+                      assert im.format == "JPEG"
+                      dims = list(im.size)
+                      im.verify()
                   assert dims == row["expectedDimensions"]
                   evidence.update({"verified":True,"originalBytes":len(data),"sha256":hashlib.sha256(data).hexdigest(),"dimensions":dims})
               except Exception as exc:
