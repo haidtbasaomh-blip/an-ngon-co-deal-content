@@ -170,16 +170,31 @@
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
       "sourceChecked": true,
-      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-oc-ha-noi.svg",
-      "imageType": "original_editorial_illustration",
-      "imageAlt": "Bìa minh họa biên tập cho bài Bún ốc Hà Nội: phân biệt bát nóng và cách ăn chua thanh; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Bun_oc_Hoe_Nhai.JPG",
+      "imageType": "licensed_dish_photo",
+      "imageAlt": "Bát bún ốc Hà Nội với nước dùng, đậu phụ rán và rau thơm",
+      "imageRights": "Ảnh chụp của Rungbachduong, Wikimedia Commons, CC BY-SA 3.0. Dùng nguyên ảnh gốc, hiển thị ghi công, nguồn và giấy phép; nếu chỉnh sửa phải ghi rõ và tuân thủ giấy phép.",
       "sourceReview": {
         "verified": true,
         "url": "https://vietnam.travel/vi/things-to-do/eating-vietnam-anthony-bourdain/",
         "checkedAt": "2026-11-16",
         "evidence": "Bài Cổng Du lịch Việt Nam nhắc tới bún ốc ăn ven đường tại Hà Nội trong hành trình của Anthony Bourdain; không xác minh từng quán hay giá.",
         "scope": "Nguồn xác nhận món bún ốc thuộc văn hóa ẩm thực Hà Nội, không chứng minh công thức riêng, cửa hàng, ảnh, giá hoặc giờ mở cửa."
+      },
+      "previousCoverIllustration": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-oc-ha-noi.svg",
+      "imageCredit": "Rungbachduong / Wikimedia Commons / CC BY-SA 3.0",
+      "imageSourcePage": "https://commons.wikimedia.org/wiki/File:Bun_oc_Hoe_Nhai.JPG",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "imageReview": {
+        "checkedAt": "2026-11-27",
+        "visualDishIdentityVerified": true,
+        "commercialReuseLicenseVerified": true,
+        "originalImageUnmodified": true,
+        "requiresVisibleAttribution": true,
+        "originalSha256": "c2c2b10921f0790e36357ad5de23926c4a7bd0a91f5f13fdd8d1e6ca6680dc87",
+        "originalBytes": 641856,
+        "reviewEvidence": "Bằng chứng ảnh và nguồn ngày 26/11 trong reports/food-photo-candidates-20261126-2150.json; kiểm tra JPEG, kích thước và SHA-256 ngày 27/11 ở GitHub Actions 46019794558; đối chiếu lại tên tác giả và giấy phép trên Wikimedia Commons.",
+        "scope": "Ảnh minh họa món bún ốc; không xác nhận cơ sở, giá, địa chỉ hoặc ưu đãi."
       }
     },
     {
@@ -309,16 +324,31 @@
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
       "sourceChecked": true,
-      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-tom-ho-tay.svg",
-      "imageType": "original_editorial_illustration",
-      "imageAlt": "Bìa minh họa biên tập cho bài Bánh tôm Hồ Tây: xem kỹ phần bánh, tôm và rau ăn kèm; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/L%E1%BB%85_h%E1%BB%99i_%E1%BA%A9m_th%E1%BB%B1c_C%E1%BB%ADa_Vi%E1%BB%87t_th4n2023_%C4%91%E1%BA%B7c_s%E1%BA%A3n_b%C3%A1nh_t%C3%B4m_H%E1%BB%93_T%C3%A2y_%289%29.jpg",
+      "imageType": "licensed_dish_photo",
+      "imageAlt": "Bánh tôm vàng giòn có tôm nguyên con phía trên, ảnh minh họa tại lễ hội ẩm thực Cửa Việt, Quảng Trị",
+      "imageRights": "Ảnh chụp của Phương Huy, Wikimedia Commons, CC BY-SA 4.0. Dùng nguyên ảnh gốc, hiển thị ghi công, nguồn và giấy phép; nếu chỉnh sửa phải ghi rõ và tuân thủ giấy phép.",
       "sourceReview": {
         "verified": true,
         "url": "https://vietnam.travel/vi/things-to-do/exploring-ha-noi-street-food-sens-asia/",
         "checkedAt": "2026-11-16",
         "evidence": "Vietnam Tourism - Khám phá ẩm thực đường phố Hà Nội cùng Sens Asia mô tả bánh tôm chiên giòn có con tôm đặt phía trên.",
         "scope": "Bài nguồn xác minh món bánh tôm ở Hà Nội, không xác nhận giá, cơ sở, nguồn tôm tại Hồ Tây hay giấy phép ảnh."
+      },
+      "previousCoverIllustration": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-tom-ho-tay.svg",
+      "imageCredit": "Phương Huy / Wikimedia Commons / CC BY-SA 4.0",
+      "imageSourcePage": "https://commons.wikimedia.org/wiki/File:L%E1%BB%85_h%E1%BB%99i_%E1%BA%A9m_th%E1%BB%B1c_C%E1%BB%ADa_Vi%E1%BB%87t_th4n2023_%C4%91%E1%BA%B7c_s%E1%BA%A3n_b%C3%A1nh_t%C3%B4m_H%E1%BB%93_T%C3%A2y_(9).jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageReview": {
+        "checkedAt": "2026-11-27",
+        "visualDishIdentityVerified": true,
+        "commercialReuseLicenseVerified": true,
+        "originalImageUnmodified": true,
+        "requiresVisibleAttribution": true,
+        "originalSha256": "e91815bf4db306c197739a10053ad70dea547f1bf1f94be40d2d6d18c9b26a82",
+        "originalBytes": 2981231,
+        "reviewEvidence": "Bằng chứng ảnh và nguồn ngày 26/11 trong reports/food-photo-candidates-20261126-2150.json; kiểm tra JPEG, kích thước và SHA-256 ngày 27/11 ở GitHub Actions 46019794558; đối chiếu lại tên tác giả và giấy phép trên Wikimedia Commons.",
+        "scope": "Ảnh minh họa món bánh tôm chụp tại lễ hội ẩm thực Cửa Việt, Quảng Trị; không phải ảnh một quán tại Hồ Tây. Không xác nhận địa chỉ, giá hoặc ưu đãi."
       }
     },
     {
