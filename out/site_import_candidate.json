@@ -19,8 +19,11 @@
       "imageReview": {
         "checkedAt": "2026-11-25",
         "commercialReuseLicenseVerified": true,
+        "originalBytes": 803162,
         "originalImageUnmodified": true,
+        "originalSha256": "a24749ce85c38a4ea4cf1428bac9f38457f9f3fc41bfdae82a70cada6ed68729",
         "requiresVisibleAttribution": true,
+        "reviewEvidence": "JPEG gốc 2560 × 1920 đã xem và đối chiếu giấy phép CC BY-SA 4.0 do Viethavvh công bố trên Wikimedia Commons.",
         "scope": "Ảnh minh họa món xôi xéo; không xác nhận địa điểm, quán, giá hoặc ưu đãi.",
         "visualDishIdentityVerified": true
       },
