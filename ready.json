@@ -288,8 +288,8 @@
       "sourceReview": {
         "verified": true,
         "url": "https://vietnam.travel/vi/things-to-do/vietnam-fish-sauce/",
-        "checkedAt": "2026-11-16",
-        "evidence": "Cổng du lịch Việt Nam nói về nem rán và cách ăn với nước mắm pha; không xác thực từng quán.",
+        "checkedAt": "2026-11-28",
+        "evidence": "nem rán/chả giò) của bạn sẽ thêm phần đậm đà với nước mắm pha loãng cùng giấm và nước.",
         "scope": "Chỉ kiểm tra nguồn đúng món, không cấp quyền sử dụng ảnh/không xác minh giá hay cửa hàng."
       },
       "previousCoverIllustration": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/nem-ran-bua-co.svg",
@@ -535,8 +535,8 @@
       "sourceReview": {
         "verified": true,
         "url": "https://vietnam.travel/vi/things-to-do/unlocking-hanoi%E2%80%99s-heritage-journey-beyond-sightseeing/",
-        "checkedAt": "2026-11-16",
-        "evidence": "Vietnam Tourism - Khám phá di sản Hà Nội mô tả trải nghiệm làm bánh cốm đặc trưng Hà Nội tại Toa Gạo & Cốm.",
+        "checkedAt": "2026-11-28",
+        "evidence": "nghiệm làm món bánh cốm đặc trưng của Hà Nội.",
         "scope": "Đối chiếu sự hiện diện của bánh cốm trong văn hóa Hà Nội, không xác nhận nhãn hàng, giá hiện tại hay quyền ảnh."
       },
       "previousCoverIllustration": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-com-lam-qua.svg",
@@ -549,7 +549,10 @@
         "commercialReuseLicenseVerified": true,
         "originalImageUnmodified": true,
         "requiresVisibleAttribution": true,
-        "scope": "Đã đối chiếu trực tiếp ảnh gốc hiển thị và trang mô tả/giấy phép Wikimedia Commons. Minh họa món ăn, không xác nhận nhà hàng, giá, địa chỉ, ưu đãi."
+        "scope": "Đã đối chiếu trực tiếp ảnh gốc hiển thị và trang mô tả/giấy phép Wikimedia Commons. Minh họa món ăn, không xác nhận nhà hàng, giá, địa chỉ, ưu đãi.",
+        "originalSha256": "587a6dd82d04cddbc5dd578832a5a9294f498b6b4e380f194446933e50758ca4",
+        "originalBytes": 3108781,
+        "reviewEvidence": "Đã kiểm tra ảnh từ đúng file gốc, SHA-256 và tên tác giả, giấy phép thương mại trên Wikimedia Commons."
       }
     },
     {
@@ -640,8 +643,8 @@
       "sourceReview": {
         "verified": true,
         "url": "https://vietnam.travel/vi/things-to-do/explore-relax-and-play-northern-vietnam%C2%A0",
-        "checkedAt": "2026-11-16",
-        "evidence": "Vietnam Tourism - Explore, Relax, and Play in Northern Vietnam xác nhận bún bò Nam Bộ không chan nước dùng và phổ biến tại Hà Nội.",
+        "checkedAt": "2026-11-28",
+        "evidence": "Món ăn này được du nhập vào Hà Nội từ miền Nam",
         "scope": "Chỉ đối chiếu bối cảnh món ăn; không khẳng định xuất xứ tên món là địa điểm hiện tại, giá hoặc chủ quán."
       },
       "previousCoverIllustration": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/bun-bo-nam-bo-ha-noi.svg",
@@ -654,7 +657,10 @@
         "commercialReuseLicenseVerified": true,
         "originalImageUnmodified": true,
         "requiresVisibleAttribution": true,
-        "scope": "Đã đối chiếu trực tiếp ảnh gốc hiển thị và trang mô tả/giấy phép Wikimedia Commons. Minh họa món ăn, không xác nhận nhà hàng, giá, địa chỉ, ưu đãi."
+        "scope": "Đã đối chiếu trực tiếp ảnh gốc hiển thị và trang mô tả/giấy phép Wikimedia Commons. Minh họa món ăn, không xác nhận nhà hàng, giá, địa chỉ, ưu đãi.",
+        "originalSha256": "a4ea5226a8871142e20421068c2b2778a3c4d61992327a71c1eba3b6599959ed",
+        "originalBytes": 1386259,
+        "reviewEvidence": "Đã kiểm tra ảnh từ đúng file gốc, SHA-256 và tên tác giả, giấy phép thương mại trên Wikimedia Commons."
       }
     },
     {
@@ -1155,16 +1161,30 @@
       "editorialNote": "Bài biên soạn riêng, hướng dẫn chọn món; không xác nhận quán, giá hay ưu đãi cụ thể.",
       "sourceStatus": "topic_matched",
       "sourceChecked": "2026-11-16",
-      "imageUrl": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-da-cua.svg",
-      "imageType": "original_editorial_illustration",
-      "imageAlt": "Bìa minh họa biên tập cho bài Bánh đa cua: một món Hải Phòng có nhiều phiên bản; không phải ảnh chụp món ăn",
-      "imageRights": "Ảnh minh họa SVG do bộ mã dự án tạo, không sao chép ảnh của quán",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/BANH_DA_CUA_1.jpg",
+      "imageType": "licensed_dish_photo",
+      "imageAlt": "Bát bánh đa cua Hải Phòng với rau và phần cua",
+      "imageRights": "Ảnh gốc Wikimedia Commons, CC BY-SA 3.0. Hiển thị tên tác giả, nguồn và giấy phép.",
       "sourceReview": {
         "verified": true,
         "url": "https://vietnam.travel/vi/things-to-do/beautiful-train-route-paradise-typical-cuisine-hai-phong/",
-        "checkedAt": "2026-11-16",
-        "evidence": "Cổng du lịch Việt Nam liệt kê bánh đa cua là món đặc trưng Hải Phòng; không xác thực giá/quán.",
+        "checkedAt": "2026-11-28",
+        "evidence": "bánh mì cay, bánh đa cua, bún cá cay, chè dừa dầm, cà phê cốt dừa…",
         "scope": "Chỉ kiểm tra nguồn đúng món, không cấp quyền sử dụng ảnh/không xác minh giá hay cửa hàng."
+      },
+      "imageCredit": "HoangTuanAnh / Wikimedia Commons / CC BY-SA 3.0",
+      "imageSourcePage": "https://commons.wikimedia.org/wiki/File:BANH_DA_CUA_1.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "imageReview": {
+        "checkedAt": "2026-11-28",
+        "visualDishIdentityVerified": true,
+        "commercialReuseLicenseVerified": true,
+        "originalImageUnmodified": true,
+        "requiresVisibleAttribution": true,
+        "originalSha256": "d5413deb0a148954ac26f3f9e6870fab683a9c7332711cf8005b257c87fc6708",
+        "originalBytes": 174540,
+        "reviewEvidence": "Ảnh đúng món từ JPEG gốc; SHA-256, tác giả và giấy phép đối chiếu trên Wikimedia Commons.",
+        "scope": "Minh họa món ăn, không xác nhận quán hoặc giá."
       }
     },
     {
@@ -1238,8 +1258,8 @@
       "sourceReview": {
         "verified": true,
         "url": "https://dulich.quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=2037",
-        "checkedAt": "2026-11-16",
-        "evidence": "Cổng du lịch Quảng Ninh - Chả mực Hạ Long: Chất riêng của ẩm thực Quảng Ninh (13/10/2020) mô tả chả mực giã tay, chiên vàng và làm quà.",
+        "checkedAt": "2026-11-28",
+        "evidence": "Chả mực Hạ Long vẫn luôn giữ được vị thơm ngon, dẻo bùi từ mực chính hiệu Quảng Ninh",
         "scope": "Chỉ đối chiếu món đặc sản và quy trình truyền thống; không tái sử dụng giá 2020, hình thương mại hoặc địa chỉ quán như hiện tại."
       },
       "previousCoverIllustration": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/cha-muc-ha-long-lam-qua.svg",
@@ -1252,7 +1272,10 @@
         "commercialReuseLicenseVerified": true,
         "originalImageUnmodified": true,
         "requiresVisibleAttribution": true,
-        "scope": "Đã đối chiếu trực tiếp ảnh gốc hiển thị và trang mô tả/giấy phép Wikimedia Commons. Minh họa món ăn, không xác nhận nhà hàng, giá, địa chỉ, ưu đãi."
+        "scope": "Đã đối chiếu trực tiếp ảnh gốc hiển thị và trang mô tả/giấy phép Wikimedia Commons. Minh họa món ăn, không xác nhận nhà hàng, giá, địa chỉ, ưu đãi.",
+        "originalSha256": "9efdac8a06f16dbb1df4c132f085e615ae1b57c409229a20fdd17ef857f8f9bf",
+        "originalBytes": 1416421,
+        "reviewEvidence": "Đã kiểm tra ảnh từ đúng file gốc, SHA-256 và tên tác giả, giấy phép thương mại trên Wikimedia Commons."
       }
     },
     {
@@ -1281,8 +1304,8 @@
       "sourceReview": {
         "verified": true,
         "url": "https://csdl.vietnamtourism.gov.vn/shop/?item=656",
-        "checkedAt": "2026-11-16",
-        "evidence": "Cơ sở dữ liệu ngành Du lịch ghi bánh gai là đặc sản Hải Dương, vỏ từ lá gai và bột nếp, nhân đỗ xanh.",
+        "checkedAt": "2026-11-28",
+        "evidence": "Bánh gai, bánh gấc là một đặc sản nổi tiếng của Hải Dương",
         "scope": "Nguồn cung cấp bối cảnh món bánh; không sử dụng địa chỉ/điện thoại cơ sở cũ làm danh bạ hiện hành hoặc lấy ảnh thương mại."
       },
       "previousCoverIllustration": "https://raw.githubusercontent.com/haidtbasaomh-blip/an-ngon-co-deal-content/main/assets/illustrations/banh-gai-lam-qua.svg",
@@ -1295,7 +1318,10 @@
         "commercialReuseLicenseVerified": true,
         "originalImageUnmodified": true,
         "requiresVisibleAttribution": true,
-        "scope": "Đã đối chiếu trực tiếp ảnh gốc hiển thị và trang mô tả/giấy phép Wikimedia Commons. Minh họa món ăn, không xác nhận nhà hàng, giá, địa chỉ, ưu đãi."
+        "scope": "Đã đối chiếu trực tiếp ảnh gốc hiển thị và trang mô tả/giấy phép Wikimedia Commons. Minh họa món ăn, không xác nhận nhà hàng, giá, địa chỉ, ưu đãi.",
+        "originalSha256": "447d717940a06f10e3dcc54a28fe0a93c90f4e6c700ec7c0d649a208e7fb71e3",
+        "originalBytes": 1227468,
+        "reviewEvidence": "Đã kiểm tra ảnh từ đúng file gốc, SHA-256 và tên tác giả, giấy phép thương mại trên Wikimedia Commons."
       }
     }
   ]
