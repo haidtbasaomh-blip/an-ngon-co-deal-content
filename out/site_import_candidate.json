@@ -44,8 +44,8 @@
     }
   ],
   "autoPublish": false,
-  "eligibleStagingCount": 9,
-  "heldForPhotoOrSourceReview": 26,
+  "eligibleStagingCount": 11,
+  "heldForPhotoOrSourceReview": 24,
   "liveInventoryVerified": true,
   "mode": "one_owner_approved_article_editor_handoff",
   "mustRecheckLiveBeforeImport": true,
